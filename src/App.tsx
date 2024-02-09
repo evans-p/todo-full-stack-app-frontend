@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className='text-amber-800'>
+        <p className="text-amber-800">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
