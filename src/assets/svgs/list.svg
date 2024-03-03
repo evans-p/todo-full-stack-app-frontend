@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.9 595.3" style="enable-background:new 0 0 841.9 595.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{enable-background:new    ;}
+	.st1{fill:#1F1F6E;}
+	.st2{fill:#ABABAB;}
+	.st3{fill:#1E1F6E;}
+	.st4{clip-path:url(#XMLID_2_);enable-background:new    ;}
+	.st5{clip-path:url(#XMLID_3_);enable-background:new    ;}
+	.st6{clip-path:url(#XMLID_4_);enable-background:new    ;}
+	.st7{clip-path:url(#XMLID_5_);enable-background:new    ;}
+	.st8{clip-path:url(#XMLID_6_);enable-background:new    ;}
+	.st9{clip-path:url(#XMLID_7_);enable-background:new    ;}
+	.st10{clip-path:url(#XMLID_8_);enable-background:new    ;}
+	.st11{fill:#4C5881;}
+	.st12{clip-path:url(#XMLID_9_);enable-background:new    ;}
+	.st13{clip-path:url(#XMLID_10_);enable-background:new    ;}
+	.st14{fill:#6676AB;}
+	.st15{clip-path:url(#XMLID_11_);enable-background:new    ;}
+	.st16{fill:#4C5982;}
+	.st17{fill:#4C5882;}
+	.st18{clip-path:url(#XMLID_12_);enable-background:new    ;}
+	.st19{clip-path:url(#XMLID_13_);enable-background:new    ;}
+	.st20{fill:#ACACAC;}
+	.st21{clip-path:url(#XMLID_14_);enable-background:new    ;}
+	.st22{clip-path:url(#XMLID_15_);enable-background:new    ;}
+	.st23{clip-path:url(#XMLID_16_);enable-background:new    ;}
+	.st24{clip-path:url(#XMLID_17_);enable-background:new    ;}
+	.st25{clip-path:url(#XMLID_18_);enable-background:new    ;}
+	.st26{clip-path:url(#XMLID_19_);enable-background:new    ;}
+	.st27{clip-path:url(#XMLID_20_);enable-background:new    ;}
+	.st28{clip-path:url(#XMLID_21_);enable-background:new    ;}
+	.st29{clip-path:url(#XMLID_22_);enable-background:new    ;}
+	.st30{clip-path:url(#XMLID_23_);enable-background:new    ;}
+	.st31{clip-path:url(#XMLID_24_);enable-background:new    ;}
+	.st32{clip-path:url(#XMLID_25_);enable-background:new    ;}
+	.st33{clip-path:url(#XMLID_26_);enable-background:new    ;}
+	.st34{clip-path:url(#XMLID_27_);enable-background:new    ;}
+	.st35{clip-path:url(#XMLID_28_);enable-background:new    ;}
+	.st36{clip-path:url(#XMLID_29_);enable-background:new    ;}
+	.st37{clip-path:url(#XMLID_30_);enable-background:new    ;}
+	.st38{fill:#F9F9F9;}
+	.st39{clip-path:url(#XMLID_31_);enable-background:new    ;}
+	.st40{clip-path:url(#XMLID_32_);enable-background:new    ;}
+	.st41{clip-path:url(#XMLID_33_);enable-background:new    ;}
+	.st42{clip-path:url(#XMLID_34_);enable-background:new    ;}
+	.st43{clip-path:url(#XMLID_35_);enable-background:new    ;}
+	.st44{clip-path:url(#XMLID_36_);enable-background:new    ;}
+	.st45{clip-path:url(#XMLID_37_);enable-background:new    ;}
+	.st46{clip-path:url(#XMLID_38_);enable-background:new    ;}
+	.st47{clip-path:url(#XMLID_39_);enable-background:new    ;}
+	.st48{clip-path:url(#XMLID_40_);enable-background:new    ;}
+	.st49{clip-path:url(#XMLID_41_);enable-background:new    ;}
+	.st50{clip-path:url(#XMLID_42_);enable-background:new    ;}
+	.st51{clip-path:url(#XMLID_72_);enable-background:new    ;}
+	.st52{clip-path:url(#XMLID_73_);enable-background:new    ;}
+	.st53{clip-path:url(#XMLID_74_);enable-background:new    ;}
+	.st54{clip-path:url(#XMLID_75_);enable-background:new    ;}
+	.st55{clip-path:url(#XMLID_76_);enable-background:new    ;}
+	.st56{clip-path:url(#XMLID_77_);enable-background:new    ;}
+	.st57{clip-path:url(#XMLID_78_);enable-background:new    ;}
+	.st58{clip-path:url(#XMLID_79_);enable-background:new    ;}
+	.st59{clip-path:url(#XMLID_80_);enable-background:new    ;}
+	.st60{clip-path:url(#XMLID_81_);enable-background:new    ;}
+	.st61{clip-path:url(#XMLID_82_);enable-background:new    ;}
+	.st62{clip-path:url(#XMLID_83_);enable-background:new    ;}
+	.st63{clip-path:url(#XMLID_84_);enable-background:new    ;}
+	.st64{clip-path:url(#XMLID_85_);enable-background:new    ;}
+	.st65{fill:#878E9E;}
+	.st66{fill:#878E9D;}
+	.st67{clip-path:url(#XMLID_86_);enable-background:new    ;}
+	.st68{clip-path:url(#XMLID_87_);enable-background:new    ;}
+	.st69{fill:#868E9D;}
+	.st70{fill:#B4BCD0;}
+	.st71{fill:#2C3390;}
+	.st72{clip-path:url(#XMLID_88_);enable-background:new    ;}
+	.st73{clip-path:url(#XMLID_89_);enable-background:new    ;}
+	.st74{clip-path:url(#XMLID_90_);enable-background:new    ;}
+	.st75{clip-path:url(#XMLID_91_);enable-background:new    ;}
+	.st76{clip-path:url(#XMLID_92_);enable-background:new    ;}
+	.st77{clip-path:url(#XMLID_93_);enable-background:new    ;}
+	.st78{clip-path:url(#XMLID_94_);enable-background:new    ;}
+	.st79{clip-path:url(#XMLID_95_);enable-background:new    ;}
+	.st80{clip-path:url(#XMLID_96_);enable-background:new    ;}
+	.st81{clip-path:url(#XMLID_97_);enable-background:new    ;}
+	.st82{clip-path:url(#XMLID_98_);enable-background:new    ;}
+</style>
+<g id="XMLID_43_">
+	<g id="XMLID_982_">
+		<g id="XMLID_985_" class="st0">
+			<g id="XMLID_2000_">
+				<polygon id="XMLID_2001_" class="st1" points="391.5,211 397.7,219.9 394.1,221.8 387.9,212.9 				"/>
+			</g>
+			<g id="XMLID_1998_">
+				<polygon id="XMLID_1999_" class="st2" points="391.5,211 397.7,219.9 398,220.8 391.8,212 				"/>
+			</g>
+			<g id="XMLID_1996_">
+				<polygon id="XMLID_1997_" class="st3" points="387.9,212.9 394.1,221.8 395,224.2 388.8,215.3 				"/>
+			</g>
+			<g id="XMLID_1992_" class="st0">
+				<defs>
+					<path id="XMLID_1995_" class="st0" d="M395,224.2C394.9,224.2,394.9,224.2,395,224.2c-2.1-2.9-4.2-5.9-6.2-8.8c0,0,0,0,0,0
+						C390.6,218,393.1,221.5,395,224.2z"/>
+				</defs>
+				<clipPath id="XMLID_2_">
+					<use xlink:href="#XMLID_1995_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1993_" class="st4">
+					<path id="XMLID_1994_" class="st1" d="M388.8,215.3l6.2,8.9c-0.2,0.4-0.5,0.7-0.6,1.1c-0.3,0.6-0.6,1.3-0.8,1.9
+						c-0.8,2.5-0.5,4.9,0.7,6.6l-6.2-8.9c-1.2-1.7-1.5-4.1-0.7-6.6c0.2-0.6,0.5-1.3,0.8-1.9C388.3,216,388.5,215.7,388.8,215.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1988_" class="st0">
+				<defs>
+					<path id="XMLID_1991_" class="st0" d="M394.9,224.2c-0.2,0.4-0.4,0.7-0.6,1.1c-2.1-3-4.1-5.9-6.2-8.9c0.2-0.4,0.4-0.7,0.6-1.1
+						C390.8,218.3,392.9,221.3,394.9,224.2z"/>
+				</defs>
+				<clipPath id="XMLID_3_">
+					<use xlink:href="#XMLID_1991_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1989_" class="st5">
+					<path id="XMLID_1990_" class="st1" d="M388.8,215.3l6.2,8.9c-0.2,0.4-0.5,0.7-0.6,1.1c-0.3,0.6-0.6,1.3-0.8,1.9
+						c-0.8,2.5-0.5,4.9,0.7,6.6l-6.2-8.9c-1.2-1.7-1.5-4.1-0.7-6.6c0.2-0.6,0.5-1.3,0.8-1.9C388.3,216,388.5,215.7,388.8,215.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1984_" class="st0">
+				<defs>
+					<path id="XMLID_1987_" class="st0" d="M394.3,225.3c-0.3,0.6-0.6,1.3-0.8,1.9c-2.1-3-4.1-5.9-6.2-8.9c0.2-0.6,0.5-1.3,0.8-1.9
+						C390.2,219.3,392.2,222.3,394.3,225.3z"/>
+				</defs>
+				<clipPath id="XMLID_4_">
+					<use xlink:href="#XMLID_1987_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1985_" class="st6">
+					<path id="XMLID_1986_" class="st1" d="M388.8,215.3l6.2,8.9c-0.2,0.4-0.5,0.7-0.6,1.1c-0.3,0.6-0.6,1.3-0.8,1.9
+						c-0.8,2.5-0.5,4.9,0.7,6.6l-6.2-8.9c-1.2-1.7-1.5-4.1-0.7-6.6c0.2-0.6,0.5-1.3,0.8-1.9C388.3,216,388.5,215.7,388.8,215.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1980_" class="st0">
+				<defs>
+					<path id="XMLID_1983_" class="st0" d="M398,220.8c-0.6-0.8-5.6-8-6.2-8.9c2.9-2.3,6.7-3.5,9.9-2.8c1.2,1.7,2.3,3.3,3.5,5
+						c0.2,0.3,0.6,0.8,0.8,1.2c0.2,0.3,0.5,0.8,0.8,1.1c0.2,0.3,0.5,0.7,0.7,1.1c0.1,0.2,0.4,0.3,0.4,0.5
+						C404.7,217.4,400.9,218.5,398,220.8z"/>
+				</defs>
+				<clipPath id="XMLID_5_">
+					<use xlink:href="#XMLID_1983_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1981_" class="st7">
+					<path id="XMLID_1982_" class="st1" d="M401.9,209.3l6.2,8.9c-0.1,0-0.2,0-0.3-0.1c-3.2-0.7-6.9,0.4-9.9,2.8l-6.2-8.9
+						c2.9-2.3,6.7-3.5,9.9-2.8C401.8,209.2,401.9,209.2,401.9,209.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1976_" class="st0">
+				<defs>
+					<path id="XMLID_1979_" class="st0" d="M408.1,218.1c-0.1,0-0.2,0-0.3-0.1c-2.1-3-4.1-5.9-6.2-8.9c0.1,0,0.2,0,0.3,0.1
+						C403.8,211.9,406.3,215.5,408.1,218.1z"/>
+				</defs>
+				<clipPath id="XMLID_6_">
+					<use xlink:href="#XMLID_1979_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1977_" class="st8">
+					<path id="XMLID_1978_" class="st1" d="M401.9,209.3l6.2,8.9c-0.1,0-0.2,0-0.3-0.1c-3.2-0.7-6.9,0.4-9.9,2.8l-6.2-8.9
+						c2.9-2.3,6.7-3.5,9.9-2.8C401.8,209.2,401.9,209.2,401.9,209.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1972_" class="st0">
+				<defs>
+					<path id="XMLID_1975_" class="st0" d="M403,209.6l6.2,8.9c-0.3-0.1-0.7-0.2-1-0.3l-6.2-8.9C402.3,209.4,402.6,209.5,403,209.6z
+						"/>
+				</defs>
+				<clipPath id="XMLID_7_">
+					<use xlink:href="#XMLID_1975_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1973_" class="st9">
+					<path id="XMLID_1974_" class="st1" d="M403,209.6l6.2,8.9c-0.3-0.1-0.7-0.2-1-0.3l-6.2-8.9C402.3,209.4,402.6,209.5,403,209.6"
+						/>
+				</g>
+			</g>
+			<g id="XMLID_1968_" class="st0">
+				<defs>
+					<path id="XMLID_1971_" class="st0" d="M403.3,209.8l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2l-6.2-8.9
+						C403.1,209.7,403.2,209.7,403.3,209.8z"/>
+				</defs>
+				<clipPath id="XMLID_8_">
+					<use xlink:href="#XMLID_1971_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1969_" class="st10">
+					<path id="XMLID_1970_" class="st1" d="M403.3,209.8l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2l-6.2-8.9
+						C403.1,209.7,403.2,209.7,403.3,209.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1966_">
+				<polygon id="XMLID_1967_" class="st1" points="403.6,209.9 409.7,218.8 409.5,218.7 403.3,209.8 				"/>
+			</g>
+			<g id="XMLID_1964_">
+				<polygon id="XMLID_1965_" class="st11" points="388.7,215.3 394.9,224.2 396.4,228.1 390.2,219.3 				"/>
+			</g>
+			<g id="XMLID_1962_">
+				<polygon id="XMLID_1963_" class="st2" points="391.8,212 398,220.8 400.5,227.8 394.3,218.9 				"/>
+			</g>
+			<g id="XMLID_1958_" class="st0">
+				<defs>
+					<path id="XMLID_1961_" class="st0" d="M405.7,211.8l6.2,8.9c-0.3-0.4-0.5-0.7-0.9-1c-0.4-0.4-0.8-0.7-1.3-0.9l-6.2-8.9
+						c0.5,0.3,0.9,0.6,1.3,0.9C405.2,211.1,405.5,211.5,405.7,211.8z"/>
+				</defs>
+				<clipPath id="XMLID_9_">
+					<use xlink:href="#XMLID_1961_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1959_" class="st12">
+					<path id="XMLID_1960_" class="st1" d="M405.7,211.8l6.2,8.9c-0.3-0.4-0.5-0.7-0.9-1c-0.4-0.4-0.8-0.7-1.3-0.9l-6.2-8.9
+						c0.5,0.3,0.9,0.6,1.3,0.9C405.2,211.1,405.5,211.5,405.7,211.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1954_" class="st0">
+				<defs>
+					<path id="XMLID_1957_" class="st0" d="M393.5,227.2c-0.8,2.5-0.5,4.9,0.7,6.6l-6.2-8.9c-1.2-1.7-1.5-4.1-0.7-6.6
+						C389.4,221.3,391.4,224.2,393.5,227.2z"/>
+				</defs>
+				<clipPath id="XMLID_10_">
+					<use xlink:href="#XMLID_1957_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1955_" class="st13">
+					<path id="XMLID_1956_" class="st1" d="M388.8,215.3l6.2,8.9c-0.2,0.4-0.5,0.7-0.6,1.1c-0.3,0.6-0.6,1.3-0.8,1.9
+						c-0.8,2.5-0.5,4.9,0.7,6.6l-6.2-8.9c-1.2-1.7-1.5-4.1-0.7-6.6c0.2-0.6,0.5-1.3,0.8-1.9C388.3,216,388.5,215.7,388.8,215.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1952_">
+				<path id="XMLID_1953_" class="st14" d="M401.7,209.2c0.1,0,0.2,0,0.3,0.1c0.4,0.1,0.7,0.2,1,0.3c0.1,0,0.3,0.1,0.4,0.2l0.2,0.1
+					c0.5,0.3,0.9,0.6,1.3,0.9c0.6,0.5,1,1.1,1.4,1.8l-11.9,6.3l-2.5-7C394.8,209.6,398.5,208.5,401.7,209.2z"/>
+			</g>
+			<g id="XMLID_1948_" class="st0">
+				<defs>
+					<path id="XMLID_1951_" class="st0" d="M405.7,211.8l6.2,8.9c0.2,0.3,0.3,0.5,0.5,0.8l-6.2-8.9
+						C406.1,212.4,405.9,212.1,405.7,211.8z"/>
+				</defs>
+				<clipPath id="XMLID_11_">
+					<use xlink:href="#XMLID_1951_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1949_" class="st15">
+					<path id="XMLID_1950_" class="st16" d="M405.7,211.8l6.2,8.9c0.2,0.3,0.3,0.5,0.5,0.8l-6.2-8.9
+						C406.1,212.4,405.9,212.1,405.7,211.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1946_">
+				<polygon id="XMLID_1947_" class="st17" points="406.2,212.7 412.4,221.5 400.5,227.8 394.3,218.9 				"/>
+			</g>
+			<g id="XMLID_1944_">
+				<polygon id="XMLID_1945_" class="st1" points="409.2,211.1 415.4,219.9 412.4,221.5 406.2,212.7 				"/>
+			</g>
+			<g id="XMLID_1942_">
+				<polygon id="XMLID_1943_" class="st11" points="390.2,219.3 396.4,228.1 397.9,232.5 391.7,223.6 				"/>
+			</g>
+			<g id="XMLID_1940_">
+				<polygon id="XMLID_1941_" class="st11" points="391.7,223.6 397.9,232.5 398,232.6 391.8,223.8 				"/>
+			</g>
+			<g id="XMLID_1936_" class="st0">
+				<defs>
+					<path id="XMLID_1939_" class="st0" d="M394.2,233.8l-6.2-8.9c0.3,0.4,0.5,0.7,0.9,1c0.3,0.2,0.6,0.5,0.9,0.7l6.2,8.9
+						c-0.3-0.2-0.6-0.4-0.9-0.7C394.8,234.5,394.5,234.2,394.2,233.8z"/>
+				</defs>
+				<clipPath id="XMLID_12_">
+					<use xlink:href="#XMLID_1939_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1937_" class="st18">
+					<path id="XMLID_1938_" class="st16" d="M389.8,226.6l6.2,8.9c-0.3-0.2-0.6-0.4-0.9-0.7c-0.3-0.3-0.6-0.6-0.9-1l-6.2-8.9
+						c0.3,0.4,0.5,0.7,0.9,1C389.2,226.2,389.5,226.4,389.8,226.6"/>
+				</g>
+			</g>
+			<g id="XMLID_1932_" class="st0">
+				<defs>
+					<path id="XMLID_1935_" class="st0" d="M390.2,226.8l6.2,8.9c-0.1-0.1-0.3-0.2-0.4-0.2l-6.2-8.9
+						C389.9,226.7,390.1,226.8,390.2,226.8z"/>
+				</defs>
+				<clipPath id="XMLID_13_">
+					<use xlink:href="#XMLID_1935_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1933_" class="st19">
+					<path id="XMLID_1934_" class="st16" d="M390.2,226.8l6.2,8.9c-0.1-0.1-0.3-0.2-0.4-0.2l-6.2-8.9
+						C389.9,226.7,390.1,226.8,390.2,226.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1930_">
+				<polygon id="XMLID_1931_" class="st16" points="390.4,226.9 396.6,235.8 396.4,235.7 390.2,226.8 				"/>
+			</g>
+			<g id="XMLID_1928_">
+				<polygon id="XMLID_1929_" class="st20" points="406.9,215.8 413.1,224.7 398,232.6 391.8,223.8 				"/>
+			</g>
+			<g id="XMLID_1926_">
+				<polygon id="XMLID_1927_" class="st2" points="409.2,211.1 415.4,219.9 416.5,222.9 410.3,214 				"/>
+			</g>
+			<g id="XMLID_1924_">
+				<polygon id="XMLID_1925_" class="st20" points="410.3,214 416.5,222.9 413.1,224.7 406.9,215.8 				"/>
+			</g>
+			<g id="XMLID_1920_" class="st0">
+				<defs>
+					<path id="XMLID_1923_" class="st0" d="M406.9,215.8l6.2,8.9c0,0.8-0.1,1.7-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2
+						c-0.2,0.4-0.4,0.8-0.7,1.2c-2.7,4-7.6,6.6-11.9,6.2c-0.3,0-0.7-0.1-1-0.2c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9
+						c0.5,0.3,1.1,0.4,1.7,0.6c0.3,0.1,0.7,0.1,1,0.2c4.3,0.4,9.2-2.1,11.9-6.2c0.2-0.4,0.5-0.8,0.7-1.2c0.4-0.7,0.6-1.4,0.8-2
+						C406.8,217.4,406.9,216.6,406.9,215.8z"/>
+				</defs>
+				<clipPath id="XMLID_14_">
+					<use xlink:href="#XMLID_1923_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1921_" class="st21">
+					<path id="XMLID_1922_" class="st16" d="M406.9,215.8l6.2,8.9c0,0.8-0.1,1.7-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2
+						c-0.2,0.4-0.4,0.8-0.7,1.2c-2.7,4-7.6,6.6-11.9,6.2c-0.3,0-0.7-0.1-1-0.2c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9
+						c0.5,0.3,1.1,0.4,1.7,0.6c0.3,0.1,0.7,0.1,1,0.2c4.3,0.4,9.2-2.1,11.9-6.2c0.2-0.4,0.5-0.8,0.7-1.2c0.4-0.7,0.6-1.4,0.8-2
+						C406.8,217.4,406.9,216.6,406.9,215.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1918_">
+				<polygon id="XMLID_1919_" class="st1" points="372.8,246.7 379,255.6 375.4,257.5 369.2,248.6 				"/>
+			</g>
+			<g id="XMLID_1916_">
+				<polygon id="XMLID_1917_" class="st3" points="415.8,214.5 422,223.4 418.7,229.5 412.6,220.7 				"/>
+			</g>
+			<g id="XMLID_1914_">
+				<polygon id="XMLID_1915_" class="st3" points="369.2,248.6 375.4,257.5 376.3,259.9 370.1,251 				"/>
+			</g>
+			<g id="XMLID_1912_">
+				<polygon id="XMLID_1913_" class="st1" points="413.5,223.4 419.7,232.2 417.6,231.8 411.4,222.9 				"/>
+			</g>
+			<g id="XMLID_1908_" class="st0">
+				<defs>
+					<path id="XMLID_1911_" class="st0" d="M383.3,245l6.2,8.9c-0.1,0-0.2,0-0.3-0.1c-3.2-0.7-6.9,0.4-9.9,2.8l-6.2-8.9
+						c2.9-2.3,6.7-3.5,9.9-2.8C383.1,244.9,383.2,245,383.3,245z"/>
+				</defs>
+				<clipPath id="XMLID_15_">
+					<use xlink:href="#XMLID_1911_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1909_" class="st22">
+					<path id="XMLID_1910_" class="st1" d="M383.3,245l6.2,8.9c-0.1,0-0.2,0-0.3-0.1c-3.2-0.7-6.9,0.4-9.9,2.8l-6.2-8.9
+						c2.9-2.3,6.7-3.5,9.9-2.8C383.1,244.9,383.2,245,383.3,245"/>
+				</g>
+			</g>
+			<g id="XMLID_1904_" class="st0">
+				<defs>
+					<path id="XMLID_1907_" class="st0" d="M384.3,245.3l6.2,8.9c-0.1,0-0.2-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1
+						c-0.2-0.1-0.4-0.1-0.6-0.2l-6.2-8.9c0.2,0.1,0.4,0.1,0.6,0.2c0,0,0.1,0,0.2,0.1C384.1,245.3,384.2,245.3,384.3,245.3z"/>
+				</defs>
+				<clipPath id="XMLID_16_">
+					<use xlink:href="#XMLID_1907_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1905_" class="st23">
+					<path id="XMLID_1906_" class="st1" d="M384.3,245.3l6.2,8.9c-0.1,0-0.2-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1
+						c-0.2-0.1-0.4-0.1-0.6-0.2l-6.2-8.9c0.2,0.1,0.4,0.1,0.6,0.2c0,0,0.1,0,0.2,0.1C384.1,245.3,384.2,245.3,384.3,245.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1902_">
+				<polygon id="XMLID_1903_" class="st3" points="411.4,222.9 417.6,231.8 414.4,237.9 408.2,229.1 				"/>
+			</g>
+			<g id="XMLID_1898_" class="st0">
+				<defs>
+					<path id="XMLID_1901_" class="st0" d="M384.7,245.5l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2l-6.2-8.9
+						C384.4,245.4,384.5,245.4,384.7,245.5z"/>
+				</defs>
+				<clipPath id="XMLID_17_">
+					<use xlink:href="#XMLID_1901_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1899_" class="st24">
+					<path id="XMLID_1900_" class="st1" d="M384.7,245.5l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2l-6.2-8.9
+						C384.4,245.4,384.5,245.4,384.7,245.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1896_">
+				<polygon id="XMLID_1897_" class="st1" points="384.9,245.6 391.1,254.5 390.8,254.4 384.7,245.5 				"/>
+			</g>
+			<g id="XMLID_1892_" class="st0">
+				<defs>
+					<path id="XMLID_1895_" class="st0" d="M386.2,246.5l6.2,8.9c-0.4-0.4-0.8-0.7-1.3-0.9l-6.2-8.9
+						C385.4,245.9,385.8,246.2,386.2,246.5z"/>
+				</defs>
+				<clipPath id="XMLID_18_">
+					<use xlink:href="#XMLID_1895_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1893_" class="st25">
+					<path id="XMLID_1894_" class="st1" d="M386.2,246.5l6.2,8.9c-0.4-0.4-0.8-0.7-1.3-0.9l-6.2-8.9
+						C385.4,245.9,385.8,246.2,386.2,246.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1890_">
+				<polygon id="XMLID_1891_" class="st11" points="368.6,259.1 374.8,268 374.8,268.1 368.7,259.3 				"/>
+			</g>
+			<g id="XMLID_1888_">
+				<polygon id="XMLID_1889_" class="st2" points="373.1,247.7 379.3,256.6 381.8,263.5 375.6,254.7 				"/>
+			</g>
+			<g id="XMLID_1884_" class="st0">
+				<defs>
+					<path id="XMLID_1887_" class="st0" d="M368.9,259.8l6.2,8.9c0.1,0.2,0.2,0.3,0.3,0.5l-6.2-8.9C369.1,260.2,369,260,368.9,259.8
+						z"/>
+				</defs>
+				<clipPath id="XMLID_19_">
+					<use xlink:href="#XMLID_1887_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1885_" class="st26">
+					<path id="XMLID_1886_" class="st11" d="M368.9,259.8l6.2,8.9c0.1,0.2,0.2,0.3,0.3,0.5l-6.2-8.9
+						C369.1,260.2,369,260,368.9,259.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1880_" class="st0">
+				<defs>
+					<path id="XMLID_1883_" class="st0" d="M375.6,269.5C375.6,269.5,375.6,269.5,375.6,269.5l-6.2-8.9c0,0,0,0,0,0
+						C371.4,263.6,373.5,266.6,375.6,269.5z"/>
+				</defs>
+				<clipPath id="XMLID_20_">
+					<use xlink:href="#XMLID_1883_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1881_" class="st27">
+					<path id="XMLID_1882_" class="st11" d="M369.7,261l6.2,8.9c-0.1-0.1-0.2-0.3-0.3-0.4l-6.2-8.9
+						C369.5,260.8,369.6,260.9,369.7,261"/>
+				</g>
+			</g>
+			<g id="XMLID_1876_" class="st0">
+				<defs>
+					<path id="XMLID_1879_" class="st0" d="M375.5,269.4c-2.1-3-4.1-5.9-6.2-8.9c0,0,0,0,0,0L375.5,269.4
+						C375.5,269.4,375.5,269.4,375.5,269.4z"/>
+				</defs>
+				<clipPath id="XMLID_21_">
+					<use xlink:href="#XMLID_1879_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1877_" class="st28">
+					<path id="XMLID_1878_" class="st11" d="M369.3,260.5l6.2,8.9c0,0,0.1,0.1,0.1,0.1l-6.2-8.9
+						C369.3,260.6,369.3,260.5,369.3,260.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1872_" class="st0">
+				<defs>
+					<path id="XMLID_1875_" class="st0" d="M375.5,269.4C375.5,269.4,375.5,269.4,375.5,269.4c-2.1-3-4.1-5.9-6.2-8.9c0,0,0,0,0,0
+						c2,2.8,4,5.7,6,8.5C375.3,269.2,375.4,269.3,375.5,269.4z"/>
+				</defs>
+				<clipPath id="XMLID_22_">
+					<use xlink:href="#XMLID_1875_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1873_" class="st29">
+					<path id="XMLID_1874_" class="st11" d="M369.3,260.5l6.2,8.9c0,0,0.1,0.1,0.1,0.1l-6.2-8.9
+						C369.3,260.6,369.3,260.5,369.3,260.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1868_" class="st0">
+				<defs>
+					<path id="XMLID_1871_" class="st0" d="M375.6,269.5c-2.1-3-4.1-5.9-6.2-8.9c0,0-0.1-0.1-0.1-0.1c2.1,3,4.1,5.9,6.2,8.9
+						C375.5,269.4,375.5,269.5,375.6,269.5z"/>
+				</defs>
+				<clipPath id="XMLID_23_">
+					<use xlink:href="#XMLID_1871_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1869_" class="st30">
+					<path id="XMLID_1870_" class="st11" d="M369.3,260.5l6.2,8.9c0,0,0.1,0.1,0.1,0.1l-6.2-8.9
+						C369.3,260.6,369.3,260.5,369.3,260.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1864_" class="st0">
+				<defs>
+					<path id="XMLID_1867_" class="st0" d="M370.1,251c0,0.1-0.1,0.1-0.1,0.1c-0.2,0.3-0.4,0.6-0.6,1c-1.3,2.6-1.5,5.1-0.8,7.1
+						c0.2,0.5,0.4,1,0.7,1.4l6.2,8.9c0-0.1-0.1-0.1-0.1-0.2c-0.8-1.2-1.7-2.4-2.5-3.7l-3.5-5.1c0,0,0,0,0,0c1.2,1.7,2.3,3.4,3.5,5.1
+						l2.5,3.7c-0.2-0.4-0.4-0.8-0.6-1.2c-0.8-2-0.6-4.6,0.8-7.1c0.2-0.3,0.4-0.7,0.6-1c0,0,0-0.1,0.1-0.1L370.1,251z"/>
+				</defs>
+				<clipPath id="XMLID_24_">
+					<use xlink:href="#XMLID_1867_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1865_" class="st31">
+					<path id="XMLID_1866_" class="st1" d="M370.1,251l6.2,8.9c0,0.1-0.1,0.1-0.1,0.1c-0.2,0.3-0.4,0.6-0.6,1
+						c-1.3,2.6-1.5,5.1-0.8,7.1c0.2,0.5,0.4,1,0.7,1.4l-6.2-8.9c-0.3-0.4-0.5-0.9-0.7-1.4c-0.8-2-0.6-4.6,0.8-7.1
+						c0.2-0.3,0.4-0.7,0.6-1C370,251.1,370,251.1,370.1,251"/>
+				</g>
+			</g>
+			<g id="XMLID_1862_">
+				<path id="XMLID_1863_" class="st16" d="M368.8,259.6c-0.1-0.1-0.1-0.3-0.2-0.4l-0.1-0.2C368.7,259.3,368.7,259.5,368.8,259.6z"
+					/>
+			</g>
+			<g id="XMLID_1858_" class="st0">
+				<defs>
+					<path id="XMLID_1861_" class="st0" d="M387,247.5l6.2,8.9c-0.2-0.3-0.4-0.5-0.6-0.7c-0.1-0.1-0.2-0.2-0.2-0.2l-6.2-8.9
+						c0.1,0.1,0.2,0.2,0.2,0.2C386.6,247,386.8,247.2,387,247.5z"/>
+				</defs>
+				<clipPath id="XMLID_25_">
+					<use xlink:href="#XMLID_1861_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1859_" class="st32">
+					<path id="XMLID_1860_" class="st1" d="M387,247.5l6.2,8.9c-0.2-0.3-0.4-0.5-0.6-0.7c-0.1-0.1-0.2-0.2-0.2-0.2l-6.2-8.9
+						c0.1,0.1,0.2,0.2,0.2,0.2C386.6,247,386.8,247.2,387,247.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1854_" class="st0">
+				<defs>
+					<path id="XMLID_1857_" class="st0" d="M393.7,257.1c0,0.1,0.1,0.1,0.1,0.2l-6.2-8.9c0-0.1-0.1-0.1-0.1-0.2
+						c-0.1-0.2-0.2-0.4-0.3-0.5c2.1,3,4.1,5.9,6.2,8.9C393.4,256.7,393.6,256.9,393.7,257.1z"/>
+				</defs>
+				<clipPath id="XMLID_26_">
+					<use xlink:href="#XMLID_1857_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1855_" class="st33">
+					<path id="XMLID_1856_" class="st16" d="M387,247.5l6.2,8.9c0.2,0.2,0.3,0.5,0.4,0.7c0,0.1,0.1,0.1,0.1,0.2l-6.2-8.9
+						c0-0.1-0.1-0.1-0.1-0.2C387.3,248,387.2,247.7,387,247.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1850_" class="st0">
+				<defs>
+					<path id="XMLID_1853_" class="st0" d="M387,247.5l6.2,8.9c0,0,0,0,0-0.1L387,247.5C387,247.5,387,247.5,387,247.5z"/>
+				</defs>
+				<clipPath id="XMLID_27_">
+					<use xlink:href="#XMLID_1853_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1851_" class="st34">
+					<path id="XMLID_1852_" class="st1" d="M387,247.5l6.2,8.9c0,0,0,0,0-0.1L387,247.5C387,247.5,387,247.5,387,247.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1846_" class="st0">
+				<defs>
+					<path id="XMLID_1849_" class="st0" d="M393.3,256.6c-2.1-3-4.1-5.9-6.2-8.9c0-0.1-0.1-0.1-0.1-0.2l6.2,8.9
+						C393.3,256.4,393.3,256.5,393.3,256.6z"/>
+				</defs>
+				<clipPath id="XMLID_28_">
+					<use xlink:href="#XMLID_1849_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1847_" class="st35">
+					<path id="XMLID_1848_" class="st16" d="M387,247.5l6.2,8.9c0.2,0.2,0.3,0.5,0.4,0.7c0,0.1,0.1,0.1,0.1,0.2l-6.2-8.9
+						c0-0.1-0.1-0.1-0.1-0.2C387.3,248,387.2,247.7,387,247.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1842_" class="st0">
+				<defs>
+					<path id="XMLID_1845_" class="st0" d="M375.6,269.5C375.6,269.5,375.6,269.5,375.6,269.5l-6.2-8.9c0,0,0,0,0,0
+						C371.4,263.6,373.5,266.5,375.6,269.5z"/>
+				</defs>
+				<clipPath id="XMLID_29_">
+					<use xlink:href="#XMLID_1845_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1843_" class="st36">
+					<path id="XMLID_1844_" class="st11" d="M369.3,260.5l6.2,8.9c0,0,0.1,0.1,0.1,0.1l-6.2-8.9
+						C369.3,260.6,369.3,260.5,369.3,260.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1840_">
+				<polygon id="XMLID_1841_" class="st17" points="387.5,248.4 393.7,257.3 381.8,263.5 375.6,254.7 				"/>
+			</g>
+			<g id="XMLID_1838_">
+				<path id="XMLID_1839_" class="st14" d="M383,244.9c0.1,0,0.2,0,0.3,0.1c0.2,0.1,0.4,0.1,0.6,0.2c0,0,0.1,0,0.1,0c0,0,0,0,0,0
+					c0.1,0,0.2,0.1,0.2,0.1c0.1,0.1,0.3,0.1,0.4,0.2l0.2,0.1c0.5,0.3,0.9,0.6,1.3,0.9c0.1,0.1,0.2,0.2,0.2,0.2
+					c0.2,0.2,0.4,0.4,0.5,0.6c0,0,0,0,0,0c0.2,0.2,0.3,0.5,0.5,0.8c0,0.1,0.1,0.1,0.1,0.2l-11.9,6.3l-2.5-7
+					C376.1,245.4,379.8,244.2,383,244.9z"/>
+			</g>
+			<g id="XMLID_1834_" class="st0">
+				<defs>
+					<path id="XMLID_1837_" class="st0" d="M375.9,269.9c-0.1-0.1-0.2-0.3-0.3-0.4c-2.1-3-4.1-5.9-6.2-8.9c0.1,0.1,0.2,0.3,0.3,0.4
+						C371.6,263.7,374,267.3,375.9,269.9z"/>
+				</defs>
+				<clipPath id="XMLID_30_">
+					<use xlink:href="#XMLID_1837_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1835_" class="st37">
+					<path id="XMLID_1836_" class="st11" d="M369.7,261l6.2,8.9c-0.1-0.1-0.2-0.3-0.3-0.4l-6.2-8.9
+						C369.5,260.8,369.6,260.9,369.7,261"/>
+				</g>
+			</g>
+			<g id="XMLID_1832_">
+				<polygon id="XMLID_1833_" class="st1" points="390.6,246.8 396.7,255.7 393.7,257.3 387.5,248.4 				"/>
+			</g>
+			<g id="XMLID_1830_">
+				<polygon id="XMLID_1831_" class="st11" points="370.1,251 376.3,259.9 379.2,268.2 373.1,259.3 				"/>
+			</g>
+			<g id="XMLID_1828_">
+				<polygon id="XMLID_1829_" class="st38" points="390.6,246.8 391.6,249.7 388.2,251.5 376.7,257.6 373.1,259.5 373.1,259.3 
+					370.1,251 369.2,248.6 372.8,246.7 373.1,247.7 375.6,254.7 387.5,248.4 				"/>
+			</g>
+			<g id="XMLID_1826_">
+				<polygon id="XMLID_1827_" class="st11" points="373.1,259.3 379.2,268.2 379.3,268.4 373.1,259.5 				"/>
+			</g>
+			<g id="XMLID_1822_" class="st0">
+				<defs>
+					<path id="XMLID_1825_" class="st0" d="M376.4,270.5c-0.3-0.3-0.6-0.6-0.9-1l-6.2-8.9c0.3,0.4,0.5,0.7,0.9,1
+						C372.1,264.3,374.6,267.9,376.4,270.5z"/>
+				</defs>
+				<clipPath id="XMLID_31_">
+					<use xlink:href="#XMLID_1825_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1823_" class="st39">
+					<path id="XMLID_1824_" class="st16" d="M370.3,261.6l6.2,8.9c-0.3-0.3-0.6-0.6-0.9-1l-6.2-8.9
+						C369.6,261,369.9,261.3,370.3,261.6"/>
+				</g>
+			</g>
+			<g id="XMLID_1818_" class="st0">
+				<defs>
+					<path id="XMLID_1821_" class="st0" d="M370.3,261.6l6.2,8.9c-0.2-0.2-0.4-0.4-0.5-0.6l-6.2-8.9
+						C369.9,261.3,370.1,261.5,370.3,261.6z"/>
+				</defs>
+				<clipPath id="XMLID_32_">
+					<use xlink:href="#XMLID_1821_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1819_" class="st40">
+					<path id="XMLID_1820_" class="st11" d="M370.3,261.6l6.2,8.9c-0.2-0.2-0.4-0.4-0.5-0.6l-6.2-8.9
+						C369.9,261.3,370.1,261.5,370.3,261.6"/>
+				</g>
+			</g>
+			<g id="XMLID_1816_">
+				<polygon id="XMLID_1817_" class="st20" points="376.7,257.6 382.8,266.5 379.3,268.4 373.1,259.5 				"/>
+			</g>
+			<g id="XMLID_1812_" class="st0">
+				<defs>
+					<path id="XMLID_1815_" class="st0" d="M377.3,271.2c-0.3-0.2-0.6-0.4-0.9-0.7l-6.2-8.9c0,0,0,0,0,0c2.1,2.9,4.1,5.9,6.2,8.8
+						c-2.1-2.9-4.1-5.9-6.2-8.8c0.3,0.3,0.6,0.5,0.9,0.7C373.2,265.3,375.3,268.2,377.3,271.2z"/>
+				</defs>
+				<clipPath id="XMLID_33_">
+					<use xlink:href="#XMLID_1815_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1813_" class="st41">
+					<path id="XMLID_1814_" class="st16" d="M371.1,262.3l6.2,8.9c-0.3-0.2-0.6-0.4-0.9-0.7l-6.2-8.9
+						C370.5,261.9,370.8,262.1,371.1,262.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1808_" class="st0">
+				<defs>
+					<path id="XMLID_1811_" class="st0" d="M371.5,262.6l6.2,8.9c-0.1-0.1-0.3-0.2-0.4-0.2l-6.2-8.9
+						C371.3,262.4,371.4,262.5,371.5,262.6z"/>
+				</defs>
+				<clipPath id="XMLID_34_">
+					<use xlink:href="#XMLID_1811_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1809_" class="st42">
+					<path id="XMLID_1810_" class="st16" d="M371.5,262.6l6.2,8.9c-0.1-0.1-0.3-0.2-0.4-0.2l-6.2-8.9
+						C371.3,262.4,371.4,262.5,371.5,262.6"/>
+				</g>
+			</g>
+			<g id="XMLID_1806_">
+				<polygon id="XMLID_1807_" class="st16" points="371.7,262.7 377.9,271.5 377.7,271.4 371.5,262.6 				"/>
+			</g>
+			<g id="XMLID_1804_">
+				<polygon id="XMLID_1805_" class="st20" points="388.2,251.5 394.4,260.4 382.8,266.5 376.7,257.6 				"/>
+			</g>
+			<g id="XMLID_1802_">
+				<polygon id="XMLID_1803_" class="st2" points="390.6,246.8 396.7,255.7 397.8,258.6 391.6,249.7 				"/>
+			</g>
+			<g id="XMLID_1800_">
+				<polygon id="XMLID_1801_" class="st20" points="391.6,249.7 397.8,258.6 394.4,260.4 388.2,251.5 				"/>
+			</g>
+			<g id="XMLID_1796_" class="st0">
+				<defs>
+					<path id="XMLID_1799_" class="st0" d="M379.6,272.1c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c0,0,0,0,0,0
+						C375.5,266.2,377.6,269.2,379.6,272.1C379.6,272.1,379.6,272.1,379.6,272.1z"/>
+				</defs>
+				<clipPath id="XMLID_35_">
+					<use xlink:href="#XMLID_1799_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1797_" class="st43">
+					<path id="XMLID_1798_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1792_" class="st0">
+				<defs>
+					<path id="XMLID_1795_" class="st0" d="M393.2,265c-2.1-3-4.1-5.9-6.2-8.9c0,0,0,0,0,0c0,0,0,0,0,0
+						C389.1,259,391.1,262,393.2,265c-2.1-3-4.1-5.9-6.2-8.9c0.4-0.8,0.7-1.6,0.9-2.3c2.1,3,4.1,5.9,6.2,8.9c-2.1-3-4.1-5.9-6.2-8.9
+						c0,0,0,0,0,0c2.1,3,4.1,5.9,6.2,8.9c-2.1-3-4.1-5.9-6.2-8.9c0.2-0.8,0.3-1.5,0.3-2.2l6.2,8.9C394.4,261.8,394,263.4,393.2,265
+						C393.2,265,393.2,265,393.2,265z"/>
+				</defs>
+				<clipPath id="XMLID_36_">
+					<use xlink:href="#XMLID_1795_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1793_" class="st44">
+					<path id="XMLID_1794_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1788_" class="st0">
+				<defs>
+					<path id="XMLID_1791_" class="st0" d="M392.9,265.5c-2.1-3-4.1-5.9-6.2-8.9c0.1-0.2,0.2-0.4,0.3-0.6c2.1,3,4.1,5.9,6.2,8.9
+						C393.1,265.1,393,265.3,392.9,265.5z"/>
+				</defs>
+				<clipPath id="XMLID_37_">
+					<use xlink:href="#XMLID_1791_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1789_" class="st45">
+					<path id="XMLID_1790_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1784_" class="st0">
+				<defs>
+					<path id="XMLID_1787_" class="st0" d="M392.8,265.5c-2.1-3-4.1-5.9-6.2-8.9c0,0,0,0,0,0C388.7,259.6,390.8,262.6,392.8,265.5
+						C392.9,265.5,392.9,265.5,392.8,265.5z"/>
+				</defs>
+				<clipPath id="XMLID_38_">
+					<use xlink:href="#XMLID_1787_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1785_" class="st46">
+					<path id="XMLID_1786_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1780_" class="st0">
+				<defs>
+					<path id="XMLID_1783_" class="st0" d="M392.5,266.1c-2.1-3-4.1-5.9-6.2-8.9c0.1-0.2,0.2-0.4,0.3-0.5c2.1,3,4.1,5.9,6.2,8.9
+						C392.7,265.7,392.6,265.9,392.5,266.1z"/>
+				</defs>
+				<clipPath id="XMLID_39_">
+					<use xlink:href="#XMLID_1783_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1781_" class="st47">
+					<path id="XMLID_1782_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1776_" class="st0">
+				<defs>
+					<path id="XMLID_1779_" class="st0" d="M392.5,266.1C392.5,266.1,392.5,266.1,392.5,266.1c-2.1-2.9-4.1-5.9-6.2-8.9c0,0,0,0,0,0
+						C388.4,260.2,390.4,263.1,392.5,266.1z"/>
+				</defs>
+				<clipPath id="XMLID_40_">
+					<use xlink:href="#XMLID_1779_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1777_" class="st48">
+					<path id="XMLID_1778_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1772_" class="st0">
+				<defs>
+					<path id="XMLID_1775_" class="st0" d="M385.2,269c-1.6-2.2-3.1-4.5-4.7-6.7c0,0,0,0,0,0C382,264.5,383.6,266.7,385.2,269z"/>
+				</defs>
+				<clipPath id="XMLID_41_">
+					<use xlink:href="#XMLID_1775_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1773_" class="st49">
+					<path id="XMLID_1774_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1768_" class="st0">
+				<defs>
+					<path id="XMLID_1771_" class="st0" d="M392.5,266.1c-2.9,4.4-8.4,7-12.9,6c-2.1-3-4.1-5.9-6.2-8.9c2.2,0.5,4.7,0.1,7-1
+						c0,0,0,0,0,0c0.8,1.1,1.5,2.2,2.3,3.3c1.3,1.9,2.6,3.7,3.9,5.6c-2.1-3-4.1-5.9-6.2-8.9c2.3-1.1,4.4-2.8,5.8-5
+						C388.4,260.2,390.4,263.1,392.5,266.1z"/>
+				</defs>
+				<clipPath id="XMLID_42_">
+					<use xlink:href="#XMLID_1771_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1769_" class="st50">
+					<path id="XMLID_1770_" class="st16" d="M388.2,251.5l6.2,8.9c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2
+						c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-6.2-8.9c0.5,0.3,1.1,0.5,1.7,0.6c4.5,1,10-1.6,12.9-6
+						c0.2-0.4,0.5-0.8,0.7-1.2C387.8,254.5,388.2,253,388.2,251.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1766_">
+				<polygon id="XMLID_1767_" class="st1" points="354.1,282.5 360.3,291.3 356.7,293.2 350.6,284.4 				"/>
+			</g>
+			<g id="XMLID_1764_">
+				<polygon id="XMLID_1765_" class="st2" points="354.1,282.5 360.3,291.3 360.7,292.3 354.5,283.4 				"/>
+			</g>
+			<g id="XMLID_1762_">
+				<polygon id="XMLID_1763_" class="st3" points="397.1,250.2 403.3,259.1 400.1,265.3 393.9,256.4 				"/>
+			</g>
+			<g id="XMLID_1760_">
+				<polygon id="XMLID_1761_" class="st3" points="350.6,284.4 356.7,293.2 357.6,295.6 351.4,286.7 				"/>
+			</g>
+			<g id="XMLID_1756_" class="st0">
+				<defs>
+					<path id="XMLID_1759_" class="st0" d="M357.6,295.6C357.6,295.6,357.6,295.6,357.6,295.6c-2.1-2.9-4.1-5.9-6.2-8.8c0,0,0,0,0,0
+						C353.3,289.4,355.7,292.9,357.6,295.6z"/>
+				</defs>
+				<clipPath id="XMLID_72_">
+					<use xlink:href="#XMLID_1759_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1757_" class="st51">
+					<path id="XMLID_1758_" class="st1" d="M351.4,286.7l6.2,8.9c-0.2,0.4-0.5,0.7-0.6,1.1l-6.2-8.9
+						C350.9,287.5,351.2,287.1,351.4,286.7"/>
+				</g>
+			</g>
+			<g id="XMLID_1752_" class="st0">
+				<defs>
+					<path id="XMLID_1755_" class="st0" d="M357.6,295.6c-0.2,0.4-0.4,0.7-0.6,1.1l-6.2-8.9c0.2-0.4,0.4-0.7,0.6-1.1
+						C353.4,289.7,355.5,292.7,357.6,295.6z"/>
+				</defs>
+				<clipPath id="XMLID_73_">
+					<use xlink:href="#XMLID_1755_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1753_" class="st52">
+					<path id="XMLID_1754_" class="st1" d="M351.4,286.7l6.2,8.9c-0.2,0.4-0.5,0.7-0.6,1.1l-6.2-8.9
+						C350.9,287.5,351.2,287.1,351.4,286.7"/>
+				</g>
+			</g>
+			<g id="XMLID_1748_" class="st0">
+				<defs>
+					<path id="XMLID_1751_" class="st0" d="M356.9,296.7c-0.3,0.6-0.6,1.3-0.8,1.9c-2.1-3-4.1-5.9-6.2-8.9c0.2-0.6,0.5-1.3,0.8-1.9
+						C352.6,290.5,355.1,294.1,356.9,296.7z"/>
+				</defs>
+				<clipPath id="XMLID_74_">
+					<use xlink:href="#XMLID_1751_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1749_" class="st53">
+					<path id="XMLID_1750_" class="st1" d="M350.8,287.8l6.2,8.9c-0.3,0.6-0.6,1.3-0.8,1.9c-0.6,1.9-0.6,3.8,0.1,5.4
+						c0.2,0.4,0.4,0.9,0.7,1.3l-6.2-8.9c-0.3-0.4-0.5-0.8-0.7-1.3c-0.6-1.5-0.7-3.4-0.1-5.4C350.2,289.1,350.4,288.5,350.8,287.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1746_">
+				<polygon id="XMLID_1747_" class="st1" points="394.8,259.1 401,268 398.9,267.5 392.7,258.6 				"/>
+			</g>
+			<g id="XMLID_1742_" class="st0">
+				<defs>
+					<path id="XMLID_1745_" class="st0" d="M360.7,292.3c-3.1-4.5-3.1-4.5-6.2-8.9c2.9-2.3,6.7-3.5,9.9-2.8c2.1,3,4.1,5.9,6.2,8.9
+						C367.3,288.8,363.6,290,360.7,292.3z"/>
+				</defs>
+				<clipPath id="XMLID_75_">
+					<use xlink:href="#XMLID_1745_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1743_" class="st54">
+					<path id="XMLID_1744_" class="st1" d="M366,281.2l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2c-0.3-0.1-0.5-0.2-0.8-0.3
+						c-0.1,0-0.3-0.1-0.4-0.1c-3.2-0.7-6.9,0.4-9.9,2.8l-6.2-8.9c2.9-2.3,6.7-3.5,9.9-2.8c0.2,0,0.3,0.1,0.4,0.1
+						c0.3,0.1,0.6,0.2,0.8,0.3C365.7,281.1,365.9,281.2,366,281.2"/>
+				</g>
+			</g>
+			<g id="XMLID_1740_">
+				<polygon id="XMLID_1741_" class="st3" points="392.7,258.6 398.9,267.5 395.7,273.7 389.5,264.8 				"/>
+			</g>
+			<g id="XMLID_1736_" class="st0">
+				<defs>
+					<path id="XMLID_1739_" class="st0" d="M371,289.6c-0.1,0-0.3-0.1-0.4-0.1c-2.1-3-4.1-5.9-6.2-8.9c0.2,0,0.3,0.1,0.4,0.1
+						c0.3,0.1,0.6,0.2,0.8,0.3c0.1,0.1,0.3,0.1,0.4,0.2l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2C371.5,289.8,371.3,289.7,371,289.6z"/>
+				</defs>
+				<clipPath id="XMLID_76_">
+					<use xlink:href="#XMLID_1739_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1737_" class="st55">
+					<path id="XMLID_1738_" class="st1" d="M366,281.2l6.2,8.9c-0.1-0.1-0.3-0.1-0.4-0.2c-0.3-0.1-0.5-0.2-0.8-0.3
+						c-0.1,0-0.3-0.1-0.4-0.1c-3.2-0.7-6.9,0.4-9.9,2.8l-6.2-8.9c2.9-2.3,6.7-3.5,9.9-2.8c0.2,0,0.3,0.1,0.4,0.1
+						c0.3,0.1,0.6,0.2,0.8,0.3C365.7,281.1,365.9,281.2,366,281.2"/>
+				</g>
+			</g>
+			<g id="XMLID_1734_">
+				<polygon id="XMLID_1735_" class="st1" points="366.1,281.3 372.3,290.2 372.2,290.1 366,281.2 				"/>
+			</g>
+			<g id="XMLID_1732_">
+				<polygon id="XMLID_1733_" class="st11" points="351.4,286.8 357.6,295.6 359,299.6 352.8,290.7 				"/>
+			</g>
+			<g id="XMLID_1728_" class="st0">
+				<defs>
+					<path id="XMLID_1731_" class="st0" d="M366.4,281.5l6.2,8.9c-0.1-0.1-0.2-0.1-0.3-0.2l-6.2-8.9
+						C366.2,281.3,366.3,281.4,366.4,281.5z"/>
+				</defs>
+				<clipPath id="XMLID_77_">
+					<use xlink:href="#XMLID_1731_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1729_" class="st56">
+					<path id="XMLID_1730_" class="st1" d="M366.4,281.5l6.2,8.9c-0.1-0.1-0.2-0.1-0.3-0.2l-6.2-8.9
+						C366.2,281.3,366.3,281.4,366.4,281.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1724_" class="st0">
+				<defs>
+					<path id="XMLID_1727_" class="st0" d="M367.5,282.3l6.2,8.9c-0.2-0.2-0.4-0.4-0.7-0.5c-0.1-0.1-0.3-0.2-0.4-0.3l-6.2-8.9
+						c0.1,0.1,0.3,0.2,0.4,0.3C367.1,281.9,367.3,282.1,367.5,282.3z"/>
+				</defs>
+				<clipPath id="XMLID_78_">
+					<use xlink:href="#XMLID_1727_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1725_" class="st57">
+					<path id="XMLID_1726_" class="st1" d="M367.5,282.3l6.2,8.9c-0.2-0.2-0.4-0.4-0.7-0.5c-0.1-0.1-0.3-0.2-0.4-0.3l-6.2-8.9
+						c0.1,0.1,0.3,0.2,0.4,0.3C367.1,281.9,367.3,282.1,367.5,282.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1720_" class="st0">
+				<defs>
+					<path id="XMLID_1723_" class="st0" d="M356.1,303.5c-2.1-3-4.1-5.9-6.2-8.9c-0.5-1.5-0.4-3.1,0.1-4.9c2.1,3,4.1,5.9,6.2,8.9
+						C355.6,300.4,355.6,302.1,356.1,303.5z"/>
+				</defs>
+				<clipPath id="XMLID_79_">
+					<use xlink:href="#XMLID_1723_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1721_" class="st58">
+					<path id="XMLID_1722_" class="st1" d="M350.8,287.8l6.2,8.9c-0.3,0.6-0.6,1.3-0.8,1.9c-0.6,1.9-0.6,3.8,0.1,5.4
+						c0.2,0.4,0.4,0.9,0.7,1.3l-6.2-8.9c-0.3-0.4-0.5-0.8-0.7-1.3c-0.6-1.5-0.7-3.4-0.1-5.4C350.2,289.1,350.4,288.5,350.8,287.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1718_">
+				<polygon id="XMLID_1719_" class="st2" points="354.5,283.4 360.7,292.3 363.2,299.3 357,290.4 				"/>
+			</g>
+			<g id="XMLID_1714_" class="st0">
+				<defs>
+					<path id="XMLID_1717_" class="st0" d="M373.7,291.1c-0.2-0.3-0.5-0.7-0.7-1c-0.5-0.7-1-1.5-1.6-2.2c-0.1-0.2-0.3-0.4-0.4-0.6
+						c-1.2-1.7-2.3-3.3-3.5-5c0.2,0.2,0.3,0.3,0.5,0.5c2.1,3,4.1,5.9,6.2,8.9C374,291.5,373.9,291.3,373.7,291.1z"/>
+				</defs>
+				<clipPath id="XMLID_80_">
+					<use xlink:href="#XMLID_1717_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1715_" class="st59">
+					<path id="XMLID_1716_" class="st1" d="M368.4,283.3l6.2,8.9c-0.3-0.4-0.5-0.7-0.9-1l-6.2-8.9
+						C367.8,282.6,368.1,282.9,368.4,283.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1710_" class="st0">
+				<defs>
+					<path id="XMLID_1713_" class="st0" d="M374.2,291.6c0,0-0.1-0.1-0.1-0.2c-0.3-0.4-0.5-0.8-0.8-1.2c-0.3-0.4-0.6-0.9-0.9-1.3
+						c-1.4-2.1-2.9-4.2-4.3-6.2c0.1,0.2,0.3,0.3,0.4,0.5l6.2,8.9C374.4,292,374.3,291.8,374.2,291.6z"/>
+				</defs>
+				<clipPath id="XMLID_81_">
+					<use xlink:href="#XMLID_1713_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1711_" class="st60">
+					<path id="XMLID_1712_" class="st1" d="M368.4,283.3l6.2,8.9c-0.3-0.4-0.5-0.7-0.9-1l-6.2-8.9
+						C367.8,282.6,368.1,282.9,368.4,283.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1706_" class="st0">
+				<defs>
+					<path id="XMLID_1709_" class="st0" d="M356.2,304c0.2,0.4,0.4,0.9,0.7,1.3l-6.2-8.9c-0.3-0.4-0.5-0.8-0.7-1.3
+						c-0.1-0.1-0.1-0.3-0.2-0.4c2.1,3,4.1,5.9,6.2,8.9C356.1,303.7,356.2,303.8,356.2,304z"/>
+				</defs>
+				<clipPath id="XMLID_82_">
+					<use xlink:href="#XMLID_1709_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1707_" class="st61">
+					<path id="XMLID_1708_" class="st1" d="M350.8,287.8l6.2,8.9c-0.3,0.6-0.6,1.3-0.8,1.9c-0.6,1.9-0.6,3.8,0.1,5.4
+						c0.2,0.4,0.4,0.9,0.7,1.3l-6.2-8.9c-0.3-0.4-0.5-0.8-0.7-1.3c-0.6-1.5-0.7-3.4-0.1-5.4C350.2,289.1,350.4,288.5,350.8,287.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1704_">
+				<path id="XMLID_1705_" class="st14" d="M364.3,280.6c0.2,0,0.3,0.1,0.4,0.1c0.3,0.1,0.6,0.2,0.8,0.3c0.1,0.1,0.3,0.1,0.4,0.2
+					l0.1,0.1c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0.1,0.3,0.2,0.4,0.3c0.2,0.2,0.5,0.3,0.7,0.5c0.6,0.5,1,1.1,1.4,1.8l-11.9,6.3l-2.5-7
+					C357.4,281.1,361.1,279.9,364.3,280.6z"/>
+			</g>
+			<g id="XMLID_1702_">
+				<polygon id="XMLID_1703_" class="st17" points="368.9,284.1 375.1,293 363.2,299.3 357,290.4 				"/>
+			</g>
+			<g id="XMLID_1698_" class="st0">
+				<defs>
+					<path id="XMLID_1701_" class="st0" d="M368.4,283.3l6.2,8.9c0.2,0.3,0.3,0.5,0.5,0.8l-6.2-8.9
+						C368.7,283.8,368.6,283.5,368.4,283.3z"/>
+				</defs>
+				<clipPath id="XMLID_83_">
+					<use xlink:href="#XMLID_1701_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1699_" class="st62">
+					<path id="XMLID_1700_" class="st16" d="M368.4,283.3l6.2,8.9c0.2,0.3,0.3,0.5,0.5,0.8l-6.2-8.9
+						C368.7,283.8,368.6,283.5,368.4,283.3"/>
+				</g>
+			</g>
+			<g id="XMLID_1696_">
+				<polygon id="XMLID_1697_" class="st1" points="371.9,282.5 378.1,291.4 375.1,293 368.9,284.1 				"/>
+			</g>
+			<g id="XMLID_1694_">
+				<polygon id="XMLID_1695_" class="st11" points="352.8,290.7 359,299.6 360.6,303.9 354.4,295 				"/>
+			</g>
+			<g id="XMLID_1692_">
+				<polygon id="XMLID_1693_" class="st11" points="354.4,295 360.6,303.9 360.6,304.1 354.4,295.2 				"/>
+			</g>
+			<g id="XMLID_1688_" class="st0">
+				<defs>
+					<path id="XMLID_1691_" class="st0" d="M356.9,305.2l-6.2-8.9c0.3,0.4,0.5,0.7,0.9,1c0.3,0.3,0.7,0.6,1.1,0.8l6.2,8.9
+						c-0.4-0.2-0.8-0.5-1.1-0.8C357.4,305.9,357.1,305.6,356.9,305.2z"/>
+				</defs>
+				<clipPath id="XMLID_84_">
+					<use xlink:href="#XMLID_1691_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1689_" class="st63">
+					<path id="XMLID_1690_" class="st16" d="M352.7,298.2l6.2,8.9c-0.4-0.2-0.8-0.5-1.1-0.8c-0.3-0.3-0.6-0.6-0.9-1l-6.2-8.9
+						c0.3,0.4,0.5,0.7,0.9,1C351.9,297.7,352.3,297.9,352.7,298.2"/>
+				</g>
+			</g>
+			<g id="XMLID_1686_">
+				<polygon id="XMLID_1687_" class="st20" points="369.5,287.2 375.7,296.1 360.6,304.1 354.4,295.2 				"/>
+			</g>
+			<g id="XMLID_1684_">
+				<polygon id="XMLID_1685_" class="st20" points="372.9,285.5 379.1,294.3 375.7,296.1 369.5,287.2 				"/>
+			</g>
+			<g id="XMLID_1682_">
+				<polygon id="XMLID_1683_" class="st38" points="371.9,282.5 372.9,285.5 369.5,287.2 354.4,295.2 354.4,295 352.8,290.7 
+					351.4,286.7 350.6,284.4 354.1,282.5 354.5,283.4 357,290.4 368.9,284.1 				"/>
+			</g>
+			<g id="XMLID_1680_">
+				<polygon id="XMLID_1681_" class="st2" points="371.9,282.5 378.1,291.4 379.1,294.3 372.9,285.5 				"/>
+			</g>
+			<g id="XMLID_1676_" class="st0">
+				<defs>
+					<path id="XMLID_1679_" class="st0" d="M369.5,287.2l6.2,8.9c0,0.8-0.1,1.6-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2
+						c-0.2,0.4-0.4,0.8-0.7,1.2c-2.7,4-7.6,6.6-11.9,6.2c-0.3,0-0.7-0.1-1-0.2c-0.6-0.1-1.2-0.3-1.7-0.6c-0.1-0.1-0.3-0.1-0.4-0.2
+						l-6.2-8.9c0.1,0.1,0.3,0.2,0.4,0.2c0.5,0.3,1.1,0.5,1.7,0.6c0.3,0.1,0.7,0.1,1,0.2c4.2,0.4,9.2-2.1,11.9-6.2
+						c0.2-0.4,0.5-0.8,0.7-1.2c0.4-0.7,0.6-1.4,0.8-2C369.4,288.9,369.5,288.1,369.5,287.2z"/>
+				</defs>
+				<clipPath id="XMLID_85_">
+					<use xlink:href="#XMLID_1679_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1677_" class="st64">
+					<path id="XMLID_1678_" class="st16" d="M369.5,287.2l6.2,8.9c0,0.8-0.1,1.6-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2
+						c-0.2,0.4-0.4,0.8-0.7,1.2c-2.7,4-7.6,6.6-11.9,6.2c-0.3,0-0.7-0.1-1-0.2c-0.6-0.1-1.2-0.3-1.7-0.6c-0.1-0.1-0.3-0.1-0.4-0.2
+						l-6.2-8.9c0.1,0.1,0.3,0.2,0.4,0.2c0.5,0.3,1.1,0.5,1.7,0.6c0.3,0.1,0.7,0.1,1,0.2c4.2,0.4,9.2-2.1,11.9-6.2
+						c0.2-0.4,0.5-0.8,0.7-1.2c0.4-0.7,0.6-1.4,0.8-2C369.4,288.9,369.5,288.1,369.5,287.2"/>
+				</g>
+			</g>
+			<g id="XMLID_1674_">
+				<polygon id="XMLID_1675_" class="st3" points="378.4,285.9 384.6,294.8 381.4,301 375.2,292.1 				"/>
+			</g>
+			<g id="XMLID_1672_">
+				<polygon id="XMLID_1673_" class="st1" points="376.1,294.8 382.3,303.7 380.2,303.2 374,294.3 				"/>
+			</g>
+			<g id="XMLID_1670_">
+				<polygon id="XMLID_1671_" class="st65" points="380.1,293.2 386.3,302.1 381.4,301 375.2,292.1 				"/>
+			</g>
+			<g id="XMLID_1668_">
+				<polygon id="XMLID_1669_" class="st3" points="374,294.3 380.2,303.2 377,309.4 370.8,300.5 				"/>
+			</g>
+			<g id="XMLID_1666_">
+				<polygon id="XMLID_1667_" class="st1" points="513.1,236.4 519.3,245.3 422,223.4 415.8,214.5 				"/>
+			</g>
+			<g id="XMLID_1664_">
+				<polygon id="XMLID_1665_" class="st65" points="509.9,242.6 516.1,251.5 418.7,229.5 412.6,220.7 				"/>
+			</g>
+			<g id="XMLID_1662_">
+				<polygon id="XMLID_1663_" class="st1" points="478.2,238 484.4,246.8 419.7,232.2 413.5,223.4 				"/>
+			</g>
+			<g id="XMLID_1660_">
+				<polygon id="XMLID_1661_" class="st66" points="478.2,238 484.4,246.8 481.2,253 475,244.1 				"/>
+			</g>
+			<g id="XMLID_1658_">
+				<polygon id="XMLID_1659_" class="st65" points="475,244.1 481.2,253 414.4,237.9 408.2,229.1 				"/>
+			</g>
+			<g id="XMLID_1654_" class="st0">
+				<defs>
+					<path id="XMLID_1657_" class="st0" d="M306.4,375.3C306.4,375.4,306.4,375.4,306.4,375.3l-6.2-8.8c0,0,0,0,0-0.1
+						C302.3,369.4,304.4,372.4,306.4,375.3c-2.1-3-4.1-5.9-6.2-8.9c0,0,0,0,0,0c0,0,0,0,0,0C302.3,369.4,304.4,372.4,306.4,375.3
+						C306.4,375.3,306.4,375.3,306.4,375.3z"/>
+				</defs>
+				<clipPath id="XMLID_86_">
+					<use xlink:href="#XMLID_1657_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1655_" class="st67">
+					<path id="XMLID_1656_" class="st1" d="M300.2,366.4l6.2,8.9c0,0,0,0,0,0c0,0,0,0,0,0.1L300.2,366.4
+						C300.3,366.5,300.3,366.5,300.2,366.4C300.2,366.5,300.2,366.5,300.2,366.4"/>
+				</g>
+			</g>
+			<g id="XMLID_1650_" class="st0">
+				<defs>
+					<path id="XMLID_1653_" class="st0" d="M300.2,366.4l6.2,8.9c0,0.1,0.1,0.2,0.1,0.2c0,0,0,0.1,0,0.1c0,0.1,0.1,0.1,0.1,0.2
+						c0,0,0,0.1,0.1,0.1l-6.2-8.9c0,0,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1,0-0.1C300.3,366.6,300.3,366.5,300.2,366.4z"
+						/>
+				</defs>
+				<clipPath id="XMLID_87_">
+					<use xlink:href="#XMLID_1653_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1651_" class="st68">
+					<path id="XMLID_1652_" class="st3" d="M300.2,366.4l6.2,8.9c0,0.1,0.1,0.2,0.1,0.2c0,0,0,0.1,0,0.1c0,0.1,0.1,0.1,0.1,0.2
+						c0,0,0,0.1,0.1,0.1l-6.2-8.9c0,0,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1,0-0.1C300.3,366.6,300.3,366.5,300.2,366.4"/>
+				</g>
+			</g>
+			<g id="XMLID_1648_">
+				<polygon id="XMLID_1649_" class="st1" points="494.4,272.2 500.6,281 403.3,259.1 397.1,250.2 				"/>
+			</g>
+			<g id="XMLID_1646_">
+				<polygon id="XMLID_1647_" class="st65" points="491.2,278.3 497.4,287.2 400.1,265.3 393.9,256.4 				"/>
+			</g>
+			<g id="XMLID_1644_">
+				<polygon id="XMLID_1645_" class="st1" points="459.6,273.7 465.8,282.6 401,268 394.8,259.1 				"/>
+			</g>
+			<g id="XMLID_1642_">
+				<polygon id="XMLID_1643_" class="st69" points="459.6,273.7 465.7,282.6 401,268 394.8,259.1 				"/>
+			</g>
+			<g id="XMLID_1640_">
+				<polygon id="XMLID_1641_" class="st66" points="459.6,273.7 465.8,282.6 462.5,288.7 456.3,279.9 				"/>
+			</g>
+			<g id="XMLID_1638_">
+				<polygon id="XMLID_1639_" class="st70" points="459.6,273.7 456.3,279.9 389.5,264.8 392.7,258.6 394.8,259.1 				"/>
+			</g>
+			<g id="XMLID_1636_">
+				<polygon id="XMLID_1637_" class="st65" points="456.3,279.9 462.5,288.7 395.7,273.7 389.5,264.8 				"/>
+			</g>
+			<g id="XMLID_1634_">
+				<polygon id="XMLID_1635_" class="st70" points="513.1,236.4 509.9,242.6 412.6,220.7 415.8,214.5 				"/>
+			</g>
+			<g id="XMLID_1632_">
+				<polygon id="XMLID_1633_" class="st66" points="513.1,236.4 519.3,245.3 516.1,251.5 509.9,242.6 				"/>
+			</g>
+			<g id="XMLID_1630_">
+				<polygon id="XMLID_1631_" class="st1" points="475.7,307.9 481.9,316.8 384.6,294.8 378.4,285.9 				"/>
+			</g>
+			<g id="XMLID_1628_">
+				<polygon id="XMLID_1629_" class="st65" points="472.5,314.1 478.7,322.9 386.3,302.1 380.1,293.2 				"/>
+			</g>
+			<g id="XMLID_1626_">
+				<polygon id="XMLID_1627_" class="st1" points="440.9,309.4 447.1,318.3 382.3,303.7 376.1,294.8 				"/>
+			</g>
+			<g id="XMLID_1624_">
+				<polygon id="XMLID_1625_" class="st65" points="437.7,315.6 443.8,324.5 377,309.4 370.8,300.5 				"/>
+			</g>
+			<g id="XMLID_1622_">
+				<polygon id="XMLID_1623_" class="st66" points="440.9,309.4 447.1,318.3 443.8,324.5 437.7,315.6 				"/>
+			</g>
+			<g id="XMLID_1620_">
+				<polygon id="XMLID_1621_" class="st66" points="494.4,272.2 500.6,281 497.4,287.2 491.2,278.3 				"/>
+			</g>
+			<g id="XMLID_1618_">
+				<polygon id="XMLID_1619_" class="st66" points="475.7,307.9 481.9,316.8 479.2,322 473,313.2 				"/>
+			</g>
+			<g id="XMLID_1616_">
+				<polygon id="XMLID_1617_" class="st66" points="473,313.2 479.2,322 478.7,322.9 472.5,314.1 				"/>
+			</g>
+			<g id="XMLID_1604_">
+				<path id="XMLID_1605_" class="st71" d="M531.2,210.9l-131.5-29.7c-0.9-0.2-1.8,0-2.7,0.4l-2.1,2.1l-94.5,180.7
+					c-0.4,0.7-0.5,1.3-0.2,2c0.1,0.3,0.3,0.6,0.7,1.1c0.3,0.3,0.6,0.5,1,0.8L433.4,398c0.8,0.2,1.8,0,2.7-0.5l0.7-0.7l1.4-1.4
+					l94.6-180.9C533.3,213.4,533,212.2,531.2,210.9z M387.3,218.3c0.2-0.6,0.5-1.3,0.8-1.9c0.2-0.4,0.4-0.7,0.6-1.1l-0.9-2.4
+					l3.6-1.9l0.3,0.9c2.9-2.3,6.7-3.5,9.9-2.8c0.1,0,0.2,0,0.3,0.1c0.4,0.1,0.7,0.2,1,0.3c0.1,0,0.3,0.1,0.4,0.2l0.2,0.1
+					c0.5,0.3,0.9,0.6,1.3,0.9c0.6,0.5,1,1.1,1.4,1.8l3-1.6l1.1,2.9l-3.4,1.8c0,0.8-0.1,1.7-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2
+					c-0.2,0.4-0.4,0.8-0.7,1.2c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6l-0.2-0.1c-0.1-0.1-0.3-0.2-0.4-0.2
+					c-0.3-0.2-0.6-0.4-0.9-0.7C387,224.2,386.4,221.3,387.3,218.3 M411.4,222.9l2.1,0.5l64.8,14.6l-3.2,6.2l-66.8-15.1L411.4,222.9
+					 M394.8,259.1l64.8,14.6l-3.2,6.2l-66.8-15.1l3.2-6.2L394.8,259.1 M369.2,248.6l3.6-1.9l0.3,0.9c2.9-2.3,6.7-3.5,9.9-2.8
+					c0.1,0,0.2,0,0.3,0.1c0.2,0.1,0.4,0.1,0.6,0.2c0,0,0.1,0,0.2,0.1c0.1,0,0.2,0.1,0.2,0.1c0.1,0.1,0.3,0.1,0.4,0.2l0.2,0.1
+					c0.5,0.3,0.9,0.6,1.3,0.9c0.1,0.1,0.2,0.2,0.2,0.2c0.2,0.2,0.4,0.4,0.6,0.7c0.2,0.2,0.3,0.5,0.5,0.8c0,0.1,0.1,0.1,0.1,0.2
+					l3-1.6l1.1,2.9l-3.4,1.8l0,0c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6
+					l-0.2-0.1c-0.1-0.1-0.3-0.2-0.4-0.2c-0.3-0.2-0.6-0.4-0.9-0.7c-0.7-0.7-1.3-1.5-1.6-2.4c-0.8-2-0.6-4.6,0.8-7.1
+					c0.2-0.3,0.4-0.7,0.6-1c0,0,0-0.1,0.1-0.1L369.2,248.6 M369.2,289.8c-0.2,0.7-0.5,1.4-0.8,2c-0.2,0.4-0.4,0.8-0.7,1.2
+					c-2.9,4.4-8.4,7-12.9,6c-0.6-0.1-1.2-0.3-1.7-0.6c-0.1-0.1-0.3-0.1-0.4-0.2c-0.4-0.2-0.8-0.5-1.1-0.8c-0.7-0.6-1.2-1.4-1.5-2.3
+					c-0.6-1.5-0.7-3.4-0.1-5.4c0.2-0.6,0.5-1.3,0.8-1.9c0.2-0.4,0.4-0.7,0.6-1.1l-0.8-2.4l3.6-1.9l0.3,0.9c2.9-2.3,6.7-3.5,9.9-2.8
+					c0.2,0,0.3,0.1,0.4,0.1c0.3,0.1,0.6,0.2,0.8,0.3c0.1,0.1,0.3,0.1,0.4,0.2l0.1,0.1c0.1,0.1,0.2,0.1,0.3,0.2
+					c0.1,0.1,0.3,0.2,0.4,0.3c0.2,0.2,0.5,0.3,0.7,0.5c0.6,0.5,1,1.1,1.4,1.8l3-1.6l1.1,2.9l-3.4,1.8
+					C369.5,288.1,369.4,288.9,369.2,289.8 M437.7,315.6l-66.8-15.1l3.2-6.2l2.1,0.5l64.8,14.6L437.7,315.6 M473,313.2l-0.5,0.9
+					l-92.4-20.8l-4.9-1.1l3.2-6.2l97.3,21.9L473,313.2 M491.7,277.4l-0.5,0.9l-92.4-20.8l-4.9-1.1l3.2-6.2l97.3,21.9L491.7,277.4
+					 M510.3,241.7l-0.5,0.9l-92.4-20.8l-4.9-1.1l3.2-6.2l97.3,22L510.3,241.7"/>
+			</g>
+			<g id="XMLID_1602_">
+				<polygon id="XMLID_1603_" class="st38" points="409.2,211.1 410.3,214 406.9,215.8 391.8,223.8 391.7,223.6 390.2,219.3 
+					388.8,215.3 387.9,212.9 391.5,211 391.8,212 394.3,218.9 406.2,212.7 				"/>
+			</g>
+			<g id="XMLID_1600_">
+				<path id="XMLID_1601_" class="st14" d="M406.9,215.8c0,0.8-0.1,1.7-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2c-0.2,0.4-0.4,0.8-0.7,1.2
+					c-2.7,4-7.6,6.6-11.9,6.2c-0.3,0-0.7-0.1-1-0.2c-0.6-0.1-1.2-0.3-1.7-0.6l-0.2-0.1c-0.1-0.1-0.3-0.2-0.4-0.2
+					c-0.3-0.2-0.6-0.4-0.9-0.7c-1.9-1.8-2.5-4.6-1.6-7.6c0.2-0.6,0.5-1.3,0.8-1.9c0.2-0.4,0.4-0.7,0.6-1.1l1.4,3.9l1.5,4.3l0.1,0.2
+					L406.9,215.8z"/>
+			</g>
+			<g id="XMLID_1598_">
+				<path id="XMLID_1599_" class="st11" d="M370.3,261.6c-0.2-0.2-0.4-0.4-0.5-0.6C369.9,261.3,370.1,261.5,370.3,261.6z"/>
+			</g>
+			<g id="XMLID_1596_">
+				<path id="XMLID_1597_" class="st14" d="M388.2,251.5c0,1.4-0.4,3-1.2,4.6c-0.2,0.4-0.4,0.8-0.7,1.2c-2.9,4.4-8.4,7-12.9,6
+					c-0.6-0.1-1.2-0.3-1.7-0.6l-0.2-0.1c-0.1-0.1-0.3-0.2-0.4-0.2c-0.3-0.2-0.6-0.4-0.9-0.7c-0.8-0.7-1.3-1.6-1.7-2.6l0.1,0.2
+					c-0.8-2-0.6-4.6,0.8-7.1c0.2-0.3,0.4-0.7,0.6-1c0,0,0.1-0.1,0.1-0.1l3,8.3l0.1,0.2L388.2,251.5z"/>
+			</g>
+			<g id="XMLID_1594_">
+				<path id="XMLID_1595_" class="st14" d="M369.5,287.2c0,0.8-0.1,1.6-0.4,2.5c-0.2,0.7-0.5,1.4-0.8,2c-0.2,0.4-0.4,0.8-0.7,1.2
+					c-2.7,4-7.6,6.6-11.9,6.2c-0.3,0-0.7-0.1-1-0.2c-0.6-0.1-1.2-0.3-1.7-0.6c-0.1-0.1-0.3-0.1-0.4-0.2c-0.4-0.2-0.8-0.5-1.1-0.8
+					c-1.9-1.8-2.5-4.6-1.6-7.6c0.2-0.6,0.5-1.3,0.8-1.9c0.2-0.4,0.4-0.7,0.6-1.1l1.4,3.9l1.6,4.3l0.1,0.2L369.5,287.2z"/>
+			</g>
+			<g id="XMLID_1592_">
+				<polygon id="XMLID_1593_" class="st70" points="478.2,238 475,244.1 408.2,229.1 411.4,222.9 413.5,223.4 				"/>
+			</g>
+			<g id="XMLID_1588_" class="st0">
+				<defs>
+					<path id="XMLID_1591_" class="st0" d="M306.4,375.3C306.4,375.3,306.4,375.3,306.4,375.3c-2.1-2.9-4.1-5.9-6.2-8.9c0,0,0,0,0,0
+						C302.1,369.1,305,372.4,306.4,375.3z"/>
+				</defs>
+				<clipPath id="XMLID_88_">
+					<use xlink:href="#XMLID_1591_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1589_" class="st72">
+					<path id="XMLID_1590_" class="st1" d="M300.2,366.4l6.2,8.9c0,0,0,0,0,0c0,0,0,0,0,0.1L300.2,366.4
+						C300.3,366.5,300.3,366.5,300.2,366.4C300.2,366.5,300.2,366.5,300.2,366.4"/>
+				</g>
+			</g>
+			<g id="XMLID_1584_" class="st0">
+				<defs>
+					<path id="XMLID_1587_" class="st0" d="M306.8,376l-6.2-8.9c0,0-0.1-0.1-0.1-0.1l6.2,8.9C306.7,375.9,306.8,376,306.8,376z"/>
+				</defs>
+				<clipPath id="XMLID_89_">
+					<use xlink:href="#XMLID_1587_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1585_" class="st73">
+					<path id="XMLID_1586_" class="st3" d="M300.5,367l6.2,8.9c0,0,0.1,0.1,0.1,0.1l-6.2-8.9C300.6,367.1,300.6,367.1,300.5,367"/>
+				</g>
+			</g>
+			<g id="XMLID_1580_" class="st0">
+				<defs>
+					<path id="XMLID_1583_" class="st0" d="M307.1,376.4C307.1,376.4,307.1,376.4,307.1,376.4l-6.2-8.9c0,0,0,0,0,0
+						C303,370.5,305,373.4,307.1,376.4z"/>
+				</defs>
+				<clipPath id="XMLID_90_">
+					<use xlink:href="#XMLID_1583_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1581_" class="st74">
+					<path id="XMLID_1582_" class="st1" d="M301.9,368.4l6.2,8.9c-0.4-0.3-0.7-0.6-1-0.8l-6.2-8.9
+						C301.2,367.8,301.5,368.1,301.9,368.4"/>
+				</g>
+			</g>
+			<g id="XMLID_1576_" class="st0">
+				<defs>
+					<path id="XMLID_1579_" class="st0" d="M308.1,377.2c-0.4-0.3-0.7-0.6-1-0.8c-2.1-3-4.1-5.9-6.2-8.9c0.3,0.3,0.6,0.5,1,0.8
+						C303.7,371,306.2,374.6,308.1,377.2z"/>
+				</defs>
+				<clipPath id="XMLID_91_">
+					<use xlink:href="#XMLID_1579_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1577_" class="st75">
+					<path id="XMLID_1578_" class="st1" d="M301.9,368.4l6.2,8.9c-0.4-0.3-0.7-0.6-1-0.8l-6.2-8.9
+						C301.2,367.8,301.5,368.1,301.9,368.4"/>
+				</g>
+			</g>
+			<g id="XMLID_1574_">
+				<path id="XMLID_1575_" class="st1" d="M301.9,368.4l2.2,6.4c-0.9-0.7-1.4-1.3-1.6-1.9l-2.2-6.3l0-0.1c0,0.1,0.1,0.2,0.1,0.2
+					c0,0,0,0.1,0,0.1c0,0.1,0.1,0.1,0.1,0.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0,0.1,0.1,0.1c0,0.1,0.1,0.1,0.1,0.2
+					c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1
+					c0.1,0,0.1,0.1,0.2,0.2c0,0,0.1,0,0.1,0.1C301.7,368.2,301.8,368.3,301.9,368.4z"/>
+			</g>
+			<g id="XMLID_1572_">
+				<path id="XMLID_1573_" class="st3" d="M300.3,366.5L300.3,366.5C300.2,366.5,300.2,366.5,300.3,366.5
+					C300.3,366.5,300.3,366.5,300.3,366.5z"/>
+			</g>
+			<g id="XMLID_1060_" class="st0">
+				<defs>
+					<path id="XMLID_1571_" class="st0" d="M307.1,376.4c-0.1-0.2-0.2-0.3-0.3-0.4l-6.2-8.9c0.1,0.1,0.2,0.3,0.3,0.4
+						C303,370.5,305,373.4,307.1,376.4c-1.2-1.7-2.3-3.4-3.5-5c-0.1-0.2-0.3-0.4-0.4-0.6c-0.1-0.2-0.3-0.4-0.4-0.6
+						c-0.1-0.2-0.3-0.4-0.4-0.6c-0.1-0.2-0.3-0.4-0.4-0.6c-0.1-0.2-0.3-0.4-0.4-0.5c-0.2-0.3-0.6-0.7-0.7-1c0,0,0,0,0,0
+						C302.8,370.2,305.2,373.7,307.1,376.4z"/>
+				</defs>
+				<clipPath id="XMLID_92_">
+					<use xlink:href="#XMLID_1571_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1061_" class="st76">
+					<path id="XMLID_1062_" class="st1" d="M300.9,367.5l6.2,8.9c-0.1-0.2-0.2-0.3-0.3-0.4l-6.2-8.9
+						C300.7,367.2,300.8,367.4,300.9,367.5"/>
+				</g>
+			</g>
+			<g id="XMLID_1055_" class="st0">
+				<defs>
+					<path id="XMLID_1058_" class="st0" d="M532.5,212.1l6.2,8.9c0.6,0.9,0.6,1.7,0.2,2.5l-6.2-8.9
+						C533.1,213.8,533.1,213,532.5,212.1z"/>
+				</defs>
+				<clipPath id="XMLID_93_">
+					<use xlink:href="#XMLID_1058_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1056_" class="st77">
+					<path id="XMLID_1057_" class="st1" d="M532.5,212.1l6.2,8.9c0.6,0.9,0.6,1.7,0.2,2.5l-6.2-8.9
+						C533.1,213.8,533.1,213,532.5,212.1"/>
+				</g>
+			</g>
+			<g id="XMLID_1051_" class="st0">
+				<defs>
+					<path id="XMLID_1054_" class="st0" d="M309,382.4l-6.2-8.9c0.3,0.4,0.7,0.8,1.3,1.2l6.2,8.9C309.7,383.2,309.2,382.8,309,382.4
+						z"/>
+				</defs>
+				<clipPath id="XMLID_94_">
+					<use xlink:href="#XMLID_1054_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1052_" class="st78">
+					<path id="XMLID_1053_" class="st3" d="M304.1,374.8l6.2,8.9c-0.6-0.4-1-0.8-1.3-1.2l-6.2-8.9
+						C303.1,373.9,303.5,374.3,304.1,374.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1049_">
+				<polygon id="XMLID_1050_" class="st3" points="301.9,368.4 308.1,377.2 310.2,383.6 304.1,374.8 				"/>
+			</g>
+			<g id="XMLID_1047_">
+				<polygon id="XMLID_1048_" class="st3" points="532.7,214.6 538.9,223.5 444.3,404.4 438.1,395.5 				"/>
+			</g>
+			<g id="XMLID_1045_">
+				<polygon id="XMLID_1046_" class="st3" points="532.6,214.8 538.8,223.7 541,230.1 534.8,221.2 				"/>
+			</g>
+			<g id="XMLID_1043_">
+				<polygon id="XMLID_1044_" class="st3" points="532.9,212.8 539,221.7 541.2,228.1 535,219.2 				"/>
+			</g>
+			<g id="XMLID_1039_" class="st0">
+				<defs>
+					<path id="XMLID_1042_" class="st0" d="M535,219.2l6.2,8.9c0,0.1,0.1,0.2,0.1,0.3c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.2
+						c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.3c0,0,0,0,0,0.1c0,0.1,0,0.2-0.1,0.3c0,0,0,0.1,0,0.1c0,0.1,0,0.1-0.1,0.2l-6.2-8.9
+						c0-0.1,0-0.1,0.1-0.2c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.3c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0-0.2
+						c0,0,0-0.1,0-0.1C535.1,219.4,535.1,219.3,535,219.2z"/>
+				</defs>
+				<clipPath id="XMLID_95_">
+					<use xlink:href="#XMLID_1042_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1040_" class="st79">
+					<path id="XMLID_1041_" class="st3" d="M535,219.2l6.2,8.9c0,0.1,0.1,0.2,0.1,0.3c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.2
+						c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.3c0,0,0,0,0,0.1c0,0.1,0,0.2-0.1,0.3c0,0,0,0.1,0,0.1c0,0.1,0,0.1-0.1,0.2l-6.2-8.9
+						c0-0.1,0-0.1,0.1-0.2c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0.1-0.3c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.3c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0-0.2
+						c0,0,0-0.1,0-0.1C535.1,219.4,535.1,219.3,535,219.2"/>
+				</g>
+			</g>
+			<g id="XMLID_1037_">
+				<path id="XMLID_1038_" class="st1" d="M535,220.8C535,220.8,534.9,220.9,535,220.8c-0.1,0.2-0.1,0.3-0.2,0.4l-2.2-6.4
+					c0,0,0-0.1,0-0.1c0,0,0-0.1,0-0.1c0.1-0.2,0.1-0.3,0.2-0.4c0,0,0,0,0,0c0,0,0,0,0,0c0-0.1,0-0.2,0.1-0.3c0,0,0,0,0-0.1
+					c0-0.1,0-0.2,0-0.3c0,0,0-0.1,0-0.1c0-0.1,0-0.2,0-0.2c0,0,0-0.1,0-0.1c0-0.1,0-0.2-0.1-0.3l2.2,6.4c0,0.1,0.1,0.2,0.1,0.3
+					c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.2c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.3c0,0,0,0,0,0.1c0,0.1,0,0.2-0.1,0.3c0,0,0,0.1,0,0.1
+					C535,220.7,535,220.7,535,220.8z"/>
+			</g>
+			<g id="XMLID_1033_" class="st0">
+				<defs>
+					<path id="XMLID_1036_" class="st0" d="M535,220.8l6.2,8.9c0,0,0,0.1,0,0.1c0,0.1-0.1,0.2-0.1,0.3l-6.2-8.9
+						C534.8,221.1,534.9,221,535,220.8C534.9,220.9,535,220.8,535,220.8z"/>
+				</defs>
+				<clipPath id="XMLID_96_">
+					<use xlink:href="#XMLID_1036_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1034_" class="st80">
+					<path id="XMLID_1035_" class="st3" d="M535,220.8l6.2,8.9c0,0,0,0.1,0,0.1c0,0.1-0.1,0.2-0.1,0.3l-6.2-8.9
+						C534.8,221.1,534.9,221,535,220.8C534.9,220.9,535,220.8,535,220.8"/>
+				</g>
+			</g>
+			<g id="XMLID_1031_">
+				<polygon id="XMLID_1032_" class="st70" points="440.9,309.4 437.7,315.6 370.8,300.5 374,294.3 376.1,294.8 				"/>
+			</g>
+			<g id="XMLID_1029_">
+				<polygon id="XMLID_1030_" class="st70" points="494.4,272.2 491.2,278.3 393.9,256.4 397.1,250.2 				"/>
+			</g>
+			<g id="XMLID_1027_">
+				<polygon id="XMLID_1028_" class="st70" points="475.7,307.9 473,313.2 472.5,314.1 380.1,293.2 375.2,292.1 378.4,285.9 				"/>
+			</g>
+			<g id="XMLID_1025_">
+				<polygon id="XMLID_1026_" class="st1" points="433.4,398 439.6,406.9 308.1,377.2 301.9,368.4 				"/>
+			</g>
+			<g id="XMLID_1023_">
+				<polygon id="XMLID_1024_" class="st3" points="438.1,395.5 444.3,404.4 442.9,405.8 436.8,396.9 				"/>
+			</g>
+			<g id="XMLID_1021_">
+				<polygon id="XMLID_1022_" class="st3" points="436.8,396.9 442.9,405.8 442.2,406.5 436,397.6 				"/>
+			</g>
+			<g id="XMLID_1017_" class="st0">
+				<defs>
+					<path id="XMLID_1020_" class="st0" d="M436,397.6l6.2,8.9c-0.9,0.5-1.8,0.6-2.7,0.5l-6.2-8.9C434.2,398.2,435.2,398,436,397.6z
+						"/>
+				</defs>
+				<clipPath id="XMLID_97_">
+					<use xlink:href="#XMLID_1020_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_1018_" class="st81">
+					<path id="XMLID_1019_" class="st1" d="M436,397.6l6.2,8.9c-0.9,0.5-1.8,0.6-2.7,0.5l-6.2-8.9C434.2,398.2,435.2,398,436,397.6"
+						/>
+				</g>
+			</g>
+			<g id="XMLID_1015_">
+				<polygon id="XMLID_1016_" class="st3" points="435.6,404.4 441.7,413.3 310.2,383.6 304.1,374.8 				"/>
+			</g>
+			<g id="XMLID_1013_">
+				<polygon id="XMLID_1014_" class="st3" points="433.4,398 439.6,406.9 441.7,413.3 435.6,404.4 				"/>
+			</g>
+			<g id="XMLID_1011_">
+				<polygon id="XMLID_1012_" class="st1" points="433.4,398 435.6,404.4 304.1,374.8 301.9,368.4 				"/>
+			</g>
+			<g id="XMLID_1009_">
+				<polygon id="XMLID_1010_" class="st3" points="438.1,395.5 444.3,404.4 446.5,410.8 440.3,401.9 				"/>
+			</g>
+			<g id="XMLID_1007_">
+				<polygon id="XMLID_1008_" class="st3" points="532.6,214.8 534.8,221.2 440.3,401.9 438.1,395.5 				"/>
+			</g>
+			<g id="XMLID_1005_">
+				<polygon id="XMLID_1006_" class="st3" points="534.8,221.2 541,230.1 446.5,410.8 440.3,401.9 				"/>
+			</g>
+			<g id="XMLID_1003_">
+				<polygon id="XMLID_1004_" class="st3" points="436,397.6 442.2,406.5 444.4,412.9 438.2,404 				"/>
+			</g>
+			<g id="XMLID_1001_">
+				<polygon id="XMLID_1002_" class="st3" points="436.8,396.9 442.9,405.8 445.1,412.2 438.9,403.3 				"/>
+			</g>
+			<g id="XMLID_999_">
+				<polygon id="XMLID_1000_" class="st3" points="440.3,401.9 446.5,410.8 445.1,412.2 438.9,403.3 				"/>
+			</g>
+			<g id="XMLID_997_">
+				<polygon id="XMLID_998_" class="st3" points="438.1,395.5 440.3,401.9 438.9,403.3 436.8,396.9 				"/>
+			</g>
+			<g id="XMLID_993_" class="st0">
+				<defs>
+					<path id="XMLID_996_" class="st0" d="M438.2,404l6.2,8.9c-0.9,0.5-1.8,0.6-2.7,0.5l-6.2-8.9C436.4,404.6,437.4,404.4,438.2,404
+						z"/>
+				</defs>
+				<clipPath id="XMLID_98_">
+					<use xlink:href="#XMLID_996_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="XMLID_994_" class="st82">
+					<path id="XMLID_995_" class="st3" d="M438.2,404l6.2,8.9c-0.9,0.5-1.8,0.6-2.7,0.5l-6.2-8.9C436.4,404.6,437.4,404.4,438.2,404
+						"/>
+				</g>
+			</g>
+			<g id="XMLID_991_">
+				<path id="XMLID_992_" class="st1" d="M436,397.6l2.2,6.4c-0.9,0.5-1.8,0.6-2.7,0.5l-2.2-6.4C434.2,398.2,435.2,398,436,397.6z"
+					/>
+			</g>
+			<g id="XMLID_989_">
+				<polygon id="XMLID_990_" class="st3" points="436.8,396.9 438.9,403.3 438.2,404 436,397.6 				"/>
+			</g>
+			<g id="XMLID_987_">
+				<polygon id="XMLID_988_" class="st3" points="438.9,403.3 445.1,412.2 444.4,412.9 438.2,404 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
