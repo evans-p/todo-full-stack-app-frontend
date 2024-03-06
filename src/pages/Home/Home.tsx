@@ -1,24 +1,13 @@
 import React from "react";
-import { createUseStyles } from "react-jss";
 
-import list from "../../assets/svgs/list.svg";
-
-const styles = createUseStyles({
-  button: {
-    display: "flex",
-    backgroundColor: "red",
-  },
-  img: {
-    width: 300,
-    height: "auto",
-  },
-});
+import style from "./style";
+import list from "../../assets/images/list.png";
 
 const Home = () => {
-  const classes = styles();
+  const styles = style();
   return (
-    <div className={classes.button}>
-      <img src={list} alt="" className={classes.img} />
+    <div className={styles.button}>
+      <img src={list} alt="" className={styles.img} />
     </div>
   );
 };
