@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  mode: "jit",
-  purge: ["./pages/**"], //TODO : add more paths to the array if needed
+  // mode: "jit",
+  // purge: [],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "gradient-image": "url('/src/assets/images/background.png')",
+      },
+    },
   },
   plugins: [],
 };
