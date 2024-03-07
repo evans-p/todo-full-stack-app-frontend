@@ -7,6 +7,9 @@ export default {
       backgroundImage: {
         "gradient-image": "url('/src/assets/images/background.png')",
       },
+      animation: {
+        "bounce-slow": "bounce 6s linear infinite",
+      },
     },
   },
   plugins: [],
