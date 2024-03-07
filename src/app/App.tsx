@@ -1,6 +1,10 @@
+import Home from "../pages/Home";
+
 const App = () => {
   return (
-    <div className="h-screen w-screen bg-gradient-image bg-contain bg-no-repeat bg-bottom"></div>
+    <div className="h-screen w-screen bg-gray-200">
+      <Home />
+    </div>
   );
 };
 
