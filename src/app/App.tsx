@@ -7,7 +7,7 @@ const App = () => {
     <div className="h-screen w-screen bg-gray-100">
       <Nav />
       <Home />
-      <Login />
+      {/* <Login /> */}
     </div>
   );
 };
