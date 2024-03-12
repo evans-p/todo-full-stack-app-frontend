@@ -10,7 +10,7 @@ const Home = () => {
             Task Management, <span className="font-medium">enhanced.</span>
           </h2>
         </section>
-        <img src={list} className="h-48 w-48 animate-bounce-slow" />
+        <img src={list} className="h-48 w-48 animate-floating" />
       </section>
     </div>
   );
