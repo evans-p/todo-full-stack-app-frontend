@@ -8,7 +8,13 @@ export default {
         "gradient-image": "url('/src/assets/images/background.png')",
       },
       animation: {
-        "bounce-slow": "bounce 6s linear infinite",
+        floating: "floating 6s linear infinite",
+      },
+      keyframes: {
+        floating: {
+          "0%, 100%": { transform: "translateY(5%)" },
+          "50%": { transform: "translateY(-5%)" },
+        },
       },
     },
   },
