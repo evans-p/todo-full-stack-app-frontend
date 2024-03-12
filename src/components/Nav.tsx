@@ -9,7 +9,7 @@ import logo from "../assets/images/logo.png";
 const Nav = () => {
   return (
     <nav className="fixed top-0 left-0 w-screen h-16 flex justify-between items-center">
-      <img src={logo} alt="TaskForge" className="w-10 h-auto ml-8" />
+      <img src={logo} alt="TaskForge" className="w-12 h-auto ml-8" />
       <div className="flex justify-between items-center">
         <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow">
           <IoMoonOutline className="text-gray-800 text-2xl" />
