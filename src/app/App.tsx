@@ -1,11 +1,11 @@
 import Nav from "../components/Nav";
-import Home from "../pages/Home";
+import Login from "../pages/Login";
 
 const App = () => {
   return (
     <div className="h-screen w-screen bg-gray-100">
       <Nav />
-      <Home />
+      <Login />
     </div>
   );
 };
