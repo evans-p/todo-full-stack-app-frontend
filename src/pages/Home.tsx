@@ -1,3 +1,5 @@
+import { IoArrowForward } from "react-icons/io5";
+
 import list from "../assets/images/list.png";
 
 const Home = () => {
@@ -9,6 +11,10 @@ const Home = () => {
           <h2 className="text-xl text-gray-800 tracking-wide">
             Task Management, <span className="font-medium">enhanced.</span>
           </h2>
+          <button className="bg-blue-900 text-lg text-gray-100 shadow w-full mt-4 py-2 flex items-center justify-center rounded-xl hover:bg-blue-800 hover:shadow-md">
+            Get Started
+            <IoArrowForward className="ml-4 text-xl" />
+          </button>
         </section>
         <img src={list} className="h-48 w-48 animate-floating" />
       </section>
