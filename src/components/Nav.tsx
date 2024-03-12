@@ -14,11 +14,11 @@ const Nav = () => {
         <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow">
           <IoMoonOutline className="text-gray-800 text-2xl" />
         </span>
-        <button className="flex items-center cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow focus:bg-white group">
+        <button className="flex items-center cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow focus:shadow focus:bg-white group">
           <IoGlobeOutline className="text-gray-800 text-2xl cursor-pointer ml-2 mr-2" />
           <p className="mr-1">EL</p>
           <IoIosArrowDown className="text-gray-800" />
-          <section className="fixed top-12 right-9 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow">
+          <section className="fixed top-14 right-10 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow">
             <span className="w-full p-6 block rounded-md hover:bg-gray-100">
               <p>Ελληνικά (EL)</p>
             </span>
@@ -27,9 +27,9 @@ const Nav = () => {
             </span>
           </section>
         </button>
-        <span className="mr-6 cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow">
+        <button className="mr-6 cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow">
           <IoPersonOutline className="text-gray-800 text-2xl" />
-        </span>
+        </button>
       </div>
     </nav>
   );
