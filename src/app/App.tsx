@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 
 const App = () => {
   return (
-    <div className="h-screen w-screen bg-gray-100">
+    <div className="h-screen w-screen bg-gray-100 dark:bg-gray-700">
       <Nav />
       <Home />
       {/* <Login /> */}
