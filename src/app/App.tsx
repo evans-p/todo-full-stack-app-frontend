@@ -6,8 +6,8 @@ const App = () => {
   return (
     <div className="h-screen w-screen bg-gray-100 dark:bg-gray-800">
       <Nav />
-      <Home />
-      {/* <Login /> */}
+      {/* <Home /> */}
+      <Login />
     </div>
   );
 };
