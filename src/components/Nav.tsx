@@ -19,17 +19,21 @@ const Nav = () => {
           <p className="mr-1">EL</p>
           <IoIosArrowDown className="text-gray-800" />
           <section className="fixed top-14 right-10 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow">
-            <span className="w-full p-6 block rounded-md hover:bg-gray-100">
-              <p>Ελληνικά (EL)</p>
+            <span className="rounded-md hover:bg-gray-100 w-36 h-16 flex justify-center items-center">
+              Ελληνικά (EL)
             </span>
-            <span className="w-full p-6 block rounded-md hover:bg-gray-100">
-              <p>English (EN)</p>
+            <span className="rounded-md hover:bg-gray-100 w-36 h-16 flex justify-center items-center">
+              English (EN)
             </span>
           </section>
         </button>
         <button className="mr-6 p-2 rounded-xl hover:bg-white hover:shadow focus:shadow focus:bg-white group">
           <IoPersonOutline className="text-gray-800 text-2xl" />
-          <section className="fixed top-14 right-2 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow w-60 h-60"></section>
+          <section className="fixed top-14 right-2 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow">
+            <span className="rounded-md hover:bg-gray-100 w-36 h-16 flex justify-center items-center font-medium">
+              Login
+            </span>
+          </section>
         </button>
       </div>
     </nav>
