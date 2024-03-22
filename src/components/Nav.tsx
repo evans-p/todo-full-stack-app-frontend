@@ -4,12 +4,12 @@ import {
   IoMoonOutline,
 } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
-import logo from "../assets/images/logo.png";
+
+import Logo from "./Logo";
 
 const Nav = () => {
   return (
-    <nav className="fixed top-0 left-0 w-screen h-16 flex justify-between items-center z-50">
-      <img src={logo} alt="TaskForge" className="w-12 h-auto ml-8" />
+    <nav className="fixed top-0 left-0 w-screen h-16 flex justify-end items-center z-50">
       <div className="flex justify-between items-center">
         <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
           <IoMoonOutline className="text-gray-800 text-2xl dark:text-gray-100" />
