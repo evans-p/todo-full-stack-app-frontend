@@ -1,4 +1,4 @@
-import { IoMenuOutline } from "react-icons/io5";
+import { IoAdd, IoMenuOutline } from "react-icons/io5";
 
 import logo from "../assets/images/logo.png";
 
@@ -29,6 +29,10 @@ const Main = () => {
           <h2 className="text-sm mb-1">Todo List</h2>
           <h3 className="text-xs">8 Todos</h3>
         </section>
+        <button className="mx-auto my-3 px-20 py-3 text-gray-800 dark:text-gray-100 flex justify-center items-center border-gray-100 rounded-full border-2">
+          <IoAdd />
+          Add List
+        </button>
       </div>
     </div>
   );
