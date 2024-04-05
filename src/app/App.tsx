@@ -42,7 +42,7 @@ const App = () => {
   };
   return (
     <div className="h-screen w-screen bg-gray-100 dark:bg-gray-800">
-      {renderContent(Page.Home)}
+      {renderContent(Page.Main)}
     </div>
   );
 };
