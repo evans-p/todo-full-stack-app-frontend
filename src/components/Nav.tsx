@@ -5,11 +5,9 @@ import {
 } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 
-import Logo from "./Logo";
-
 const Nav = () => {
   return (
-    <nav className="fixed top-0 left-0 w-screen h-16 flex justify-end items-center z-50">
+    <nav className="fixed top-0 left-0 w-screen h-16 flex justify-end items-center">
       <div className="flex justify-between items-center">
         <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
           <IoMoonOutline className="text-gray-800 text-2xl dark:text-gray-100" />
