@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Nav = () => {
   return (
-    <nav className="fixed top-0 right-0 h-16 flex justify-end items-center">
+    <nav className="fixed top-0 right-0 h-16 flex justify-end items-center z-10">
       <div className="flex justify-between items-center">
         <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
           <IoMoonOutline className="text-gray-800 text-2xl dark:text-gray-100" />
