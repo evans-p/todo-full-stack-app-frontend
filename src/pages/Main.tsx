@@ -36,28 +36,45 @@ const Main = () => {
         </button>
       </div>
       <div className="ml-80 w-full h-full">
-        <h2 className="ml-6 mt-20 text-gray-800 dark:text-gray-100 text-xl font-bold">
-          Todo List
-        </h2>
-        <section className="grid grid-cols-6 ml-6">
-          <h3 className="col-start-1 col-end-4 text-gray-800 dark:text-gray-100 mt-3">
-            Todo
-          </h3>
-          <h3 className="col-start-4 col-end-5 text-gray-800 dark:text-gray-100 mt-3">
-            Creation Date
-          </h3>
-          <h3 className="col-start-5 col-end-6 text-gray-800 dark:text-gray-100 mt-3">
-            Favourite
-          </h3>
-          <section className="col-start-6 col-end-7 flex justify-end mr-6">
-            <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-              <BiSortAlt2 className="text-gray-800 text-2xl dark:text-gray-100" />
-            </span>
-            <span className=" cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-              <IoFilterOutline className="text-gray-800 text-2xl dark:text-gray-100" />
-            </span>
+        <div className="mx-6 mt-20">
+          <h2 className="text-gray-800 dark:text-gray-100 text-xl font-bold">
+            Todo List
+          </h2>
+          <section className="grid grid-cols-6">
+            <h3 className="col-start-1 col-end-4 text-gray-800 dark:text-gray-100 mt-3">
+              Todo
+            </h3>
+            <h3 className="col-start-4 col-end-5 text-gray-800 dark:text-gray-100 mt-3">
+              Creation Date
+            </h3>
+            <h3 className="col-start-5 col-end-6 text-gray-800 dark:text-gray-100 mt-3">
+              Favourite
+            </h3>
+            <section className="col-start-6 col-end-7 flex justify-end mr-6">
+              <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+                <BiSortAlt2 className="text-gray-800 text-2xl dark:text-gray-100" />
+              </span>
+              <span className=" cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+                <IoFilterOutline className="text-gray-800 text-2xl dark:text-gray-100" />
+              </span>
+            </section>
           </section>
-        </section>
+          <section className="grid grid-cols-6 h-12 bg-gray-900 cursor-pointer">
+            <h3 className="col-start-1 col-end-4 text-gray-800 dark:text-gray-100 my-auto">
+              Todo
+            </h3>
+            <h3 className="co4-start-1 col-end-5 text-gray-800 dark:text-gray-100 my-auto">
+              Todo
+            </h3>
+
+            <h3 className="co4-start-5 col-end-6 text-gray-800 dark:text-gray-100 my-auto">
+              Todo
+            </h3>
+            <h3 className="co4-start-6 col-end-7 text-gray-800 dark:text-gray-100 mt-3 flex justify-end mr-6">
+              Todo
+            </h3>
+          </section>
+        </div>
       </div>
     </div>
   );
