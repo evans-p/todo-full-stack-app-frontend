@@ -5,11 +5,11 @@ import Menu from "../components/Menu";
 
 const Main = () => {
   return (
-    <div className="h-screen w-screen flex">
+    <div className="flex">
       <Menu />
       <div className="ml-80 w-full h-full">
-        <div className="mx-6 mt-20 grid grid-cols-6 grid-rows-3 text-gray-800 dark:text-gray-100">
-          <h2 className=" text-xl font-bold col-span-full row-span-1">
+        <div className="mx-6 mt-20 grid grid-cols-6 grid-rows-2 text-gray-800 dark:text-gray-100">
+          <h2 className="text-xl font-bold col-span-full row-span-1">
             Todo List
           </h2>
 
@@ -28,21 +28,6 @@ const Main = () => {
               <IoFilterOutline />
             </span>
           </section>
-          <h4 className="col-span-3 row-span-1 my-auto">First Task</h4>
-          <h4 className="col-span-1 row-span-1 flex justify-center items-center">
-            27-02-1992
-          </h4>
-          <h4 className="col-span-1 row-span-1 flex justify-center items-center">
-            <span className="cursor-pointer p-2 rounded-xl text-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-              <IoStarOutline />
-            </span>
-          </h4>
-
-          <h4 className="col-span-1 row-span-1 flex justify-end items-center">
-            <span className="cursor-grab p-2 rounded-xl text-xl">
-              <RiDraggable />
-            </span>
-          </h4>
         </div>
       </div>
     </div>
