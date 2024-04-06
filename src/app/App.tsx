@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Main from "../pages/Main";
 
 import Logo from "../components/Logo";
+import ThemeProvider from "../providers/ThemeProvider";
 
 const App = () => {
   enum Page {
@@ -42,7 +43,7 @@ const App = () => {
   };
   return (
     <div className="h-screen w-screen bg-gray-100 dark:bg-gray-800">
-      {renderContent(Page.Main)}
+      <ThemeProvider>{renderContent(Page.Main)}</ThemeProvider>
     </div>
   );
 };
