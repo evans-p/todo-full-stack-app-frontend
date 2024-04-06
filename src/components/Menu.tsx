@@ -9,23 +9,23 @@ const Menu = () => {
         <img src={logo} alt="TaskForge" className="ml-6 w-10 h-auto" />
         <h1 className="text-gray-100 ml-12">TaskForge</h1>
       </section>
-      <section className="px-6 py-3 cursor-pointer hover:bg-gray-700">
+      <section className="pl-6 py-3 cursor-pointer hover:bg-gray-700">
         <h2 className="text-sm mb-1">Todo List</h2>
         <h3 className="text-xs">8 Todo(s)</h3>
       </section>
-      <section className="w-full px-6 py-3 cursor-pointer  hover:bg-gray-700">
+      <section className="pl-6 py-3 cursor-pointer  hover:bg-gray-700">
         <h2 className="text-sm mb-1">Todo List</h2>
         <h3 className="text-xs">8 Todos</h3>
       </section>
-      <section className="px-6 py-3 cursor-pointer">
+      <section className="pl-6 py-3 cursor-pointer hover:bg-gray-700">
         <h2 className="text-sm mb-1">Todo List</h2>
         <h3 className="text-xs">8 Todos</h3>
       </section>
-      <section className="px-6 py-3 cursor-pointer">
+      <section className="pl-6 py-3 cursor-pointer hover:bg-gray-700">
         <h2 className="text-sm mb-1">Todo List</h2>
         <h3 className="text-xs">8 Todos</h3>
       </section>
-      <button className="mx-auto my-3 px-20 py-3 border-2 border-gray-100 rounded-full flex justify-center items-center hover:bg-gray-700">
+      <button className="mx-auto my-6 px-20 py-3 border-2 border-gray-100 rounded-full flex justify-center items-center hover:bg-gray-700">
         <IoAdd />
         Add List
       </button>
