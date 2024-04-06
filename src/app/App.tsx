@@ -43,7 +43,7 @@ const App = () => {
   };
   return (
     <div className="h-screen w-screen bg-gray-100 dark:bg-gray-800">
-      <ThemeProvider>{renderContent(Page.Login)}</ThemeProvider>
+      <ThemeProvider>{renderContent(Page.Main)}</ThemeProvider>
     </div>
   );
 };
