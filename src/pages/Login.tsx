@@ -15,7 +15,9 @@ const Login = () => {
         </h1>
         <button className="w-80 mx-auto mt-16 rounded-full bg-white hover:bg-gray-100 py-2 px-4 shadow hover:shadow-md flex items-center justify-center">
           <FcGoogle className="text-2xl mr-3" />
-          <span className="text-xl font-semibold">Login with Google</span>
+          <span className="text-xl text-gray-800 font-semibold">
+            Login with Google
+          </span>
         </button>
       </section>
     </div>
