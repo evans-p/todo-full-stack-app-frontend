@@ -60,7 +60,9 @@ const Main = () => {
                 <IoIosArrowDropdown />
               </span>
             </section>
-            <section className="w-full  h-48 hidden group-focus:flex"></section>
+            <section className="w-full h-48 overflow-scroll hidden group-focus:grid">
+              {renderTodos()}
+            </section>
           </button>
         </div>
       </div>
