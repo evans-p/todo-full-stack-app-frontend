@@ -1,9 +1,32 @@
 import { IoFilterOutline, IoStarOutline } from "react-icons/io5";
+import { IoIosArrowDropdown } from "react-icons/io";
 import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
 import Menu from "../components/Menu";
 
 const Main = () => {
+  const renderTodos = (): JSX.Element[] => {
+    return [...Array(20).keys()].map(() => (
+      <div className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm">
+        <h4 className="col-span-3 row-span-1 pl-3 text-sm flex items-center justify-start">
+          Task
+        </h4>
+        <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
+          27-02-1992
+        </h4>
+        <section className="col-span-1 row-span-1 flex justify-center items-center">
+          <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <IoStarOutline />
+          </span>
+        </section>
+        <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
+          <span className="cursor-grab p-1">
+            <RiDraggable />
+          </span>
+        </section>
+      </div>
+    ));
+  };
   return (
     <div className="flex">
       <Menu />
@@ -19,30 +42,21 @@ const Main = () => {
           <h3 className="col-start-5 col-end-6 flex justify-center items-center">
             Favourite
           </h3>
-          <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
-            <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+          <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center pr-2">
+            <span className="cursor-pointer p-2 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
               <BiSortAlt2 />
             </span>
-            <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <span className="cursor-pointer p-2 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
               <IoFilterOutline />
             </span>
           </section>
         </div>
-        <div className="mx-6 grid grid-cols-6 grid-rows-1 cursor-pointer border">
-          <h4 className="col-span-3 row-span-1 my-auto pl-3 text-sm">Task</h4>
-          <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
-            27-02-1992
-          </h4>
-          <section className="col-span-1 row-span-1 flex justify-center items-center">
-            <span className="cursor-pointer p-2 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-              <IoStarOutline />
-            </span>
-          </section>
-          <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
-            <span className="cursor-grab p-2">
-              <RiDraggable />
-            </span>
-          </section>
+        <div className="h-40 overflow-scroll">{renderTodos()}</div>
+        <div className="mx-6 my-6 rounded-sm flex items-center justify-between dark:bg-gray-700 bg-gray-300">
+          <h3 className="pl-3">Completed Todos</h3>
+          <button className="text-2xl mr-2 p-2 cursor-pointer rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <IoIosArrowDropdown />
+          </button>
         </div>
       </div>
     </div>
