@@ -52,10 +52,15 @@ const Main = () => {
           </section>
         </div>
         <div className="h-40 overflow-scroll">{renderTodos()}</div>
-        <div className="mx-6 my-6 rounded-sm flex items-center justify-between dark:bg-gray-700 bg-gray-300">
-          <h3 className="pl-3">Completed Todos</h3>
-          <button className="text-2xl mr-2 p-2 cursor-pointer rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-            <IoIosArrowDropdown />
+        <div className="mx-6 my-6 rounded-sm  dark:bg-gray-700 bg-gray-300">
+          <button className="w-full group">
+            <section className="flex items-center justify-between">
+              <h3 className="pl-3">Completed Todos</h3>
+              <span className="text-2xl mr-2 p-2 cursor-pointer rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+                <IoIosArrowDropdown />
+              </span>
+            </section>
+            <section className="w-full  h-48 hidden group-focus:flex"></section>
           </button>
         </div>
       </div>
