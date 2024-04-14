@@ -14,6 +14,12 @@ const EN = {
     title: "Welcome to",
     googleButton: "Login with Google",
   },
+  main: {
+    menu: {
+      addListButton: "Add todo list",
+      favouriteTodosButton: "Favourite todos",
+    },
+  },
 };
 
 export default EN;

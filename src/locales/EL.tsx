@@ -13,6 +13,12 @@ const EL = {
     title: "Καλωσήρθατε στο",
     googleButton: "Σύνδεση μέσω Google",
   },
+  main: {
+    menu: {
+      addListButton: "Προσθήκη λίστας",
+      favouriteTodosButton: "Αγαπημένες διεργασίες",
+    },
+  },
 };
 
 export default EL;

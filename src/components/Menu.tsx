@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { IoAdd, IoStarOutline } from "react-icons/io5";
 
 import logo from "../assets/images/logo.png";
 
 const Menu = () => {
+  const { t } = useTranslation();
+
   const renderlists = (): JSX.Element[] => {
     return [...Array(10).keys()].map((x) => (
       <section key={x} className="pl-6 py-2 cursor-pointer hover:bg-gray-700">
@@ -21,12 +24,14 @@ const Menu = () => {
       <div className="w-full h-4/6 overflow-scroll">{renderlists()}</div>
       <button className="fixed bottom-16 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
         <IoAdd className="col-span-1 row-span-1 mx-auto my-auto" />
-        <span className="col-span-5 row-span-1 my-auto mr-auto">Add List</span>
+        <span className="col-span-5 row-span-1 my-auto mr-auto">
+          {t("main.menu.addListButton")}
+        </span>
       </button>
       <button className="fixed bottom-0 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
         <IoStarOutline className="col-span-1 row-span-1 mx-auto my-auto" />
         <span className="col-span-5 row-span-1 my-auto mr-auto">
-          Favoutite Todos
+          {t("main.menu.favouriteTodosButton")}
         </span>
       </button>
     </div>
