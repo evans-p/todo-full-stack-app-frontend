@@ -9,6 +9,10 @@ const EL = {
     },
     getStartedButton: "Ας αρχίσουμε",
   },
+  login: {
+    title: "Καλωσήρθατε στο",
+    googleButton: "Σύνδεση μέσω Google",
+  },
 };
 
 export default EL;

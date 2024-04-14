@@ -10,6 +10,10 @@ const EN = {
     },
     getStartedButton: "Let's get started",
   },
+  login: {
+    title: "Welcome to",
+    googleButton: "Login with Google",
+  },
 };
 
 export default EN;
