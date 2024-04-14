@@ -43,7 +43,7 @@ const App = () => {
   };
   return (
     <div>
-      <ThemeProvider>{renderContent(Page.Main)}</ThemeProvider>
+      <ThemeProvider>{renderContent(Page.Home)}</ThemeProvider>
     </div>
   );
 };
