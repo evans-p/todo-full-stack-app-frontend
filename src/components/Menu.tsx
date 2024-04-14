@@ -19,13 +19,15 @@ const Menu = () => {
         <h1 className="text-gray-100 ml-12">TaskForge</h1>
       </div>
       <div className="w-full h-4/6 overflow-scroll">{renderlists()}</div>
-      <button className="fixed bottom-16 w-80 h-16 flex justify-center items-center bg-gray-700 hover:bg-gray-500">
-        <IoAdd className="mr-3 absolute left-6" />
-        Add List
+      <button className="fixed bottom-16 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
+        <IoAdd className="col-span-1 row-span-1 mx-auto my-auto" />
+        <span className="col-span-5 row-span-1 my-auto mr-auto">Add List</span>
       </button>
-      <button className="fixed bottom-0 w-80 h-16 flex justify-center items-center bg-gray-700 hover:bg-gray-500">
-        <IoStarOutline className="mr-3 absolute left-6" />
-        Favoutite Todos
+      <button className="fixed bottom-0 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
+        <IoStarOutline className="col-span-1 row-span-1 mx-auto my-auto" />
+        <span className="col-span-5 row-span-1 my-auto mr-auto">
+          Favoutite Todos
+        </span>
       </button>
     </div>
   );
