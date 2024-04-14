@@ -27,6 +27,29 @@ const Main = () => {
       </div>
     ));
   };
+
+  const renderCompletedTodos = () => {
+    return [...Array(20).keys()].map(() => (
+      <div className=" dark:bg-gray-600 bg-gray-200 mt-1 w-full h-8 grid grid-cols-6 grid-rows-1 cursor-pointer">
+        <h2 className="col-span-3 row-span-1 ml-3 flex justify-start items-center">
+          Todo
+        </h2>
+        <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
+          27-02-1992
+        </h4>
+        <section className="col-span-1 row-span-1 flex justify-center items-center">
+          <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-400 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <IoStarOutline />
+          </span>
+        </section>
+        <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
+          <span className="cursor-grab p-1">
+            <RiDraggable />
+          </span>
+        </section>
+      </div>
+    ));
+  };
   return (
     <div className="flex">
       <Menu />
@@ -60,8 +83,11 @@ const Main = () => {
                 <IoIosArrowDropdown />
               </span>
             </section>
-            <section className="w-full h-48 overflow-scroll hidden group-focus:grid">
-              {renderTodos()}
+            <section
+              className="w-full h-48 overflow-scroll hidden group-focus:grid
+            "
+            >
+              {renderCompletedTodos()}
             </section>
           </button>
         </div>
