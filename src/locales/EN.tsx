@@ -19,6 +19,12 @@ const EN = {
       addListButton: "Add todo list",
       favouriteTodosButton: "Favourite todos",
     },
+    list: {
+      todo: "Todo",
+      creationDate: "Creation Date",
+      favourite: "Favourite",
+      completed: "Completed todos",
+    },
   },
 };
 

@@ -18,6 +18,12 @@ const EL = {
       addListButton: "Προσθήκη λίστας",
       favouriteTodosButton: "Αγαπημένες διεργασίες",
     },
+    list: {
+      todo: "Διεργασία",
+      creationDate: "Ημ. δημιουργίας",
+      favourite: "Αγαπημένο",
+      completed: "Ολοκληρωμένες διεργασίες",
+    },
   },
 };
 
