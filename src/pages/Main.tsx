@@ -6,8 +6,11 @@ import Menu from "../components/Menu";
 
 const Main = () => {
   const renderTodos = (): JSX.Element[] => {
-    return [...Array(20).keys()].map(() => (
-      <div className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm">
+    return [...Array(20).keys()].map((x) => (
+      <div
+        key={x}
+        className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm"
+      >
         <h4 className="col-span-3 row-span-1 pl-3 text-sm flex items-center justify-start">
           Task
         </h4>
@@ -29,8 +32,11 @@ const Main = () => {
   };
 
   const renderCompletedTodos = () => {
-    return [...Array(20).keys()].map(() => (
-      <div className=" dark:bg-gray-600 bg-gray-200 mt-1 w-full h-8 grid grid-cols-6 grid-rows-1 cursor-pointer">
+    return [...Array(20).keys()].map((x) => (
+      <div
+        key={x + 30}
+        className=" dark:bg-gray-600 bg-gray-200 mt-1 w-full h-8 grid grid-cols-6 grid-rows-1 cursor-pointer"
+      >
         <h2 className="col-span-3 row-span-1 ml-3 flex justify-start items-center">
           Todo
         </h2>

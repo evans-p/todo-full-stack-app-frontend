@@ -1,5 +1,5 @@
-import { useContext } from "react";
-
+import { useContext, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import {
   IoPersonOutline,
   IoGlobeOutline,
@@ -11,7 +11,23 @@ import ThemeContext from "../contexts/ThemeContext";
 import StringConstants from "../constants/StringConstants";
 
 const Nav = () => {
+  const languageRef = useRef<HTMLButtonElement>(null);
   const { theme, updateTheme } = useContext(ThemeContext);
+  const { i18n } = useTranslation();
+
+  const updateLanguage = (language: string): void => {
+    if (
+      language == StringConstants.ENGLISH ||
+      language == StringConstants.GREEK
+    ) {
+      localStorage.setItem(StringConstants.LANGUAGE, language);
+      i18n.changeLanguage(language);
+      if (languageRef) {
+        languageRef.current?.blur();
+      }
+    }
+  };
+
   return (
     <nav className="fixed top-0 right-0 h-16 flex justify-end items-center z-10">
       <div className="flex justify-between items-center">
@@ -25,15 +41,30 @@ const Nav = () => {
             <IoMoonOutline className="text-gray-800 text-2xl dark:text-gray-100" />
           )}
         </span>
-        <button className="flex items-center cursor-pointer p-2 rounded-xl group hover:bg-white hover:shadow focus:shadow focus:bg-white dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm dark:focus:bg-gray-600 dark:focus:shadow-gray-400 dark:focus:shadow-sm">
+        <button
+          className="w-24 flex items-center cursor-pointer p-2 rounded-xl group hover:bg-white hover:shadow focus:shadow focus:bg-white dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm dark:focus:bg-gray-600 dark:focus:shadow-gray-400 dark:focus:shadow-sm"
+          ref={languageRef}
+        >
           <IoGlobeOutline className="text-gray-800 text-2xl cursor-pointer ml-2 mr-2 dark:text-gray-100" />
-          <p className="mr-1 dark:text-gray-100">EL</p>
+          <p className="mr-1 dark:text-gray-100">
+            {i18n.language === StringConstants.GREEK ? "EL" : "EN"}
+          </p>
           <IoIosArrowDown className="text-gray-800 dark:text-gray-100" />
           <section className="fixed top-14 right-10 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow dark:bg-gray-600 dark:group-focus:shadow-gray-400">
-            <span className="rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center dark:text-gray-100 dark:hover:bg-gray-500">
+            <span
+              className={"rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center dark:text-gray-100 dark:hover:bg-gray-500".concat(
+                i18n.language === StringConstants.GREEK ? " font-semibold" : ""
+              )}
+              onClick={() => updateLanguage(StringConstants.GREEK)}
+            >
               Ελληνικά (EL)
             </span>
-            <span className="rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center dark:text-gray-100 dark:hover:bg-gray-500">
+            <span
+              className={"rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center dark:text-gray-100 dark:hover:bg-gray-500".concat(
+                i18n.language === StringConstants.GREEK ? " " : " font-semibold"
+              )}
+              onClick={() => updateLanguage(StringConstants.ENGLISH)}
+            >
               English (EN)
             </span>
           </section>

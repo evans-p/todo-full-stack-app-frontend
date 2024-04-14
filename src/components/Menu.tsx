@@ -4,8 +4,8 @@ import logo from "../assets/images/logo.png";
 
 const Menu = () => {
   const renderlists = (): JSX.Element[] => {
-    return [...Array(10).keys()].map(() => (
-      <section className="pl-6 py-2 cursor-pointer hover:bg-gray-700">
+    return [...Array(10).keys()].map((x) => (
+      <section key={x} className="pl-6 py-2 cursor-pointer hover:bg-gray-700">
         <h2 className="text-sm mb-1">Todo List</h2>
         <h3 className="text-xs">8 Todo(s)</h3>
       </section>
