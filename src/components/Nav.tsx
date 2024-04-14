@@ -13,7 +13,7 @@ import StringConstants from "../constants/StringConstants";
 const Nav = () => {
   const languageRef = useRef<HTMLButtonElement>(null);
   const { theme, updateTheme } = useContext(ThemeContext);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const updateLanguage = (language: string): void => {
     if (
@@ -73,7 +73,7 @@ const Nav = () => {
           <IoPersonOutline className="text-gray-800 text-2xl dark:text-gray-100" />
           <section className="fixed top-14 right-2 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow dark:bg-gray-600 dark:group-focus:shadow-gray-400">
             <span className="rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center font-medium dark:text-gray-100 dark:hover:bg-gray-500">
-              Login
+              {t("nav.login")}
             </span>
           </section>
         </button>
