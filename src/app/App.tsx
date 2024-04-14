@@ -2,7 +2,7 @@ import Nav from "../components/Nav";
 import Login from "../pages/Login";
 import Home from "../pages/Home";
 import Main from "../pages/Main";
-
+import NotFound from "../pages/NotFound";
 import Logo from "../components/Logo";
 import ThemeProvider from "../providers/ThemeProvider";
 
@@ -11,9 +11,10 @@ const App = () => {
     Main,
     Login,
     Home,
+    NotFound,
   }
 
-  const renderContent = (page: Page) => {
+  const renderContent = (page: Page): JSX.Element => {
     switch (page) {
       case Page.Home:
         return (
@@ -39,11 +40,20 @@ const App = () => {
             <Main />
           </>
         );
+
+      case Page.NotFound:
+        return (
+          <>
+            <Nav />
+            <Logo />
+            <NotFound />
+          </>
+        );
     }
   };
   return (
     <div>
-      <ThemeProvider>{renderContent(Page.Main)}</ThemeProvider>
+      <ThemeProvider>{renderContent(Page.NotFound)}</ThemeProvider>
     </div>
   );
 };
