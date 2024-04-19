@@ -1,10 +1,12 @@
-import Nav from "../components/Nav";
-import Login from "../pages/Login";
-import Home from "../pages/Home";
-import Main from "../pages/Main";
-import NotFound from "../pages/NotFound";
-import Logo from "../components/Logo";
-import ThemeProvider from "../providers/ThemeProvider";
+import { lazy } from "react";
+
+const Nav = lazy(() => import("../components/Nav"));
+const Login = lazy(() => import("../pages/Login"));
+const Home = lazy(() => import("../pages/Home"));
+const Main = lazy(() => import("../pages/Main"));
+const NotFound = lazy(() => import("../pages/NotFound"));
+const Logo = lazy(() => import("../components/Logo"));
+const ThemeProvider = lazy(() => import("../providers/ThemeProvider"));
 
 const App = () => {
   enum Page {
