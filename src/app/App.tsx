@@ -1,4 +1,5 @@
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 const Nav = lazy(() => import("../components/Nav"));
 const Login = lazy(() => import("../pages/Login"));
@@ -9,55 +10,65 @@ const Logo = lazy(() => import("../components/Logo"));
 const ThemeProvider = lazy(() => import("../providers/ThemeProvider"));
 
 const App = () => {
-  enum Page {
-    Main,
-    Login,
-    Home,
-    NotFound,
-  }
+  const location = useLocation();
 
-  const renderContent = (page: Page): JSX.Element => {
-    switch (page) {
-      case Page.Home:
-        return (
-          <>
-            <Nav />
-            <Logo />
-            <Home />
-          </>
-        );
-
-      case Page.Login:
-        return (
-          <>
-            <Nav />
-            <Login />
-          </>
-        );
-
-      case Page.Main:
-        return (
-          <>
-            <Nav />
-            <Main />
-          </>
-        );
-
-      case Page.NotFound:
-        return (
-          <>
-            <Nav />
-            <Logo />
-            <NotFound />
-          </>
-        );
-    }
+  const renderRoutes = (): JSX.Element => {
+    return (
+      <Routes location={location}>
+        <Route
+          index
+          path="/"
+          element={
+            <Suspense fallback={<>...</>}>
+              <Nav />
+              <Logo />
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/login/"
+          element={
+            <Suspense fallback={<>...</>}>
+              <Nav />
+              <Login />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/lists/"
+          element={
+            <Suspense fallback={<>...</>}>
+              <Nav />
+              <Main />
+            </Suspense>
+          }
+        >
+          <Route
+            path=":listId"
+            element={
+              <Suspense fallback={<>...</>}>
+                <Nav />
+                <Main />
+              </Suspense>
+            }
+          />
+        </Route>
+        <Route
+          path="*"
+          element={
+            <Suspense fallback={<>...</>}>
+              <Nav />
+              <Logo />
+              <NotFound />
+            </Suspense>
+          }
+        />
+      </Routes>
+    );
   };
-  return (
-    <div>
-      <ThemeProvider>{renderContent(Page.NotFound)}</ThemeProvider>
-    </div>
-  );
+
+  return <ThemeProvider>{renderRoutes()}</ThemeProvider>;
 };
 
 export default App;
