@@ -26,6 +26,10 @@ const EN = {
       completed: "Completed todos",
     },
   },
+  notFound: {
+    title: "The page you requested does not exist.",
+    back: "Back",
+  },
 };
 
 export default EN;
