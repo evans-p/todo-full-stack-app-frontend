@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import { IoAdd, IoStarOutline } from "react-icons/io5";
 
@@ -38,4 +39,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default memo(Menu);

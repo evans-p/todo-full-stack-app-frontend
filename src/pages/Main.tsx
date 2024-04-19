@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import { IoFilterOutline, IoStarOutline } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
@@ -104,4 +105,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default memo(Main);

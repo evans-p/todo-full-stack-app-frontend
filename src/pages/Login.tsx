@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import { FcGoogle } from "react-icons/fc";
 
@@ -26,4 +27,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default memo(Login);

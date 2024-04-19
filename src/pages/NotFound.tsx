@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import Lottie from "react-lottie";
 import notFound from "../assets/animations/notFound.json";
@@ -26,4 +27,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default memo(NotFound);

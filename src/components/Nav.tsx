@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, memo } from "react";
 import { useTranslation } from "react-i18next";
 import {
   IoPersonOutline,
@@ -82,4 +82,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default memo(Nav);

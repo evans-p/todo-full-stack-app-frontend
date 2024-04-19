@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import { IoArrowForward } from "react-icons/io5";
 
@@ -27,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default memo(Home);
