@@ -18,11 +18,13 @@ const Menu = () => {
 
   return (
     <div className="fixed left-0 top-0 w-80 h-screen bg-gray-950 text-xl text-gray-100">
-      <div className="w-full flex items-center justify-start mt-3 mb-6">
+      <div className="w-full h-16 flex items-center justify-start mb-4">
         <img src={logo} alt="TaskForge" className="ml-6 w-10 h-auto" />
         <h1 className="text-gray-100 ml-12">TaskForge</h1>
       </div>
-      <div className="w-full h-4/6 overflow-scroll">{renderlists()}</div>
+      <div className="w-full h-[calc(100%-13rem)] overflow-scroll no-scrollbar">
+        {renderlists()}
+      </div>
       <button className="fixed bottom-16 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
         <IoAdd className="col-span-1 row-span-1 mx-auto my-auto" />
         <span className="col-span-5 row-span-1 my-auto mr-auto">
