@@ -95,7 +95,7 @@ const Main = () => {
                 <IoIosArrowDropdown />
               </span>
             </section>
-            <section className="w-full h-48 overflow-scroll hidden group-focus:grid">
+            <section className="w-full h-48 overflow-scroll no-scrollbar hidden group-focus:grid">
               {renderCompletedTodos()}
             </section>
           </button>
