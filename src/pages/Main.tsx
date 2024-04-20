@@ -105,7 +105,6 @@ const Main = () => {
           <button
             className="w-full dark:bg-gray-700 bg-gray-300 flex justify-between items-center"
             onClick={toogleCompletedMenu}
-            onBlur={() => setCompletedMenuOpen(false)}
           >
             <h3 className="pl-3">{t("main.list.completed")}</h3>
             <span className="text-2xl mr-3 p-1 cursor-pointer rounded-full hover:bg-white dark:hover:bg-gray-600">
