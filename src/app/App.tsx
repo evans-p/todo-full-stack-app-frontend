@@ -1,14 +1,14 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import ThemeProvider from "../providers/ThemeProvider";
 import RoutingConstants from "../constants/RoutingConstants";
 
-const Nav = lazy(() => import("../components/Nav"));
 const Login = lazy(() => import("../pages/Login"));
 const Home = lazy(() => import("../pages/Home"));
 const Main = lazy(() => import("../pages/Main"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 const Logo = lazy(() => import("../components/Logo"));
-const ThemeProvider = lazy(() => import("../providers/ThemeProvider"));
+const Nav = lazy(() => import("../components/Nav"));
 
 const App = () => {
   const location = useLocation();
