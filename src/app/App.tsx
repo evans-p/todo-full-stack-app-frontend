@@ -8,6 +8,7 @@ const Home = lazy(() => import("../pages/Home"));
 const Main = lazy(() => import("../pages/Main"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 const Logo = lazy(() => import("../components/Logo"));
+const TodoListPanel = lazy(() => import("../components/TodoListPanel"));
 const ThemeProvider = lazy(() => import("../providers/ThemeProvider"));
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
             <Suspense fallback={<>...</>}>
               <Nav />
               <Main />
+              <TodoListPanel todoList={null} />
             </Suspense>
           }
         />

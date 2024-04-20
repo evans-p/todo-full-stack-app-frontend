@@ -25,6 +25,20 @@ const EN = {
       favourite: "Favourite",
       completed: "Completed todos",
     },
+    todoListPanel: {
+      new: {
+        title: "New list",
+        label: "List name",
+        save: "Save",
+        cancel: "Cancel",
+      },
+      edit: {
+        title: "Edit list",
+        label: "List name",
+        save: "Save",
+        cancel: "Cancel",
+      },
+    },
   },
   notFound: {
     title: "The page you requested does not exist.",
