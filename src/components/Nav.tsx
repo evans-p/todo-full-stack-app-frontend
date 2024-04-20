@@ -1,4 +1,5 @@
 import { useContext, useRef, memo } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   IoPersonOutline,
@@ -9,11 +10,15 @@ import {
 import { IoIosArrowDown } from "react-icons/io";
 import ThemeContext from "../contexts/ThemeContext";
 import StringConstants from "../constants/StringConstants";
+import RoutingConstants from "../constants/RoutingConstants";
 
 const Nav = () => {
   const languageRef = useRef<HTMLButtonElement>(null);
+  const loginRef = useRef<HTMLButtonElement>(null);
   const { theme, updateTheme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const updateLanguage = (language: string): void => {
     if (
@@ -26,6 +31,13 @@ const Nav = () => {
         languageRef.current?.blur();
       }
     }
+  };
+
+  const navigateToLogin = () => {
+    if (location.pathname != RoutingConstants.LOGIN) {
+      navigate(RoutingConstants.LOGIN);
+    }
+    loginRef.current?.blur();
   };
 
   return (
@@ -69,10 +81,16 @@ const Nav = () => {
             </span>
           </section>
         </button>
-        <button className="mr-6 p-2 rounded-xl hover:bg-white hover:shadow focus:shadow focus:bg-white group dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm dark:focus:bg-gray-600 dark:focus:shadow-gray-400 dark:focus:shadow-sm">
+        <button
+          ref={loginRef}
+          className="mr-6 p-2 rounded-xl hover:bg-white hover:shadow focus:shadow focus:bg-white group dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm dark:focus:bg-gray-600 dark:focus:shadow-gray-400 dark:focus:shadow-sm"
+        >
           <IoPersonOutline className="text-gray-800 text-2xl dark:text-gray-100" />
           <section className="fixed top-14 right-2 bg-white rounded-md hidden shadow group-focus:inline group-focus:shadow dark:bg-gray-600 dark:group-focus:shadow-gray-400">
-            <span className="rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center font-medium dark:text-gray-100 dark:hover:bg-gray-500">
+            <span
+              onClick={navigateToLogin}
+              className="z-50 rounded-md hover:bg-gray-300 w-36 h-16 flex justify-center items-center font-medium dark:text-gray-100 dark:hover:bg-gray-500"
+            >
               {t("nav.login")}
             </span>
           </section>

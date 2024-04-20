@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import RoutingConstants from "../constants/RoutingConstants";
 
 const Nav = lazy(() => import("../components/Nav"));
 const Login = lazy(() => import("../pages/Login"));
@@ -17,7 +18,7 @@ const App = () => {
       <Routes location={location}>
         <Route
           index
-          path="/"
+          path={RoutingConstants.ROOT}
           element={
             <Suspense fallback={<>...</>}>
               <Nav />
@@ -27,7 +28,7 @@ const App = () => {
           }
         />
         <Route
-          path="/login/"
+          path={RoutingConstants.LOGIN}
           element={
             <Suspense fallback={<>...</>}>
               <Nav />
@@ -36,26 +37,16 @@ const App = () => {
           }
         />
         <Route
-          path="/lists/"
+          path={RoutingConstants.LISTS}
           element={
             <Suspense fallback={<>...</>}>
               <Nav />
               <Main />
             </Suspense>
           }
-        >
-          <Route
-            path=":listId"
-            element={
-              <Suspense fallback={<>...</>}>
-                <Nav />
-                <Main />
-              </Suspense>
-            }
-          />
-        </Route>
+        />
         <Route
-          path="*"
+          path={RoutingConstants.ALL}
           element={
             <Suspense fallback={<>...</>}>
               <Nav />
