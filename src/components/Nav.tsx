@@ -27,9 +27,7 @@ const Nav = () => {
     ) {
       localStorage.setItem(StringConstants.LANGUAGE, language);
       i18n.changeLanguage(language);
-      if (languageRef) {
-        languageRef.current?.blur();
-      }
+      languageRef.current?.blur();
     }
   };
 
