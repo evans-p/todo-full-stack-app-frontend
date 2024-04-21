@@ -15,7 +15,7 @@ const Login = () => {
         <h2 className="text-3xl text-gray-800  tracking-wider text-center dark:text-gray-100">
           {t("login.title")}
         </h2>
-        <h1 className="text-5xl text-gray-800  font-bold tracking-wide text-center dark:text-gray-100">
+        <h1 className="text-5xl text-gray-800 font-bold tracking-wide text-center dark:text-gray-100">
           TaskForge
         </h1>
         <div className="flex justify-center items-center mt-6">
