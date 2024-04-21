@@ -1,12 +1,28 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { jwtDecode } from "jwt-decode";
 import { CredentialResponse, GoogleLogin } from "@react-oauth/google";
 
 import logo from "../assets/images/logo.png";
 import { redirect } from "react-router-dom";
+import { Profile } from "../@types/Profile";
 
 const Login = () => {
   const { t } = useTranslation();
+  const [credentials, setCredentials] = useState<CredentialResponse>();
+  const [profile, setProfile] = useState<Profile>();
+
+  const handleSuccess = (response: CredentialResponse) => {
+    if (response.credential) {
+      setCredentials(response);
+      setProfile(jwtDecode<Profile>(response.credential));
+      redirect("lists");
+    }
+  };
+
+  const handleError = () => {
+    redirect("/");
+  };
 
   return (
     <div className="h-screen w-screen bg-gradient-image bg-contain bg-no-repeat bg-bottom flex justify-center items-center">
@@ -20,12 +36,8 @@ const Login = () => {
         </h1>
         <div className="flex justify-center items-center mt-6">
           <GoogleLogin
-            onSuccess={(response: CredentialResponse) => {
-              console.log(response.clientId);
-            }}
-            onError={() => {
-              redirect("/");
-            }}
+            onSuccess={handleSuccess}
+            onError={handleError}
             width={250}
             shape="square"
             size="large"
