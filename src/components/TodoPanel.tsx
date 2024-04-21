@@ -6,7 +6,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   const { t } = useTranslation();
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-0">
+    <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-10">
       <div className="w-96 p-10 bg-gray-100 dark:bg-gray-800 rounded-sm">
         <section className="flex justify-between items-center mb-3">
           <h3 className="font-bold text-xl text-gray-800 dark:text-gray-100">
