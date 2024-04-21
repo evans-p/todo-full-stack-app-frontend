@@ -38,6 +38,25 @@ const EL = {
         cancel: "Ακύρωση",
       },
     },
+
+    todoPanel: {
+      new: {
+        title: "Νέα διεργασία",
+        titleLabel: "Ονομα διεργασίας",
+        description: "Περιγραφή",
+        listLabel: "Λίστα",
+        save: "Αποθήκευση",
+        cancel: "Ακύρωση",
+      },
+      edit: {
+        title: "Επεξεργασία διεργασίας",
+        titleLabel: "Ονομα διεργασίας",
+        description: "Περιγραφή",
+        listLabel: "Λίστα",
+        save: "Αποθήκευση",
+        cancel: "Ακύρωση",
+      },
+    },
   },
   notFound: {
     title: "Η σελίδα που ζητήσατε δεν είναι διαθέσιμη.",

@@ -39,6 +39,24 @@ const EN = {
         cancel: "Cancel",
       },
     },
+    todoPanel: {
+      new: {
+        title: "New task",
+        titleLabel: "Task name",
+        description: "Description",
+        listLabel: "List",
+        save: "Save",
+        cancel: "Cancel",
+      },
+      edit: {
+        title: "Edit task",
+        titleLabel: "Task name",
+        description: "Description",
+        listLabel: "List",
+        save: "Save",
+        cancel: "Cancel",
+      },
+    },
   },
   notFound: {
     title: "The page you requested does not exist.",
