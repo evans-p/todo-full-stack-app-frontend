@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import ThemeProvider from "../providers/ThemeProvider";
 import RoutingConstants from "../constants/RoutingConstants";
+import CredentialProvider from "../providers/CredentialProvider";
+import ProfileProvider from "../providers/ProfileProvider";
 
 const Login = lazy(() => import("../pages/Login"));
 const Home = lazy(() => import("../pages/Home"));
@@ -59,7 +61,13 @@ const App = () => {
     );
   };
 
-  return <ThemeProvider>{renderRoutes()}</ThemeProvider>;
+  return (
+    <ThemeProvider>
+      <CredentialProvider>
+        <ProfileProvider>{renderRoutes()}</ProfileProvider>
+      </CredentialProvider>
+    </ThemeProvider>
+  );
 };
 
 export default App;
