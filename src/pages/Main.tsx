@@ -4,6 +4,7 @@ import { IoFilterOutline, IoStarOutline } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
+import { CiEdit } from "react-icons/ci";
 import Menu from "../components/Menu";
 
 const Main: React.FC = () => {
@@ -69,7 +70,12 @@ const Main: React.FC = () => {
   const renderHeader = (): JSX.Element => {
     return (
       <div className="mx-6 h-36 flex flex-col items-start justify-end">
-        <h2 className="ml-3 text-xl font-bold">Todo List</h2>
+        <section className="ml-3 flex justify-center items-center">
+          <h2 className="text-xl font-bold">Todo List</h2>
+          <span className="ml-3 cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <CiEdit className="text-gray-800 text-2xl dark:text-gray-100" />
+          </span>
+        </section>
         <section className="w-full grid grid-cols-6 grid-rows-1">
           <h3 className="col-span-3 row-span-1 my-auto ml-3">
             {t("main.list.todo")}
