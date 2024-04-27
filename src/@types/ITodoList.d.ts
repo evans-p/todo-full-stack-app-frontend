@@ -5,4 +5,8 @@ interface ITodoList {
   created: Date | null;
   lastModified: Date | null;
   todos: Todo[];
+  _link: {
+    self: ILink;
+    todoLists: ILink;
+  };
 }

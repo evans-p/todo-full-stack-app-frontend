@@ -1,0 +1,3 @@
+interface ILink {
+  href: string;
+}
