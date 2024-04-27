@@ -6,7 +6,7 @@ import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
 import Menu from "../components/Menu";
 
-const Main = () => {
+const Main: React.FC = () => {
   const [completedMenuOpen, setCompletedMenuOpen] = useState<boolean>(false);
   const { t } = useTranslation();
 

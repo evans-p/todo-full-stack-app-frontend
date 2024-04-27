@@ -3,6 +3,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import ThemeProvider from "../providers/ThemeProvider";
 import CredentialProvider from "../providers/CredentialProvider";
 import RoutingConstants from "../constants/RoutingConstants";
+import LoginReqired from "../components/hoc/LoginReqired";
+import AnonymousRequired from "../components/hoc/AnonymousRequired";
 
 const Login = lazy(() => import("../pages/Login"));
 const Home = lazy(() => import("../pages/Home"));
@@ -21,29 +23,35 @@ const App = () => {
           index
           path={RoutingConstants.ROOT}
           element={
-            <Suspense fallback={<>...</>}>
-              <Nav />
-              <Logo />
-              <Home />
-            </Suspense>
-          }
-        />
-        <Route
-          path={RoutingConstants.LOGIN}
-          element={
-            <Suspense fallback={<>...</>}>
-              <Nav />
-              <Login />
-            </Suspense>
+            <AnonymousRequired>
+              <Suspense fallback={<>...</>}>
+                <Nav />
+                <Logo />
+                <Home />
+              </Suspense>
+            </AnonymousRequired>
           }
         />
         <Route
           path={RoutingConstants.LISTS}
           element={
-            <Suspense fallback={<>...</>}>
-              <Nav />
-              <Main />
-            </Suspense>
+            <LoginReqired>
+              <Suspense fallback={<>...</>}>
+                <Nav />
+                <Main />
+              </Suspense>
+            </LoginReqired>
+          }
+        />
+        <Route
+          path={RoutingConstants.LOGIN}
+          element={
+            <AnonymousRequired>
+              <Suspense fallback={<>...</>}>
+                <Nav />
+                <Login />
+              </Suspense>
+            </AnonymousRequired>
           }
         />
         <Route

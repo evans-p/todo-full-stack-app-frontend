@@ -5,6 +5,8 @@ const StringConstants = {
   LANGUAGE: "lang",
   ENGLISH: "en",
   GREEK: "el",
+  CREDENTIALS: "credentials",
+  PROFILE: "profile",
 };
 
 export default StringConstants;

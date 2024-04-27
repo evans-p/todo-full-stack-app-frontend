@@ -7,7 +7,7 @@ import RoutingConstants from "../constants/RoutingConstants";
 
 import list from "../assets/images/list.png";
 
-const Home = () => {
+const Home: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="h-screen w-screen bg-gradient-image bg-contain bg-no-repeat bg-bottom flex justify-center items-center">

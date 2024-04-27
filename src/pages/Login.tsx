@@ -6,7 +6,7 @@ import logo from "../assets/images/logo.png";
 import CredentialContext from "../contexts/CredentialContext";
 import { ICredentials } from "../@types/ICredentials";
 
-const Login = () => {
+const Login: React.FC = () => {
   const { t } = useTranslation();
   const { loginSuccess, loginError } =
     useContext<ICredentials>(CredentialContext);

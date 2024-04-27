@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Lottie from "react-lottie";
 import notFound from "../assets/animations/notFound.json";
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
   const { t } = useTranslation();
 
   return (
