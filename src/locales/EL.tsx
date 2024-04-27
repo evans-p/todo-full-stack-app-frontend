@@ -1,6 +1,7 @@
 const EL = {
   nav: {
     login: "Σύνδεση",
+    logout: "Αποσύνδεση",
   },
   home: {
     subtitle: {

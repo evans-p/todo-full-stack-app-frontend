@@ -1,6 +1,7 @@
 const EN = {
   nav: {
     login: "Login",
+    logout: "Logout",
   },
 
   home: {
