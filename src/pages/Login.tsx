@@ -1,28 +1,15 @@
-import { memo, useState } from "react";
+import { memo, useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { jwtDecode } from "jwt-decode";
-import { CredentialResponse, GoogleLogin } from "@react-oauth/google";
-
+import { GoogleLogin } from "@react-oauth/google";
 import logo from "../assets/images/logo.png";
-import { redirect } from "react-router-dom";
-import { Profile } from "../@types/Profile";
+
+import CredentialContext from "../contexts/CredentialContext";
+import { ICredentials } from "../@types/ICredentials";
 
 const Login = () => {
   const { t } = useTranslation();
-  const [credentials, setCredentials] = useState<CredentialResponse>();
-  const [profile, setProfile] = useState<Profile>();
-
-  const handleSuccess = (response: CredentialResponse) => {
-    if (response.credential) {
-      setCredentials(response);
-      setProfile(jwtDecode<Profile>(response.credential));
-      redirect("lists");
-    }
-  };
-
-  const handleError = () => {
-    redirect("/");
-  };
+  const { loginSuccess, loginError } =
+    useContext<ICredentials>(CredentialContext);
 
   return (
     <div className="h-screen w-screen bg-gradient-image bg-contain bg-no-repeat bg-bottom flex justify-center items-center">
@@ -36,8 +23,8 @@ const Login = () => {
         </h1>
         <div className="flex justify-center items-center mt-6">
           <GoogleLogin
-            onSuccess={handleSuccess}
-            onError={handleError}
+            onSuccess={loginSuccess}
+            onError={loginError}
             width={250}
             shape="square"
             size="large"

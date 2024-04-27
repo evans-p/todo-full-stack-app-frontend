@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import ThemeProvider from "../providers/ThemeProvider";
+import CredentialProvider from "../providers/CredentialProvider";
 import RoutingConstants from "../constants/RoutingConstants";
 
 const Login = lazy(() => import("../pages/Login"));
@@ -59,7 +60,11 @@ const App = () => {
     );
   };
 
-  return <ThemeProvider>{renderRoutes()}</ThemeProvider>;
+  return (
+    <ThemeProvider>
+      <CredentialProvider>{renderRoutes()}</CredentialProvider>
+    </ThemeProvider>
+  );
 };
 
 export default App;
