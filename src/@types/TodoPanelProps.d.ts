@@ -1,3 +1,3 @@
 interface TodoPanelProps {
-  todo: Todo | null;
+  todo: ITodo | null;
 }

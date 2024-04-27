@@ -1,3 +1,3 @@
 interface TodoListPanelProps {
-  todoList: TodoList | null;
+  todoList: ITodoList | null;
 }

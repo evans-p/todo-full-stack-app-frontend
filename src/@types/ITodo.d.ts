@@ -1,4 +1,4 @@
-interface Todo {
+interface ITodo {
   todoId: number | null;
   todoListId: number | null;
   userId: string | null;
