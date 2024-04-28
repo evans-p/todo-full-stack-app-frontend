@@ -12,6 +12,7 @@ const Main = lazy(() => import("../pages/Main"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 const Logo = lazy(() => import("../components/Logo"));
 const Nav = lazy(() => import("../components/Nav"));
+const TodoList = lazy(() => import("../components/TodoList"));
 
 const App = () => {
   const location = useLocation();
@@ -42,7 +43,18 @@ const App = () => {
               </Suspense>
             </LoginReqired>
           }
-        />
+        >
+          <Route index element={<></>} />
+          <Route
+            path=":listId"
+            element={
+              <Suspense fallback={<>...</>}>
+                <TodoList />
+              </Suspense>
+            }
+          />
+        </Route>
+
         <Route
           path={RoutingConstants.LOGIN}
           element={
