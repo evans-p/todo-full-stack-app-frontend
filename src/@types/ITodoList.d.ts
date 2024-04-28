@@ -2,10 +2,10 @@ interface ITodoList {
   todoListId: number | null;
   userId: string | null;
   title: string | null;
-  created: Date | null;
-  lastModified: Date | null;
-  todos: Todo[];
-  _link: {
+  created: string | null;
+  lastModified: string | null;
+  todos: ITodo[];
+  _links: {
     self: ILink;
     todoLists: ILink;
   };

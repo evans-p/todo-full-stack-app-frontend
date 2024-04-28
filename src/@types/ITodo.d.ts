@@ -5,6 +5,6 @@ interface ITodo {
   title: string | null;
   favourite: boolean | null;
   body: string | null;
-  created: Date | null;
-  lastModified: Date | null;
+  created: string | null;
+  lastModified: string | null;
 }
