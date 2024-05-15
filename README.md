@@ -5,4 +5,4 @@
 
 ## Notes
 
-1. https://www.youtube.com/watch?v=pfaSUYaSgRo
+1. Google OAUTH2=https://gemini.google.com/app/195f8522a8d5d45a
