@@ -1,9 +1,13 @@
-import { memo } from "react";
+import { memo, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { IoTrashOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
+import DataContext from "../contexts/DataContext";
 
 const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   const { t } = useTranslation();
+  const data = useContext(DataContext);
+  const navigate = useNavigate();
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-10">
@@ -33,6 +37,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           type="text"
           id="title"
           className="w-full h-8 p-3 text-gray-800 rounded-sm mb-2"
+          value={props.todo ? (props.todo.title ? props.todo.title : "") : ""}
         />
 
         <label
@@ -46,6 +51,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         <textarea
           id="body"
           className="w-full h-24 p-3 text-gray-800 rounded-sm mb-2 resize-none"
+          value={props.todo ? (props.todo.body ? props.todo.body : "") : ""}
         />
         <label
           className="block text-gray-800 dark:text-gray-100 mb-2"
@@ -59,15 +65,19 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           id="listId"
           className="w-full h-8 pl-3 text-gray-800 dark:text-gray-100 dark:bg-gray-700 bg-gray-300"
         >
-          <option value="1">First List</option>
-          <option value="1">Second List</option>
+          {data._embedded.todoListList.map((list: ITodoList) => {
+            return <option value={list.todoListId}>{list.title}</option>;
+          })}
         </select>
         <button className="w-full h-8 mt-5 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400">
           {props.todo
             ? t("main.todoPanel.edit.save")
             : t("main.todoPanel.new.save")}
         </button>
-        <button className="w-full h-8 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400">
+        <button
+          className="w-full h-8 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
+          onClick={() => navigate(-1)}
+        >
           {props.todo
             ? t("main.todoPanel.edit.cancel")
             : t("main.todoPanel.new.cancel")}

@@ -1,65 +1,48 @@
-import { memo, useState, useContext, useEffect } from "react";
+import { memo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 import { IoFilterOutline, IoStarOutline } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
 import { CiEdit } from "react-icons/ci";
-import { useParams } from "react-router-dom";
-import DataContext from "../contexts/DataContext";
-import RoutingConstants from "../constants/RoutingConstants";
+import { Outlet, Link } from "react-router-dom";
 
-const TodoList = () => {
+const TodoList = (props: ITodoList) => {
   const [completedMenuOpen, setCompletedMenuOpen] = useState<boolean>(false);
-  const data = useContext(DataContext);
   const { t } = useTranslation();
-  const navigate = useNavigate();
-  let { listId } = useParams();
-
-  // useEffect(() => {
-  //   try {
-  //     if (listId) {
-  //       const result = data._embedded.todoListList.filter(
-  //         (list) => list.todoListId === parseInt(listId)
-  //       );
-  //       if (result.length === 0) {
-  //         navigate("/" + RoutingConstants.ALL, { replace: true });
-  //       }
-  //     } else {
-  //       navigate("/" + RoutingConstants.ALL, { replace: true });
-  //     }
-  //   } catch {}
-  // }, [listId, data]);
 
   const toogleCompletedMenu = () => {
     setCompletedMenuOpen(!completedMenuOpen);
   };
 
   const renderTodos = (): JSX.Element[] => {
-    return [...Array(20).keys()].map((x) => (
-      <div
-        key={x}
-        className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm"
-      >
-        <h4 className="col-span-3 row-span-1 pl-3 text-sm flex items-center justify-start">
-          Task
-        </h4>
-        <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
-          27-02-1992
-        </h4>
-        <section className="col-span-1 row-span-1 flex justify-center items-center">
-          <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-            <IoStarOutline />
-          </span>
-        </section>
-        <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
-          <span className="cursor-grab p-1">
-            <RiDraggable />
-          </span>
-        </section>
-      </div>
-    ));
+    return props.todos.map((todo) => {
+      return (
+        <Link to={String(todo.todoId)}>
+          <div
+            key={todo.todoId}
+            className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm"
+          >
+            <h4 className="col-span-3 row-span-1 pl-3 text-sm flex items-center justify-start">
+              {todo.title}
+            </h4>
+            <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
+              {todo.created}
+            </h4>
+            <section className="col-span-1 row-span-1 flex justify-center items-center">
+              <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+                <IoStarOutline />
+              </span>
+            </section>
+            <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
+              <span className="cursor-grab p-1">
+                <RiDraggable />
+              </span>
+            </section>
+          </div>
+        </Link>
+      );
+    });
   };
 
   const renderCompletedTodos = (): JSX.Element[] => {
@@ -92,10 +75,13 @@ const TodoList = () => {
     return (
       <div className="mx-6 h-36 flex flex-col items-start justify-end">
         <section className="ml-3 flex justify-center items-center">
-          <h2 className="text-xl font-bold">Todo List</h2>
-          <span className="ml-3 cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+          <h2 className="text-xl font-bold">{props.title}</h2>
+          <Link
+            to="edit"
+            className="ml-3 cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm"
+          >
             <CiEdit className="text-gray-800 text-2xl dark:text-gray-100" />
-          </span>
+          </Link>
         </section>
         <section className="w-full grid grid-cols-6 grid-rows-1">
           <h3 className="col-span-3 row-span-1 my-auto ml-3">
@@ -122,6 +108,7 @@ const TodoList = () => {
 
   return (
     <div className="ml-80 w-screen h-screen text-gray-800 dark:text-gray-100">
+      <Outlet />
       {renderHeader()}
       <div className="h-[calc(50%-4.5rem)] overflow-scroll no-scrollbar">
         {renderTodos()}

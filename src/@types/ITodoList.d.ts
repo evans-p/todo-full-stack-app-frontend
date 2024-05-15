@@ -1,5 +1,5 @@
 interface ITodoList {
-  todoListId: number | null;
+  todoListId: number;
   userId: string | null;
   title: string | null;
   created: string | null;

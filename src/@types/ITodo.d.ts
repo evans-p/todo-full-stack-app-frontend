@@ -1,5 +1,5 @@
 interface ITodo {
-  todoId: number | null;
+  todoId: number;
   todoListId: number | null;
   userId: string | null;
   title: string | null;
