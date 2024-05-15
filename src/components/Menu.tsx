@@ -1,19 +1,32 @@
-import { memo } from "react";
+import { memo, useContext } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { IoAdd, IoStarOutline } from "react-icons/io5";
+import DataContext from "../contexts/DataContext";
 
 import logo from "../assets/images/logo.png";
+import RoutingConstants from "../constants/RoutingConstants";
 
 const Menu = () => {
   const { t } = useTranslation();
+  const data = useContext(DataContext);
 
   const renderlists = (): JSX.Element[] => {
-    return [...Array(10).keys()].map((x) => (
-      <section key={x} className="pl-6 py-2 cursor-pointer hover:bg-gray-700">
-        <h2 className="text-sm mb-1">Todo List</h2>
-        <h3 className="text-xs">8 Todo(s)</h3>
-      </section>
-    ));
+    return data._embedded.todoListList.map((list) => {
+      return (
+        <Link to={RoutingConstants.LISTS + list.todoListId}>
+          <section
+            key={list.todoListId}
+            className="pl-6 py-2 cursor-pointer hover:bg-gray-700"
+          >
+            <h2 className="text-sm mb-1">{list.title}</h2>
+            <h3 className="text-xs">
+              {list.todos.length} Todo{list.todos.length != 1 ? "s" : ""}
+            </h3>
+          </section>
+        </Link>
+      );
+    });
   };
 
   return (

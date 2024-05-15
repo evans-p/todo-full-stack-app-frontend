@@ -5,6 +5,7 @@ import CredentialProvider from "../providers/CredentialProvider";
 import RoutingConstants from "../constants/RoutingConstants";
 import LoginReqired from "../components/hoc/LoginReqired";
 import AnonymousRequired from "../components/hoc/AnonymousRequired";
+import DataProvider from "../providers/DataProvider";
 
 const Login = lazy(() => import("../pages/Login"));
 const Home = lazy(() => import("../pages/Home"));
@@ -82,7 +83,9 @@ const App = () => {
 
   return (
     <ThemeProvider>
-      <CredentialProvider>{renderRoutes()}</CredentialProvider>
+      <CredentialProvider>
+        <DataProvider>{renderRoutes()}</DataProvider>
+      </CredentialProvider>
     </ThemeProvider>
   );
 };

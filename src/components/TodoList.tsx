@@ -1,18 +1,36 @@
-import { memo, useState } from "react";
+import { memo, useState, useContext, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { IoFilterOutline, IoStarOutline } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
 import { CiEdit } from "react-icons/ci";
 import { useParams } from "react-router-dom";
+import DataContext from "../contexts/DataContext";
+import RoutingConstants from "../constants/RoutingConstants";
 
 const TodoList = () => {
   const [completedMenuOpen, setCompletedMenuOpen] = useState<boolean>(false);
+  const data = useContext(DataContext);
   const { t } = useTranslation();
+  const navigate = useNavigate();
   let { listId } = useParams();
 
-  console.log(listId);
+  // useEffect(() => {
+  //   try {
+  //     if (listId) {
+  //       const result = data._embedded.todoListList.filter(
+  //         (list) => list.todoListId === parseInt(listId)
+  //       );
+  //       if (result.length === 0) {
+  //         navigate("/" + RoutingConstants.ALL, { replace: true });
+  //       }
+  //     } else {
+  //       navigate("/" + RoutingConstants.ALL, { replace: true });
+  //     }
+  //   } catch {}
+  // }, [listId, data]);
 
   const toogleCompletedMenu = () => {
     setCompletedMenuOpen(!completedMenuOpen);
