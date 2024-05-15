@@ -19,6 +19,8 @@ const EN = {
     menu: {
       addListButton: "Add todo list",
       favouriteTodosButton: "Favourite todos",
+      singleTodo: "Todo",
+      multipleTodos: "Todos",
     },
     list: {
       todo: "Todo",

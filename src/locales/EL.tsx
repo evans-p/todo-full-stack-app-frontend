@@ -18,6 +18,8 @@ const EL = {
     menu: {
       addListButton: "Προσθήκη λίστας",
       favouriteTodosButton: "Αγαπημένες διεργασίες",
+      singleTodo: "Διεργασία",
+      multipleTodos: "Διεργασίες",
     },
     list: {
       todo: "Διεργασία",

@@ -21,7 +21,11 @@ const Menu = () => {
           >
             <h2 className="text-sm mb-1">{list.title}</h2>
             <h3 className="text-xs">
-              {list.todos.length} Todo{list.todos.length != 1 ? "s" : ""}
+              {String(list.todos.length) +
+                " " +
+                (list.todos.length != 1
+                  ? t("main.menu.multipleTodos")
+                  : t("main.menu.singleTodo"))}
             </h3>
           </section>
         </Link>
