@@ -76,7 +76,10 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         </button>
         <button
           className="w-full h-8 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
-          onClick={() => navigate(-1)}
+          onClick={() => {
+            let path = location.pathname.split("/");
+            navigate(path.slice(0, path.length - 1).join("/"));
+          }}
         >
           {props.todo
             ? t("main.todoPanel.edit.cancel")
