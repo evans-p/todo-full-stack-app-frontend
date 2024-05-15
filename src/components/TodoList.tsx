@@ -27,7 +27,7 @@ const TodoList = (props: ITodoList) => {
               {todo.title}
             </h4>
             <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
-              {todo.created}
+              {todo.created?.split("T")[0].split("-").reverse().join("-")}
             </h4>
             <section className="col-span-1 row-span-1 flex justify-center items-center">
               <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
