@@ -42,12 +42,15 @@ const Menu = () => {
       <div className="w-full h-[calc(100%-13rem)] overflow-scroll no-scrollbar">
         {renderlists()}
       </div>
-      <button className="fixed bottom-16 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
+      <Link
+        to={"new"}
+        className="fixed bottom-16 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500"
+      >
         <IoAdd className="col-span-1 row-span-1 mx-auto my-auto" />
         <span className="col-span-5 row-span-1 my-auto mr-auto">
           {t("main.menu.addListButton")}
         </span>
-      </button>
+      </Link>
       <button className="fixed bottom-0 w-80 h-16 grid grid-cols-6 grid-rows-1 bg-gray-700 hover:bg-gray-500">
         <IoStarOutline className="col-span-1 row-span-1 mx-auto my-auto" />
         <span className="col-span-5 row-span-1 my-auto mr-auto">

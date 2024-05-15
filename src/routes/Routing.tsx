@@ -80,6 +80,7 @@ const Routing = (): JSX.Element => {
             </Route>
           );
         })}
+        <Route path="new" element={<TodoListPanel todoList={null} />} />
       </Route>
 
       <Route
