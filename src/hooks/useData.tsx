@@ -10,6 +10,10 @@ export default function useData(): IDataContext {
   const { credentials } = useContext(CredentialContext);
   const navigate = useNavigate();
 
+  const clearData = () => {
+    _setData(undefined);
+  };
+
   const readAllLists = async () => {
     try {
       const response = await fetch(
@@ -33,5 +37,5 @@ export default function useData(): IDataContext {
       navigate(RoutingConstants.ERROR);
     }
   };
-  return { data, readAllLists };
+  return { data, readAllLists, clearData };
 }

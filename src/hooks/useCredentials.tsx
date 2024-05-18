@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { jwtDecode } from "jwt-decode";
 import { Profile } from "../@types/Profile";
 import { CredentialResponse, googleLogout } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
+import DataContext from "../contexts/DataContext";
 import RoutingConstants from "../constants/RoutingConstants";
 import { ICredentials } from "../@types/ICredentials";
 import StringConstants from "../constants/StringConstants";
 
 export default function useCredentials(): ICredentials {
   const navigate = useNavigate();
+  const { clearData } = useContext(DataContext);
   const [credentials, _setCredentials] = useState<
     CredentialResponse | undefined
   >(fetchFromSessionStorage<CredentialResponse>(StringConstants.CREDENTIALS));
@@ -40,6 +42,7 @@ export default function useCredentials(): ICredentials {
 
   const logout = (): void => {
     googleLogout();
+    clearData();
     _setCredentials(() => {
       deleteFromSessionStorage(StringConstants.PROFILE);
       _setProfile(undefined);
