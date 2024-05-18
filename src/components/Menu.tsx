@@ -42,7 +42,9 @@ const Menu = () => {
   return (
     <div className="fixed left-0 top-0 w-80 h-screen bg-gray-950 text-xl text-gray-100">
       <div className="w-full h-16 flex items-center justify-start mb-4">
-        <img src={logo} alt="TaskForge" className="ml-6 w-10 h-auto" />
+        <Link to={RoutingConstants.LISTS}>
+          <img src={logo} alt="TaskForge" className="ml-6 w-10 h-auto" />
+        </Link>
         <h1 className="text-gray-100 ml-12">TaskForge</h1>
       </div>
       <div className="w-full h-[calc(100%-13rem)] overflow-scroll no-scrollbar">
