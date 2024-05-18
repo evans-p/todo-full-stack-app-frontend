@@ -1,11 +1,15 @@
-import { PropsWithChildren, useState } from "react";
+import { PropsWithChildren } from "react";
 import DataContext from "../contexts/DataContext";
-import initialData from "../samples/getAllLists.json";
+import useData from "../hooks/useData";
 
 const DataProvider = ({ children }: PropsWithChildren<{}>) => {
-  const [data, _setData] = useState<IData>(initialData);
+  const { data, readAllLists } = useData();
 
-  return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
+  return (
+    <DataContext.Provider value={{ data, readAllLists }}>
+      {children}
+    </DataContext.Provider>
+  );
 };
 
 export default DataProvider;

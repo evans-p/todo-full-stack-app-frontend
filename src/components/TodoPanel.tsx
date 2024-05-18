@@ -6,7 +6,7 @@ import DataContext from "../contexts/DataContext";
 
 const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   const { t } = useTranslation();
-  const data = useContext(DataContext);
+  const { data } = useContext(DataContext);
   const navigate = useNavigate();
 
   return (
@@ -65,7 +65,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           id="listId"
           className="w-full h-8 pl-3 text-gray-800 dark:text-gray-100 dark:bg-gray-700 bg-gray-300"
         >
-          {data._embedded.todoListList.map((list: ITodoList) => {
+          {data?._embedded.todoListList.map((list: ITodoList) => {
             return <option value={list.todoListId}>{list.title}</option>;
           })}
         </select>

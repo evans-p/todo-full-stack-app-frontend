@@ -1,0 +1,10 @@
+{
+  "_embedded": {
+    "todoListList": []
+  },
+  "_links": {
+    "self": {
+      "href": ""
+    }
+  }
+}

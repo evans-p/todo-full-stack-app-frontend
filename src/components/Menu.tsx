@@ -9,28 +9,34 @@ import RoutingConstants from "../constants/RoutingConstants";
 
 const Menu = () => {
   const { t } = useTranslation();
-  const data = useContext(DataContext);
+  const { data } = useContext(DataContext);
 
-  const renderlists = (): JSX.Element[] => {
-    return data._embedded.todoListList.map((list) => {
-      return (
-        <Link to={RoutingConstants.LISTS + list.todoListId}>
-          <section
+  const renderlists = (): JSX.Element[] | null => {
+    if (data) {
+      return data._embedded.todoListList.map((list) => {
+        return (
+          <Link
+            to={RoutingConstants.LISTS + list.todoListId}
             key={list.todoListId}
-            className="pl-6 py-2 cursor-pointer hover:bg-gray-700"
           >
-            <h2 className="text-sm mb-1">{list.title}</h2>
-            <h3 className="text-xs">
-              {String(list.todos.length) +
-                " " +
-                (list.todos.length != 1
-                  ? t("main.menu.multipleTodos")
-                  : t("main.menu.singleTodo"))}
-            </h3>
-          </section>
-        </Link>
-      );
-    });
+            <section
+              key={list.todoListId}
+              className="pl-6 py-2 cursor-pointer hover:bg-gray-700"
+            >
+              <h2 className="text-sm mb-1">{list.title}</h2>
+              <h3 className="text-xs">
+                {String(list.todos.length) +
+                  " " +
+                  (list.todos.length != 1
+                    ? t("main.menu.multipleTodos")
+                    : t("main.menu.singleTodo"))}
+              </h3>
+            </section>
+          </Link>
+        );
+      });
+    }
+    return null;
   };
 
   return (

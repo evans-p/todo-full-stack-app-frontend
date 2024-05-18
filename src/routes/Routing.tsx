@@ -16,7 +16,7 @@ const TodoListPanel = lazy(() => import("../components/TodoListPanel"));
 const TodoPanel = lazy(() => import("../components/TodoPanel"));
 
 const Routing = (): JSX.Element => {
-  const data = useContext(DataContext);
+  const { data } = useContext(DataContext);
   const location = useLocation();
 
   return (
@@ -45,7 +45,7 @@ const Routing = (): JSX.Element => {
           </LoginReqired>
         }
       >
-        {data._embedded.todoListList.map((list) => {
+        {data?._embedded.todoListList.map((list) => {
           return (
             <Route
               key={list.todoListId}
@@ -92,6 +92,16 @@ const Routing = (): JSX.Element => {
               <Login />
             </Suspense>
           </AnonymousRequired>
+        }
+      />
+      <Route
+        path={RoutingConstants.ERROR}
+        element={
+          <Suspense fallback={<>...</>}>
+            <Nav />
+            <Logo />
+            {/* <NotFound /> */}
+          </Suspense>
         }
       />
       <Route

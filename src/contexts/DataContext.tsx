@@ -1,6 +1,11 @@
 import { createContext } from "react";
-import data from "../samples/getAllLists.json";
+import initialData from "../data/initialData.json";
 
-const DataContext = createContext<IData>(data);
+const data: IDataContext = {
+  data: initialData,
+  readAllLists: async () => {},
+};
+
+const DataContext = createContext<IDataContext>(data);
 
 export default DataContext;
