@@ -17,6 +17,39 @@ export default function useData(): IDataContext {
     _setData(undefined);
   };
 
+  const deleteList = async (todoListId: number): Promise<void> => {
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_BACKEND_BASE_URL +
+          DataConstants.LISTS +
+          todoListId,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + credentials?.credential,
+            "Accept-Language": i18n.language,
+          },
+        }
+      );
+
+      if (!response.ok) throw new Error();
+
+      if (data) {
+        _setData({
+          ...data,
+          _embedded: {
+            todoListList: data._embedded.todoListList.filter(
+              (list) => list.todoListId !== todoListId
+            ),
+          },
+        });
+      }
+    } catch {
+      navigate(RoutingConstants.ERROR);
+    }
+  };
+
   const updateList = async (list: ITodoList): Promise<IError | void> => {
     try {
       const response = await fetch(
@@ -130,5 +163,5 @@ export default function useData(): IDataContext {
       navigate(RoutingConstants.ERROR);
     }
   };
-  return { data, readAllLists, clearData, addNewList, updateList };
+  return { data, readAllLists, clearData, addNewList, updateList, deleteList };
 }

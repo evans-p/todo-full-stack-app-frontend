@@ -4,13 +4,14 @@ import { IoTrashOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import DataContext from "../contexts/DataContext";
 import { isIError } from "../utils/TypeGuards";
+import RoutingConstants from "../constants/RoutingConstants";
 
 const TodoListPanel = (props: TodoListPanelProps) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [title, setTitle] = useState<string>();
   const [errors, setErrors] = useState<IError>();
-  const { addNewList, updateList } = useContext(DataContext);
+  const { addNewList, updateList, deleteList } = useContext(DataContext);
 
   useEffect(() => {
     setTitle(
@@ -68,6 +69,14 @@ const TodoListPanel = (props: TodoListPanelProps) => {
     navigate(path.slice(0, path.length - 1).join("/"));
   };
 
+  const handleDeleteList = () => {
+    if (props.todoList) {
+      deleteList(props.todoList.todoListId).then(() => {
+        navigate(RoutingConstants.LISTS);
+      });
+    }
+  };
+
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-10">
       <div className="w-96 p-10 bg-gray-100 dark:bg-gray-800 rounded-sm">
@@ -78,7 +87,10 @@ const TodoListPanel = (props: TodoListPanelProps) => {
               : t("main.todoListPanel.new.title")}
           </h3>
           {props.todoList ? (
-            <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <span
+              className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm"
+              onClick={handleDeleteList}
+            >
               <IoTrashOutline className="text-gray-800 text-2xl dark:text-gray-100" />
             </span>
           ) : null}
