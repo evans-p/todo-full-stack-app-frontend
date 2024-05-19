@@ -5,6 +5,7 @@ const data: IDataContext = {
   data: initialData,
   readAllLists: async () => {},
   clearData: () => {},
+  addNewList: async () => {},
 };
 
 const DataContext = createContext<IDataContext>(data);

@@ -1,5 +1,8 @@
 import { lazy, Suspense, useContext } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+
+import Loader from "../components/Loader";
+
 import RoutingConstants from "../constants/RoutingConstants";
 import LoginReqired from "../components/hoc/LoginReqired";
 import AnonymousRequired from "../components/hoc/AnonymousRequired";
@@ -26,7 +29,7 @@ const Routing = (): JSX.Element => {
         path={RoutingConstants.ROOT}
         element={
           <AnonymousRequired>
-            <Suspense fallback={<>...</>}>
+            <Suspense fallback={<Loader />}>
               <Nav />
               <Logo />
               <Home />
@@ -38,9 +41,11 @@ const Routing = (): JSX.Element => {
         path={RoutingConstants.LISTS}
         element={
           <LoginReqired>
-            <Suspense fallback={<>...</>}>
+            <Suspense fallback={<Loader />}>
               <Nav />
-              <Main />
+              <Suspense fallback={<Loader />}>
+                <Main />
+              </Suspense>
             </Suspense>
           </LoginReqired>
         }
@@ -51,7 +56,7 @@ const Routing = (): JSX.Element => {
               key={list.todoListId}
               path={String(list.todoListId)}
               element={
-                <Suspense fallback={<>...</>}>
+                <Suspense fallback={<Loader />}>
                   <TodoList
                     todoListId={list.todoListId}
                     userId={list.userId}
@@ -87,7 +92,7 @@ const Routing = (): JSX.Element => {
         path={RoutingConstants.LOGIN}
         element={
           <AnonymousRequired>
-            <Suspense fallback={<>...</>}>
+            <Suspense fallback={<Loader />}>
               <Nav />
               <Login />
             </Suspense>
@@ -97,17 +102,16 @@ const Routing = (): JSX.Element => {
       <Route
         path={RoutingConstants.ERROR}
         element={
-          <Suspense fallback={<>...</>}>
+          <Suspense fallback={<Loader />}>
             <Nav />
             <Logo />
-            {/* <NotFound /> */}
           </Suspense>
         }
       />
       <Route
         path={RoutingConstants.ALL}
         element={
-          <Suspense fallback={<>...</>}>
+          <Suspense fallback={<Loader />}>
             <Nav />
             <Logo />
             <NotFound />

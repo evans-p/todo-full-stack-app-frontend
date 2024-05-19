@@ -1,11 +1,47 @@
-import { memo } from "react";
+import { memo, useState, useContext, ChangeEvent, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { IoTrashOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import DataContext from "../contexts/DataContext";
+import { isIError } from "../utils/TypeGuards";
 
 const TodoListPanel = (props: TodoListPanelProps) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [title, setTitle] = useState<string>();
+  const [errors, setErrors] = useState<IError>();
+  const { addNewList } = useContext(DataContext);
+
+  useEffect(() => {
+    setTitle(
+      props.todoList ? (props.todoList.title ? props.todoList.title : "") : ""
+    );
+  }, []);
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setErrors(undefined);
+    setTitle(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    const newList: INewList = {
+      title: title ? (title.length > 0 ? title : "") : "",
+    };
+
+    addNewList(newList).then((value) => {
+      if (isIError(value)) {
+        const e = value as IError;
+        setErrors(e);
+      } else {
+        handleClose();
+      }
+    });
+  };
+
+  const handleClose = () => {
+    let path = location.pathname.split("/");
+    navigate(path.slice(0, path.length - 1).join("/"));
+  };
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-10">
@@ -34,25 +70,26 @@ const TodoListPanel = (props: TodoListPanelProps) => {
           type="text"
           id="title"
           className="w-full h-8 p-3 text-gray-800 rounded-sm"
-          value={
-            props.todoList
-              ? props.todoList.title
-                ? props.todoList.title
-                : ""
-              : ""
-          }
+          onChange={handleChange}
+          value={title}
         />
-        <button className="w-full h-8 mt-5 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400">
+        {errors?.messages?.title ? (
+          <p className="my-2 text-rose-600">{errors?.messages?.title}</p>
+        ) : (
+          <div className="h-10" />
+        )}
+
+        <button
+          className="w-full h-8 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
+          onClick={handleSubmit}
+        >
           {props.todoList
             ? t("main.todoListPanel.edit.save")
             : t("main.todoListPanel.new.save")}
         </button>
         <button
           className="w-full h-8 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
-          onClick={() => {
-            let path = location.pathname.split("/");
-            navigate(path.slice(0, path.length - 1).join("/"));
-          }}
+          onClick={handleClose}
         >
           {props.todoList
             ? t("main.todoListPanel.edit.cancel")
