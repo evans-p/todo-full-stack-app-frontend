@@ -10,7 +10,7 @@ const TodoListPanel = (props: TodoListPanelProps) => {
   const navigate = useNavigate();
   const [title, setTitle] = useState<string>();
   const [errors, setErrors] = useState<IError>();
-  const { addNewList } = useContext(DataContext);
+  const { addNewList, updateList } = useContext(DataContext);
 
   useEffect(() => {
     setTitle(
@@ -24,6 +24,31 @@ const TodoListPanel = (props: TodoListPanelProps) => {
   };
 
   const handleSubmit = () => {
+    if (props.todoList) {
+      handleUpdateList();
+    } else {
+      handleNewList();
+    }
+  };
+
+  const handleUpdateList = () => {
+    if (props.todoList) {
+      const newList: ITodoList = JSON.parse(JSON.stringify(props.todoList));
+      // TODO: newList.lastModified = now;
+      newList.title = title ? title : "";
+
+      updateList(newList).then((value) => {
+        if (isIError(value)) {
+          const e = value as IError;
+          setErrors(e);
+        } else {
+          handleClose();
+        }
+      });
+    }
+  };
+
+  const handleNewList = () => {
     const newList: INewList = {
       title: title ? (title.length > 0 ? title : "") : "",
     };
