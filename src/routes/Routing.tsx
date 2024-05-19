@@ -17,6 +17,7 @@ const Nav = lazy(() => import("../components/Nav"));
 const TodoList = lazy(() => import("../components/TodoList"));
 const TodoListPanel = lazy(() => import("../components/TodoListPanel"));
 const TodoPanel = lazy(() => import("../components/TodoPanel"));
+const ServerError = lazy(() => import("../pages/ServerError"));
 
 const Routing = (): JSX.Element => {
   const { data } = useContext(DataContext);
@@ -105,6 +106,7 @@ const Routing = (): JSX.Element => {
           <Suspense fallback={<Loader />}>
             <Nav />
             <Logo />
+            <ServerError />
           </Suspense>
         }
       />

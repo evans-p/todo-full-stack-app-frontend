@@ -65,6 +65,11 @@ const EN = {
     title: "The page you requested does not exist.",
     back: "Back",
   },
+
+  serverError: {
+    title:
+      "The server encountered a problem and could not complete the request. Please try again later.",
+  },
 };
 
 export default EN;
