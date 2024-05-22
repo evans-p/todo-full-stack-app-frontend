@@ -6,6 +6,7 @@ import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
 import { CiEdit } from "react-icons/ci";
 import { Outlet, Link } from "react-router-dom";
+import StickyButton from "./StickyButton";
 
 const TodoList = (props: ITodoList) => {
   const [completedMenuOpen, setCompletedMenuOpen] = useState<boolean>(false);
@@ -108,6 +109,7 @@ const TodoList = (props: ITodoList) => {
 
   return (
     <div className="ml-80 w-screen h-screen text-gray-800 dark:text-gray-100">
+      <StickyButton />
       <Outlet />
       {renderHeader()}
       <div className="h-[calc(50%-4.5rem)] overflow-scroll no-scrollbar">
