@@ -74,6 +74,7 @@ const Routing = (): JSX.Element => {
               }
             >
               <Route path="edit" element={<TodoListPanel todoList={list} />} />
+              <Route path="new-todo" element={<TodoPanel todo={null} />} />
               {list.todos.map((todo) => {
                 return (
                   <Route
