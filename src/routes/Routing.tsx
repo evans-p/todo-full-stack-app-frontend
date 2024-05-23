@@ -74,13 +74,16 @@ const Routing = (): JSX.Element => {
               }
             >
               <Route path="edit" element={<TodoListPanel todoList={list} />} />
-              <Route path="new-todo" element={<TodoPanel todo={null} />} />
+              <Route
+                path="new-todo"
+                element={<TodoPanel todoList={list} todo={null} />}
+              />
               {list.todos.map((todo) => {
                 return (
                   <Route
                     key={todo.todoId}
                     path={String(todo.todoId)}
-                    element={<TodoPanel todo={todo} />}
+                    element={<TodoPanel todoList={list} todo={todo} />}
                   />
                 );
               })}
