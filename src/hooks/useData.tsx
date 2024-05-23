@@ -183,18 +183,11 @@ export default function useData(): IDataContext {
 
       if (response.status !== 422 && !response.ok) throw new Error();
 
-      const d = await response.json();
+      const d: ITodo | IError = await response.json();
 
       if (isIError(d)) {
         return d as IError;
       }
-      let dt = data ? [...data._embedded.todoListList, d] : [d];
-
-      _setData(
-        data
-          ? { ...data, _embedded: { todoListList: dt } }
-          : { ...initialData, _embedded: { todoListList: dt } }
-      );
     } catch {
       navigate(RoutingConstants.ERROR);
     }
