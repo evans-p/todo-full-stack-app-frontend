@@ -206,6 +206,35 @@ export default function useData(): IDataContext {
     }
   };
 
+  const updateTodo = async (todo: ITodo): Promise<IError | void> => {
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_BACKEND_BASE_URL + DataConstants.TODOS,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + credentials?.credential,
+            "Accept-Language": i18n.language,
+          },
+          body: JSON.stringify(todo),
+        }
+      );
+
+      if (response.status !== 422 && !response.ok) throw new Error();
+
+      const d: ITodo | IError = await response.json();
+
+      if (isIError(d)) {
+        return d as IError;
+      }
+
+      await readAllLists();
+    } catch {
+      navigate(RoutingConstants.ERROR);
+    }
+  };
+
   const _getTodoListById = (
     todoListId: number,
     data: IData | undefined
@@ -226,5 +255,6 @@ export default function useData(): IDataContext {
     updateList,
     deleteList,
     addNewTodo,
+    updateTodo,
   };
 }

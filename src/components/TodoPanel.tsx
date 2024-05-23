@@ -11,7 +11,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   const [body, setBody] = useState<string>();
   const [todoListId, setTodoListId] = useState<number>();
   const [errors, setErrors] = useState<IError>();
-  const { data, addNewTodo } = useContext(DataContext);
+  const { data, addNewTodo, updateTodo } = useContext(DataContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,6 +33,31 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   }, [props]);
 
   const handleSubmit = () => {
+    if (props.todo) {
+      handleUpdateTodo();
+    } else {
+      handleNewTodo();
+    }
+  };
+
+  const handleUpdateTodo = () => {
+    if (props.todo) {
+      const todo: ITodo = JSON.parse(JSON.stringify(props.todo));
+      todo.body = body ? body : "";
+      todo.title = title ? title : "";
+      todo.todoListId = todoListId ? todoListId : null;
+
+      updateTodo(todo).then((e) => {
+        if (isIError(e)) {
+          setErrors(e as IError);
+        } else {
+          handleClose();
+        }
+      });
+    }
+  };
+
+  const handleNewTodo = () => {
     addNewTodo({
       title: title ? title : "",
       todoListId: todoListId ? todoListId : undefined,
