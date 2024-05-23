@@ -29,15 +29,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
       props ? (props.todo ? (props.todo.body ? props.todo.body : "") : "") : ""
     );
 
-    setTodoListId(
-      props
-        ? props.todo
-          ? props.todo.todoListId
-            ? props.todo.todoListId
-            : undefined
-          : undefined
-        : undefined
-    );
+    setTodoListId(props?.todoList?.todoListId);
   }, [props]);
 
   const handleSubmit = () => {
@@ -86,10 +78,20 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         <input
           type="text"
           id="title"
-          className="w-full h-8 p-3 text-gray-800 rounded-sm mb-2"
+          className="w-full h-8 p-3 text-gray-800 rounded-sm"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => {
+            setTitle(e.target.value);
+            setErrors(undefined);
+          }}
         />
+        {errors?.messages?.title ? (
+          <p className="my-2 text-rose-600 text-xs">
+            {errors?.messages?.title}
+          </p>
+        ) : (
+          <div className="h-8" />
+        )}
 
         <label
           className="block text-gray-800 dark:text-gray-100 mb-2"
@@ -101,10 +103,18 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         </label>
         <textarea
           id="body"
-          className="w-full h-24 p-3 text-gray-800 rounded-sm mb-2 resize-none"
+          className="w-full h-24 p-3 text-gray-800 rounded-sm resize-none"
           value={body}
-          onChange={(e) => setBody(e.target.value)}
+          onChange={(e) => {
+            setBody(e.target.value);
+            setErrors(undefined);
+          }}
         />
+        {errors?.messages?.body ? (
+          <p className="my-2 text-rose-600 text-xs">{errors?.messages?.body}</p>
+        ) : (
+          <div className="h-8" />
+        )}
         <label
           className="block text-gray-800 dark:text-gray-100 mb-2"
           htmlFor="listId"
@@ -119,6 +129,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           value={todoListId}
           onChange={(e) => {
             setTodoListId(Number(e.target.value));
+            setErrors(undefined);
           }}
         >
           <option value={undefined}></option>;
@@ -126,8 +137,15 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
             return <option value={list.todoListId}>{list.title}</option>;
           })}
         </select>
+        {errors?.messages?.todoListId ? (
+          <p className="my-2 text-rose-600 text-xs">
+            {errors?.messages?.todoListId}
+          </p>
+        ) : (
+          <div className="h-8" />
+        )}
         <button
-          className="w-full h-8 mt-5 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
+          className="w-full h-8 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
           onClick={handleSubmit}
         >
           {props.todo
