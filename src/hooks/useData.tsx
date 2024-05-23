@@ -213,6 +213,9 @@ export default function useData(): IDataContext {
     const todoList = data?._embedded.todoListList.filter(
       (list) => list.todoListId === todoListId
     );
+    if (todoList) {
+      return todoList[0];
+    }
   };
 
   return {

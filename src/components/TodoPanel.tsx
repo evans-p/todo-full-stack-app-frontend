@@ -1,13 +1,63 @@
-import { memo, useContext } from "react";
+import { memo, useContext, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { IoTrashOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { isIError } from "../utils/TypeGuards";
 import DataContext from "../contexts/DataContext";
 
 const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   const { t } = useTranslation();
-  const { data } = useContext(DataContext);
+  const [title, setTitle] = useState<string>();
+  const [body, setBody] = useState<string>();
+  const [todoListId, setTodoListId] = useState<number>();
+  const [errors, setErrors] = useState<IError>();
+  const { data, addNewTodo } = useContext(DataContext);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setTitle(
+      props
+        ? props.todo
+          ? props.todo.title
+            ? props.todo.title
+            : ""
+          : ""
+        : ""
+    );
+
+    setBody(
+      props ? (props.todo ? (props.todo.body ? props.todo.body : "") : "") : ""
+    );
+
+    setTodoListId(
+      props
+        ? props.todo
+          ? props.todo.todoListId
+            ? props.todo.todoListId
+            : undefined
+          : undefined
+        : undefined
+    );
+  }, [props]);
+
+  const handleSubmit = () => {
+    addNewTodo({
+      title: title ? title : "",
+      todoListId: todoListId ? todoListId : undefined,
+      body: body ? body : "",
+    }).then((e) => {
+      if (isIError(e)) {
+        setErrors(e as IError);
+      } else {
+        handleClose();
+      }
+    });
+  };
+
+  const handleClose = () => {
+    let path = location.pathname.split("/");
+    navigate(path.slice(0, path.length - 1).join("/"));
+  };
 
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-10">
@@ -37,7 +87,8 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           type="text"
           id="title"
           className="w-full h-8 p-3 text-gray-800 rounded-sm mb-2"
-          value={props.todo ? (props.todo.title ? props.todo.title : "") : ""}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
 
         <label
@@ -51,7 +102,8 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         <textarea
           id="body"
           className="w-full h-24 p-3 text-gray-800 rounded-sm mb-2 resize-none"
-          value={props.todo ? (props.todo.body ? props.todo.body : "") : ""}
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
         />
         <label
           className="block text-gray-800 dark:text-gray-100 mb-2"
@@ -64,22 +116,27 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         <select
           id="listId"
           className="w-full h-8 pl-3 text-gray-800 dark:text-gray-100 dark:bg-gray-700 bg-gray-300"
+          value={todoListId}
+          onChange={(e) => {
+            setTodoListId(Number(e.target.value));
+          }}
         >
+          <option value={undefined}></option>;
           {data?._embedded.todoListList.map((list: ITodoList) => {
             return <option value={list.todoListId}>{list.title}</option>;
           })}
         </select>
-        <button className="w-full h-8 mt-5 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400">
+        <button
+          className="w-full h-8 mt-5 mb-1 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
+          onClick={handleSubmit}
+        >
           {props.todo
             ? t("main.todoPanel.edit.save")
             : t("main.todoPanel.new.save")}
         </button>
         <button
           className="w-full h-8 rounded-sm text-gray-800 dark:text-gray-100 hover:text-gray-100 hover:dark:text-gray-800 dark:bg-gray-700 bg-gray-300 hover:dark:bg-gray-600 hover:bg-gray-400"
-          onClick={() => {
-            let path = location.pathname.split("/");
-            navigate(path.slice(0, path.length - 1).join("/"));
-          }}
+          onClick={handleClose}
         >
           {props.todo
             ? t("main.todoPanel.edit.cancel")
