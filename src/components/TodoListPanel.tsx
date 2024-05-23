@@ -111,9 +111,11 @@ const TodoListPanel = (props: TodoListPanelProps) => {
           value={title}
         />
         {errors?.messages?.title ? (
-          <p className="my-2 text-rose-600">{errors?.messages?.title}</p>
+          <p className="my-2 text-rose-600 text-xs">
+            {errors?.messages?.title}
+          </p>
         ) : (
-          <div className="h-10" />
+          <div className="h-8" />
         )}
 
         <button
