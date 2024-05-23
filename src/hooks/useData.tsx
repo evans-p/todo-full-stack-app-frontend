@@ -188,9 +188,31 @@ export default function useData(): IDataContext {
       if (isIError(d)) {
         return d as IError;
       }
+
+      const todoResponse = d as ITodo;
+
+      const _data: IData | undefined = JSON.parse(JSON.stringify(data));
+
+      if (todoResponse.todoListId) {
+        const todoList = _getTodoListById(todoResponse.todoListId, _data);
+        if (todoList) {
+          todoList.todos.push(todoResponse);
+        }
+      }
+
+      _setData(_data);
     } catch {
       navigate(RoutingConstants.ERROR);
     }
+  };
+
+  const _getTodoListById = (
+    todoListId: number,
+    data: IData | undefined
+  ): ITodoList | void => {
+    const todoList = data?._embedded.todoListList.filter(
+      (list) => list.todoListId === todoListId
+    );
   };
 
   return {
