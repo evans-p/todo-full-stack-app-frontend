@@ -10,6 +10,7 @@ const data: IDataContext = {
   deleteList: async () => {},
   addNewTodo: async () => {},
   updateTodo: async () => {},
+  deleteTodo: async () => {},
 };
 
 const DataContext = createContext<IDataContext>(data);

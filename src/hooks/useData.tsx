@@ -235,6 +235,27 @@ export default function useData(): IDataContext {
     }
   };
 
+  const deleteTodo = async (todoId: number): Promise<void> => {
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_BACKEND_BASE_URL + DataConstants.TODOS + todoId,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + credentials?.credential,
+            "Accept-Language": i18n.language,
+          },
+        }
+      );
+
+      if (!response.ok) throw new Error();
+      await readAllLists();
+    } catch {
+      navigate(RoutingConstants.ERROR);
+    }
+  };
+
   const _getTodoListById = (
     todoListId: number,
     data: IData | undefined
@@ -256,5 +277,6 @@ export default function useData(): IDataContext {
     deleteList,
     addNewTodo,
     updateTodo,
+    deleteTodo,
   };
 }
