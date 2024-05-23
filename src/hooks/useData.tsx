@@ -74,7 +74,6 @@ export default function useData(): IDataContext {
       }
 
       const res: ITodoList = d as ITodoList;
-      console.log(res);
       let dt: ITodoList[];
       if (data) {
         const index = data._embedded.todoListList.findIndex(
@@ -90,7 +89,6 @@ export default function useData(): IDataContext {
         } else {
           dt = [...data._embedded.todoListList, res];
         }
-        console.log(index);
       } else {
         dt = [res];
       }
@@ -153,7 +151,6 @@ export default function useData(): IDataContext {
         }
       );
       if (!response.ok) {
-        console.log(response.status);
         throw new Error();
       }
 
@@ -163,5 +160,53 @@ export default function useData(): IDataContext {
       navigate(RoutingConstants.ERROR);
     }
   };
-  return { data, readAllLists, clearData, addNewList, updateList, deleteList };
+
+  const addNewTodo = async (todo: INewTodo): Promise<IError | void> => {
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_BACKEND_BASE_URL + DataConstants.TODOS,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + credentials?.credential,
+            "Accept-Language": i18n.language,
+          },
+          body: JSON.stringify({
+            userId: profile?.sub,
+            title: todo.title,
+            body: todo.body,
+            todoListId: todo.todoListId,
+          }),
+        }
+      );
+
+      if (response.status !== 422 && !response.ok) throw new Error();
+
+      const d = await response.json();
+
+      if (isIError(d)) {
+        return d as IError;
+      }
+      let dt = data ? [...data._embedded.todoListList, d] : [d];
+
+      _setData(
+        data
+          ? { ...data, _embedded: { todoListList: dt } }
+          : { ...initialData, _embedded: { todoListList: dt } }
+      );
+    } catch {
+      navigate(RoutingConstants.ERROR);
+    }
+  };
+
+  return {
+    data,
+    readAllLists,
+    clearData,
+    addNewList,
+    updateList,
+    deleteList,
+    addNewTodo,
+  };
 }

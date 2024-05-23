@@ -5,4 +5,5 @@ interface IDataContext {
   addNewList: (list: INewList) => Promise<IError | void>;
   updateList: (list: ITodoList) => Promise<IError | void>;
   deleteList: (todoListId: number) => Promise<void>;
+  addNewTodo: (list: INewTodo) => Promise<IError | void>;
 }
