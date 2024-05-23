@@ -68,7 +68,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           ) : null}
         </section>
         <label
-          className="block text-gray-800 dark:text-gray-100 mb-2"
+          className="block text-gray-800 dark:text-gray-100 mb-1"
           htmlFor="title"
         >
           {props.todo
@@ -94,7 +94,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
         )}
 
         <label
-          className="block text-gray-800 dark:text-gray-100 mb-2"
+          className="block text-gray-800 dark:text-gray-100 mb-1"
           htmlFor="body"
         >
           {props.todo
@@ -116,7 +116,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           <div className="h-8" />
         )}
         <label
-          className="block text-gray-800 dark:text-gray-100 mb-2"
+          className="block text-gray-800 dark:text-gray-100 mb-1"
           htmlFor="listId"
         >
           {props.todo
