@@ -103,7 +103,7 @@ const TodoList = (props: ITodoList) => {
             </span>
           </section>
           <section
-            className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3"
+            className="col-span-1 row-span-1 text-lg flex justify-end items-center mr-3"
             onClick={(e) => handleCompleted(e, todo)}
           >
             <span className=" cursor-pointer p-1">
