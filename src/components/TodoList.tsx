@@ -1,9 +1,14 @@
 import { memo, useState, useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { IoFilterOutline, IoStarOutline, IoStar } from "react-icons/io5";
+import {
+  IoFilterOutline,
+  IoStarOutline,
+  IoStar,
+  IoCheckboxOutline,
+  IoCheckbox,
+} from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { BiSortAlt2 } from "react-icons/bi";
-import { RiDraggable } from "react-icons/ri";
 import { CiEdit } from "react-icons/ci";
 import { Outlet, Link } from "react-router-dom";
 import StickyButton from "./StickyButton";
@@ -23,67 +28,89 @@ const TodoList = (props: ITodoList) => {
     updateTodo(todo);
   };
 
+  const handleCompleted = (
+    e: React.MouseEvent<HTMLElement, MouseEvent>,
+    todo: ITodo
+  ) => {
+    e.preventDefault();
+    todo.completed = !todo.completed;
+    updateTodo(todo);
+  };
+
   const toogleCompletedMenu = () => {
     setCompletedMenuOpen(!completedMenuOpen);
   };
 
   const renderTodos = (): JSX.Element[] => {
-    return props.todos.map((todo) => {
-      return (
-        <Link to={String(todo.todoId)}>
-          <div
-            key={todo.todoId}
-            className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm"
-          >
-            <h4 className="col-span-3 row-span-1 pl-3 text-sm flex items-center justify-start">
-              {todo.title}
-            </h4>
-            <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
-              {todo.created?.split("T")[0].split("-").reverse().join("-")}
-            </h4>
-            <section
-              className="col-span-1 row-span-1 flex justify-center items-center"
-              onClick={(e) => handleFavourite(e, todo)}
+    return props.todos
+      .filter((todo) => !todo.completed)
+      .map((todo) => {
+        return (
+          <Link to={String(todo.todoId)}>
+            <div
+              key={todo.todoId}
+              className="mx-6 mt-1 grid grid-cols-6 grid-rows-1 cursor-pointer dark:bg-gray-700 bg-gray-300 rounded-sm"
             >
-              <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-                {todo.favourite ? <IoStar /> : <IoStarOutline />}
-              </span>
-            </section>
-            <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
-              <span className="cursor-grab p-1">
-                <RiDraggable />
-              </span>
-            </section>
-          </div>
-        </Link>
-      );
-    });
+              <h4 className="col-span-3 row-span-1 pl-3 text-sm flex items-center justify-start">
+                {todo.title}
+              </h4>
+              <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
+                {todo.created?.split("T")[0].split("-").reverse().join("-")}
+              </h4>
+              <section
+                className="col-span-1 row-span-1 flex justify-center items-center"
+                onClick={(e) => handleFavourite(e, todo)}
+              >
+                <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+                  {todo.favourite ? <IoStar /> : <IoStarOutline />}
+                </span>
+              </section>
+              <section
+                className="col-span-1 row-span-1 text-lg flex justify-end items-center mr-3"
+                onClick={(e) => handleCompleted(e, todo)}
+              >
+                <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+                  <IoCheckboxOutline />
+                </span>
+              </section>
+            </div>
+          </Link>
+        );
+      });
   };
 
   const renderCompletedTodos = (): JSX.Element[] => {
-    return [...Array(20).keys()].map((x) => (
-      <div
-        key={x + 30}
-        className=" dark:bg-gray-600 bg-gray-200 mt-1 w-full h-8 grid grid-cols-6 grid-rows-1 cursor-pointer"
-      >
-        <h2 className="col-span-3 row-span-1 ml-3 flex justify-start items-center">
-          Todo
-        </h2>
-        <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
-          27-02-1992
-        </h4>
-        <section className="col-span-1 row-span-1 flex justify-center items-center">
-          <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-400 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-            <IoStarOutline />
-          </span>
-        </section>
-        <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
-          <span className="cursor-grab p-1">
-            <RiDraggable />
-          </span>
-        </section>
-      </div>
-    ));
+    return props.todos
+      .filter((todo) => todo.completed)
+      .map((todo) => (
+        <div
+          key={todo.todoId}
+          className=" dark:bg-gray-600 bg-gray-200 mt-1 w-full h-8 grid grid-cols-6 grid-rows-1 cursor-pointer"
+        >
+          <h2 className="col-span-3 row-span-1 ml-3 flex justify-start items-center">
+            {todo.title}
+          </h2>
+          <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
+            {todo.created?.split("T")[0].split("-").reverse().join("-")}
+          </h4>
+          <section
+            className="col-span-1 row-span-1 flex justify-center items-center"
+            onClick={(e) => handleFavourite(e, todo)}
+          >
+            <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-400 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+              {todo.favourite ? <IoStar /> : <IoStarOutline />}
+            </span>
+          </section>
+          <section
+            className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3"
+            onClick={(e) => handleCompleted(e, todo)}
+          >
+            <span className=" cursor-pointer p-1">
+              <IoCheckbox />
+            </span>
+          </section>
+        </div>
+      ));
   };
 
   const renderHeader = (): JSX.Element => {
