@@ -1,16 +1,27 @@
-import { memo, useState } from "react";
+import { memo, useState, useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { IoFilterOutline, IoStarOutline } from "react-icons/io5";
+import { IoFilterOutline, IoStarOutline, IoStar } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { BiSortAlt2 } from "react-icons/bi";
 import { RiDraggable } from "react-icons/ri";
 import { CiEdit } from "react-icons/ci";
 import { Outlet, Link } from "react-router-dom";
 import StickyButton from "./StickyButton";
+import DataContext from "../contexts/DataContext";
 
 const TodoList = (props: ITodoList) => {
   const [completedMenuOpen, setCompletedMenuOpen] = useState<boolean>(false);
   const { t } = useTranslation();
+  const { updateTodo } = useContext(DataContext);
+
+  const handleFavourite = (
+    e: React.MouseEvent<HTMLElement, MouseEvent>,
+    todo: ITodo
+  ) => {
+    e.preventDefault();
+    todo.favourite = !todo.favourite;
+    updateTodo(todo);
+  };
 
   const toogleCompletedMenu = () => {
     setCompletedMenuOpen(!completedMenuOpen);
@@ -30,9 +41,12 @@ const TodoList = (props: ITodoList) => {
             <h4 className="col-span-1 row-span-1 flex justify-center items-center text-sm">
               {todo.created?.split("T")[0].split("-").reverse().join("-")}
             </h4>
-            <section className="col-span-1 row-span-1 flex justify-center items-center">
+            <section
+              className="col-span-1 row-span-1 flex justify-center items-center"
+              onClick={(e) => handleFavourite(e, todo)}
+            >
               <span className="cursor-pointer p-1 rounded-full hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
-                <IoStarOutline />
+                {todo.favourite ? <IoStar /> : <IoStarOutline />}
               </span>
             </section>
             <section className="col-span-1 row-span-1 text-2xl flex justify-end items-center mr-3">
