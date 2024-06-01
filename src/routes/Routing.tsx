@@ -51,45 +51,52 @@ const Routing = (): JSX.Element => {
           </LoginReqired>
         }
       >
-        {data?._embedded.todoListList.map((list) => {
-          return (
-            <Route
-              key={list.todoListId}
-              path={String(list.todoListId)}
-              element={
-                <Suspense fallback={<Loader />}>
-                  <TodoList
-                    todoListId={list.todoListId}
-                    userId={list.userId}
-                    title={list.title}
-                    created={list.created}
-                    lastModified={list.lastModified}
-                    todos={list.todos}
-                    _links={{
-                      self: list._links.self,
-                      todoLists: list._links.todoLists,
-                    }}
-                  />
-                </Suspense>
-              }
-            >
-              <Route path="edit" element={<TodoListPanel todoList={list} />} />
-              <Route
-                path="new-todo"
-                element={<TodoPanel todoList={list} todo={null} />}
-              />
-              {list.todos.map((todo) => {
+        {data
+          ? data._embedded
+            ? data._embedded.todoListList.map((list) => {
                 return (
                   <Route
-                    key={todo.todoId}
-                    path={String(todo.todoId)}
-                    element={<TodoPanel todoList={list} todo={todo} />}
-                  />
+                    key={list.todoListId}
+                    path={String(list.todoListId)}
+                    element={
+                      <Suspense fallback={<Loader />}>
+                        <TodoList
+                          todoListId={list.todoListId}
+                          userId={list.userId}
+                          title={list.title}
+                          created={list.created}
+                          lastModified={list.lastModified}
+                          todos={list.todos}
+                          _links={{
+                            self: list._links.self,
+                            todoLists: list._links.todoLists,
+                          }}
+                        />
+                      </Suspense>
+                    }
+                  >
+                    <Route
+                      path="edit"
+                      element={<TodoListPanel todoList={list} />}
+                    />
+                    <Route
+                      path="new-todo"
+                      element={<TodoPanel todoList={list} todo={null} />}
+                    />
+                    {list.todos.map((todo) => {
+                      return (
+                        <Route
+                          key={todo.todoId}
+                          path={String(todo.todoId)}
+                          element={<TodoPanel todoList={list} todo={todo} />}
+                        />
+                      );
+                    })}
+                  </Route>
                 );
-              })}
-            </Route>
-          );
-        })}
+              })
+            : null
+          : null}
         <Route path="new" element={<TodoListPanel todoList={null} />} />
       </Route>
 

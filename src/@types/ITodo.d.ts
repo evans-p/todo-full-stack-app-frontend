@@ -7,4 +7,5 @@ interface ITodo {
   body: string | null;
   created: string | null;
   lastModified: string | null;
+  completed: boolean | null;
 }

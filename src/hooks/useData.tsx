@@ -177,6 +177,8 @@ export default function useData(): IDataContext {
             title: todo.title,
             body: todo.body,
             todoListId: todo.todoListId,
+            completed: false,
+            favourite: false,
           }),
         }
       );

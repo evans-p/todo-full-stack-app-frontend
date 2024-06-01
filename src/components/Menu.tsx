@@ -12,7 +12,7 @@ const Menu = () => {
   const { data } = useContext(DataContext);
 
   const renderlists = (): JSX.Element[] | null => {
-    if (data) {
+    if (data && data._embedded) {
       return data._embedded.todoListList.map((list) => {
         return (
           <Link

@@ -11,7 +11,7 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
   const [body, setBody] = useState<string>();
   const [todoListId, setTodoListId] = useState<number>();
   const [errors, setErrors] = useState<IError>();
-  const { data, addNewTodo, updateTodo } = useContext(DataContext);
+  const { data, addNewTodo, updateTodo, deleteTodo } = useContext(DataContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -76,6 +76,10 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
     navigate(path.slice(0, path.length - 1).join("/"));
   };
 
+  const handleDeleteTodo = (todoId: number) => {
+    deleteTodo(todoId).then(() => handleClose());
+  };
+
   return (
     <div className="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-40 backdrop-blur flex justify-center items-center ring-4 ring-black/5 z-10">
       <div className="w-96 p-10 bg-gray-100 dark:bg-gray-800 rounded-sm">
@@ -87,7 +91,14 @@ const TodoPanel = (props: TodoPanelProps): JSX.Element => {
           </h3>
 
           {props.todo ? (
-            <span className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm">
+            <span
+              className="cursor-pointer p-2 rounded-xl hover:bg-white hover:shadow dark:hover:bg-gray-600 dark:hover:shadow-gray-400 dark:hover:shadow-sm"
+              onClick={() => {
+                if (props.todo) {
+                  handleDeleteTodo(props.todo.todoId);
+                }
+              }}
+            >
               <IoTrashOutline className="text-gray-800 text-2xl dark:text-gray-100" />
             </span>
           ) : null}
