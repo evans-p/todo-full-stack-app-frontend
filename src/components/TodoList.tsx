@@ -83,7 +83,8 @@ const TodoList = (props: ITodoList) => {
     return props.todos
       .filter((todo) => todo.completed)
       .map((todo) => (
-        <div
+        <Link
+          to={String(todo.todoId)}
           key={todo.todoId}
           className=" dark:bg-gray-600 bg-gray-200 mt-1 w-full h-8 grid grid-cols-6 grid-rows-1 cursor-pointer"
         >
@@ -109,7 +110,7 @@ const TodoList = (props: ITodoList) => {
               <IoCheckbox />
             </span>
           </section>
-        </div>
+        </Link>
       ));
   };
 
