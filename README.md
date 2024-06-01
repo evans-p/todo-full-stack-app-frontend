@@ -1,7 +1,6 @@
 ## TODOS
 
-1. Add Login
-2. Revoke Token on Logout
+1. Fix Login Proccess
 
 ## Notes
 
