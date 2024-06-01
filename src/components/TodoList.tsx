@@ -162,7 +162,16 @@ const TodoList = (props: ITodoList) => {
           className="w-full dark:bg-gray-700 bg-gray-300 flex justify-between items-center"
           onClick={toogleCompletedMenu}
         >
-          <h3 className="pl-3">{t("main.list.completed")}</h3>
+          <h3 className="pl-3">
+            {t("main.list.completed")
+              .concat(" (")
+              .concat(
+                props.todos
+                  ? String(props.todos.filter((todo) => todo.completed).length)
+                  : "0"
+              )
+              .concat(")")}
+          </h3>
           <span className="text-2xl mr-3 p-1 cursor-pointer rounded-full hover:bg-white dark:hover:bg-gray-600">
             <IoIosArrowDropdown />
           </span>
